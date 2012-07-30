@@ -12,8 +12,6 @@ void SimpleClassInteraction()
     
     [baseA add: 5];
     NSLog(@"The number is %i", [baseA getNumber]);
-    
-    //[baseA release];
 }
 
 void DerivedClassInteraction()
@@ -27,8 +25,6 @@ void DerivedClassInteraction()
     
     [instance add: 5];
     NSLog(@"The number is %i", [instance getNumber]);
-    
-    //[instance release];
 }
 
 void DerivedClassInteractionThroughBase()
@@ -42,13 +38,27 @@ void DerivedClassInteractionThroughBase()
     // call getCalculatedNumber polymorphically
     NSLog(@"The number is %i", [instance getCalculatedNumber]);
     
-    //// the below generates a compile-time warning but behaves correctly at runtime
+    // the below generates a compile-time warning but behaves correctly at runtime
+    // Note: Not anymore (XCode 4.4)
     //NSLog(@"The number is %i", [instance methodThatExistsOnlyInDerivedC]);
     
-    // the below avoids the warning
+    // the below avoids the warning, obviously
     NSLog(@"The number is %i", [(DerivedC*)instance methodThatExistsOnlyInDerivedC]);
+}
+
+void GenericInteractionThroughId()
+{
+    NSLog(@"GenericInteractionThroughId()");
     
-    //[instance release];
+    id instance = [[BaseA alloc] initWithNumber:30];
+    NSLog(@"The number is %i", [instance getCalculatedNumber]);
+    
+    instance = [[DerivedC alloc] initWithNumber:40];
+    // call getCalculatedNumber polymorphically
+    NSLog(@"The number is %i", [instance getCalculatedNumber]);
+    
+    // call a method that exists only in DerivedC
+    NSLog(@"The number is %i", [instance methodThatExistsOnlyInDerivedC]);
 }
 
 int main (int argc, const char * argv[])
@@ -58,6 +68,7 @@ int main (int argc, const char * argv[])
         SimpleClassInteraction();
         DerivedClassInteraction();
         DerivedClassInteractionThroughBase();
+        GenericInteractionThroughId();
     
     }
     
