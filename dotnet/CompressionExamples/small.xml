@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<newsMessage xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:x="http://www.w3.org/1999/xhtml" xmlns:rtr="http://www.reuters.com/ns/2003/08/content" xmlns="http://iptc.org/std/nar/2006-10-01/">
+  <header>
+    <sent>2011-01-05T09:04:35.6592195Z</sent>
+    <sender>reuters.com</sender>
+    <transmitId>tag:reuters.com,0000:newsml_a4d3bcae-075e-4830-a580-951ec9e32484:10000</transmitId>
+    <priority>4</priority>
+   <destination>DEST1</destination>
+    <channel>TXT</channel>
+  </header>
+  <itemSet>
+    <packageItem guid="tag:reuters.com,0000:newsml_a4d3bcae-075e-4830-a580-951ec9e32484" version="10000" standard="NewsML-G2" standardversion="2.1" conformance="power" xml:lang="en-US">
+      <catalogRef href="http://www.iptc.org/std/catalog/catalog.IPTC-G2-Standards_3.xml" />
+      <rightsInfo>
+        <copyrightHolder literal="Reuters" />
+        <copyrightNotice>(c) Copyright Thomson Reuters 2011. Check for restrictions at: http://about.reuters.com/fulllegal.asp</copyrightNotice>
+      </rightsInfo>
+      <itemMeta>
+        <signal qcode="prodId:TXT" />
+        <signal qcode="sic:SIMCON" />
+        <signal qcode="var:itemEvol" />
+        <signal qcode="edStat:N" />
+        <signal qcode="pmt:composite" />
+        <itemClass qcode="icls:composite" rtr:msgType="S" />
+        <provider literal="reuters.com" />
+        <versionCreated>2011-01-05T09:04:35.6572194Z</versionCreated>
+        <firstCreated>2011-01-05T09:04:35.6572194Z</firstCreated>
+        <pubStatus qcode="stat:usable" />
+        <role qcode="itemRole:N" />
+        <fileName>still-to-do</fileName>
+        <title>This is my package</title>
+        <rtr:versionedId guid="tag:reuters.com,0000:newsml_a4d3bcae-075e-4830-a580-951ec9e32484:10000" />
+      </itemMeta>
+      <contentMeta>
+        <infoSource role="cRole:origProv" literal="Reuters" />
+        <infoSource role="cRole:source" literal="Reuters" />
+        <subject qcode="E:N" />
+        <subject qcode="G:2D" />
+        <subject qcode="3907672" />
+        <subject qcode="31998" />
+        <subject qcode="RR:4510" />
+        <subject qcode="RR:5141" />
+        <subject qcode="C" />
+        <subject qcode="D" />
+        <urgency>4</urgency>
+        <creator literal="Reuters" role="cRole:source" />
+        <altId type="idType:itemId" rtr:isOriginal="1">a4d3bcae-075e-4830-a580-951ec9e32484</altId>
+        <language tag="en-US" />
+        <slugline separator="-">THIS-IS-THE-SLUG</slugline>
+        <headline>This is my package</headline>
+        <dateline>0001-01-01T00:00:00</dateline>
+        <creditline>Reuters</creditline>
+        <description role="descRole:caption">This is the description</description>
+      </contentMeta>
+      <groupSet root="root">
+        <group role="grpRole:NEP" id="root">
+          <groupRef idref="main" />
+        </group>
+        <group role="grpRole:Main" id="main">
+          <itemRef residref="tag:reuters.com,0000:newsml_0" version="1" contenttype="application/vnd.iptc.g2.packageitem+xml">
+            <provider literal="reuters.com" />
+            <pubStatus qcode="stat:usable" />
+            <role qcode="itemRole:N" />
+            <fileName>LVE6L7000</fileName>
+            <altId type="idType:SYNTH" rtr:isOriginal="1">0</altId>
+            <slugline separator="-">STORY-1</slugline>
+            <headline>Story 1</headline>
+          </itemRef>
+          <itemRef residref="tag:reuters.com,0000:newsml_1" version="1" contenttype="application/vnd.iptc.g2.packageitem+xml">
+            <provider literal="reuters.com" />
+            <pubStatus qcode="stat:usable" />
+            <role qcode="itemRole:N" />
+            <fileName>LVE6L7001</fileName>
+            <altId type="idType:SYNTH" rtr:isOriginal="1">1</altId>
+            <slugline separator="-">STORY-2</slugline>
+            <headline>Story 2</headline>
+          </itemRef>
+          <itemRef residref="tag:reuters.com,0000:newsml_2" version="1" contenttype="application/vnd.iptc.g2.packageitem+xml">
+            <provider literal="reuters.com" />
+            <pubStatus qcode="stat:usable" />
+            <role qcode="itemRole:N" />
+            <fileName>LVE6L7002</fileName>
+            <altId type="idType:SYNTH" rtr:isOriginal="1">2</altId>
+            <slugline separator="-">STORY-3</slugline>
+            <headline>Story 3</headline>
+          </itemRef>
+        </group>
+      </groupSet>
+   </packageItem>
+  </itemSet>
+</newsMessage>

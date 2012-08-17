@@ -1,0 +1,817 @@
+<?xml version="1.0" encoding="utf-8"?>
+<newsMessage xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:rtr="http://www.reuters.com/ns/2003/08/content" xmlns:x="http://www.w3.org/1999/xhtml" xmlns="http://iptc.org/std/nar/2006-10-01/">
+  <header>
+    <sent>2011-04-15T09:11:58.215Z</sent>
+    <sender>reuters.com</sender>
+    <transmitId>tag:reuters.com,2011:newsml_KDE73E00X:2</transmitId>
+    <priority>4</priority>
+    <destination>DEST1</destination>
+    <channel>TXT</channel>
+  </header>
+  <itemSet>
+    <packageItem guid="tag:reuters.com,2011:newsml_KDE73E00X" version="2" standard="NewsML-G2" standardversion="2.8" conformance="power" xml:lang="en-US">
+      <catalogRef href="http://xml.media.reuters.com/g2-standards/catalogs/ReutersMedia_G2-Standards-Catalog_v1.xml" />
+      <rightsInfo>
+        <copyrightHolder literal="Thomson Reuters" />
+        <copyrightNotice>(c) Copyright Thomson Reuters 2011. Click For Restrictions - http://about.reuters.com/fulllegal.asp</copyrightNotice>
+      </rightsInfo>
+      <itemMeta>
+        <itemClass qcode="icls:composite" rtr:msgType="S" />
+        <provider literal="reuters.com" />
+        <versionCreated>2011-04-15T09:11:58.082Z</versionCreated>
+        <firstCreated>2011-04-14T14:29:27.398Z</firstCreated>
+        <pubStatus qcode="stat:usable" />
+        <role qcode="itemRole:N" />
+        <fileName>2011-04-15T091158Z_2_KDE73E00X_RTRLXPC_0_THIS-IS-THE-PACKAGE-TITLE.XML</fileName>
+        <generator versioninfo="00.00.01">Lynx Packager</generator>
+        <profile versioninfo="00.00.01">SNEP-External</profile>
+        <service qcode="svc:RTR_TNS" />
+        <signal qcode="sic:ATOMIC" />
+        <signal qcode="prodId:TXT" />
+        <signal qcode="edStat:N" />
+        <signal qcode="pmt:composite" />
+        <rtr:versionedId guid="tag:reuters.com,2011:newsml_KDE73E00X:2" />
+      </itemMeta>
+      <contentMeta>
+        <urgency>4</urgency>
+        <infoSource role="cRole:origProv" literal="Reuters" />
+        <infoSource role="cRole:source" literal="Reuters" />
+        <creator literal="Reuters" role="cRole:source" />
+        <altId type="idType:USN" rtr:isOriginal="1">KDE73E00X</altId>
+        <language tag="en-US" />
+        <subject qcode="B:125" />
+        <subject qcode="BL:62" />
+        <subject qcode="G:1" />
+        <subject qcode="G:B1" />
+        <subject qcode="G:K" />
+        <subject qcode="M:C" />
+        <subject qcode="M:E7" />
+        <subject qcode="M:E8" />
+        <subject qcode="M:N" />
+        <subject qcode="M:Z" />
+        <subject qcode="R:C.N" />
+        <slugline separator="-">THIS-IS-THE-PACKAGE-TITLE</slugline>
+        <headline>This is the package title</headline>
+        <dateline>April 15 (Reuters)</dateline>
+        <creditline>Reuters</creditline>
+        <description>This is the package description</description>
+      </contentMeta>
+      <groupSet root="root">
+        <group role="grpRole:SNEP" id="root">
+          <groupRef idref="alerts" />
+          <groupRef idref="main" />
+          <groupRef idref="sidebars" />
+        </group>
+        <group role="grpRole:alerts" id="alerts">
+          <itemRef residref="tag:reuters.com,0000:text_LFX5TFKRD" contenttype="text/plain">
+            <itemClass qcode="icls:text" />
+            <altId type="idType:USN" rtr:isOriginal="1">LFX5TFKRD</altId>
+            <headline>Japan's nuclear power plant accident not catastrophic</headline>
+            <description>Russian nuclear industry experts are hoping that their Japanese colleagues will manage to take the situation on the nuclear power plant Fukushima under control, Sergei Boyarkin, programs director at Rosatom, told reporters on Tuesday.</description>
+            <by>av dp</by>
+            <dateline>MOSCOW. March 22 (Interfax)</dateline>
+          </itemRef>
+        </group>
+        <group role="grpRole:Main" id="main">
+          <itemRef residref="tag:reuters.com,2011:newsml_KDE73E00Y" contenttype="application/vnd.iptc.g2.packageitem+xml">
+            <itemClass qcode="icls:composite" />
+            <altId type="idType:USN" rtr:isOriginal="1">KDE73E00Y</altId>
+          </itemRef>
+          <itemRef residref="tag:reuters.com,2011:newsml_KDE73E00Z" contenttype="application/vnd.iptc.g2.packageitem+xml">
+            <itemClass qcode="icls:composite" />
+            <altId type="idType:USN" rtr:isOriginal="1">KDE73E00Z</altId>
+          </itemRef>
+          <itemRef residref="tag:reuters.com,2011:newsml_KDE73E010" contenttype="application/vnd.iptc.g2.packageitem+xml">
+            <itemClass qcode="icls:composite" />
+            <altId type="idType:USN" rtr:isOriginal="1">KDE73E010</altId>
+          </itemRef>
+          <itemRef residref="tag:reuters.com,2011:newsml_KDE73E011" contenttype="application/vnd.iptc.g2.packageitem+xml">
+            <itemClass qcode="icls:composite" />
+            <altId type="idType:USN" rtr:isOriginal="1">KDE73E011</altId>
+          </itemRef>
+          <itemRef residref="tag:reuters.com,2011:newsml_KDE73E012" contenttype="application/vnd.iptc.g2.packageitem+xml">
+            <itemClass qcode="icls:composite" />
+            <altId type="idType:USN" rtr:isOriginal="1">KDE73E012</altId>
+          </itemRef>
+          <itemRef residref="tag:reuters.com,2011:newsml_KDE73E013" contenttype="application/vnd.iptc.g2.packageitem+xml">
+            <itemClass qcode="icls:composite" />
+            <altId type="idType:USN" rtr:isOriginal="1">KDE73E013</altId>
+          </itemRef>
+          <itemRef residref="tag:reuters.com,2011:newsml_KDE73E014" contenttype="application/vnd.iptc.g2.packageitem+xml">
+            <itemClass qcode="icls:composite" />
+            <altId type="idType:USN" rtr:isOriginal="1">KDE73E014</altId>
+          </itemRef>
+          <itemRef residref="tag:reuters.com,2011:newsml_KDE73E015" contenttype="application/vnd.iptc.g2.packageitem+xml">
+            <itemClass qcode="icls:composite" />
+            <altId type="idType:USN" rtr:isOriginal="1">KDE73E015</altId>
+          </itemRef>
+          <itemRef residref="tag:reuters.com,2011:newsml_KDE73E016" contenttype="application/vnd.iptc.g2.packageitem+xml">
+            <itemClass qcode="icls:composite" />
+            <altId type="idType:USN" rtr:isOriginal="1">KDE73E016</altId>
+          </itemRef>
+          <itemRef residref="tag:reuters.com,2011:newsml_KDE73E017" contenttype="application/vnd.iptc.g2.packageitem+xml">
+            <itemClass qcode="icls:composite" />
+            <altId type="idType:USN" rtr:isOriginal="1">KDE73E017</altId>
+          </itemRef>
+          <itemRef residref="tag:reuters.com,2011:newsml_KDE73E018" contenttype="application/vnd.iptc.g2.packageitem+xml">
+            <itemClass qcode="icls:composite" />
+            <altId type="idType:USN" rtr:isOriginal="1">KDE73E018</altId>
+          </itemRef>
+        </group>
+        <group role="grpRole:sidebars" id="sidebars">
+          <groupRef idref="analysisandopinion" />
+          <groupRef idref="indepth" />
+        </group>
+        <group role="grpRole:sidebar" id="analysisandopinion">
+          <itemRef residref="tag:reuters.com,0000:text_RON6787W1" contenttype="text/plain">
+            <itemClass qcode="icls:text" />
+            <altId type="idType:USN" rtr:isOriginal="1">RON6787W1</altId>
+            <headline>Headline for Analysis and Opinion story 1</headline>
+            <description>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</description>
+          </itemRef>
+          <itemRef residref="tag:reuters.com,0000:text_RON6787W2" contenttype="text/plain">
+            <itemClass qcode="icls:text" />
+            <altId type="idType:USN" rtr:isOriginal="1">RON6787W2</altId>
+            <headline>Headline for Analysis and Opinion story 2</headline>
+            <description>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</description>
+          </itemRef>
+          <itemRef residref="tag:reuters.com,0000:text_RON6787W3" contenttype="text/plain">
+            <itemClass qcode="icls:text" />
+            <altId type="idType:USN" rtr:isOriginal="1">RON6787W3</altId>
+            <headline>Headline for Analysis and Opinion story 3</headline>
+            <description>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</description>
+          </itemRef>
+          <itemRef residref="tag:reuters.com,0000:text_RON6787W4" contenttype="text/plain">
+            <itemClass qcode="icls:text" />
+            <altId type="idType:USN" rtr:isOriginal="1">RON6787W4</altId>
+            <headline>Headline for Analysis and Opinion story 4</headline>
+            <description>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</description>
+          </itemRef>
+          <itemRef residref="tag:reuters.com,0000:text_RON6787W5" contenttype="text/plain">
+            <itemClass qcode="icls:text" />
+            <altId type="idType:USN" rtr:isOriginal="1">RON6787W5</altId>
+            <headline>Headline for Analysis and Opinion story 5</headline>
+            <description>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</description>
+          </itemRef>
+          <itemRef residref="tag:reuters.com,0000:text_RON6787W6" contenttype="text/plain">
+            <itemClass qcode="icls:text" />
+            <altId type="idType:USN" rtr:isOriginal="1">RON6787W6</altId>
+            <headline>Headline for Analysis and Opinion story 6</headline>
+            <description>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</description>
+          </itemRef>
+        </group>
+        <group role="grpRole:sidebar" id="indepth">
+          <itemRef residref="tag:reuters.com,0000:text_RON5676Y1" contenttype="text/plain">
+            <itemClass qcode="icls:text" />
+            <altId type="idType:USN" rtr:isOriginal="1">RON5676Y1</altId>
+            <headline>Headline for In Depth story 1</headline>
+            <description>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</description>
+          </itemRef>
+          <itemRef residref="tag:reuters.com,0000:text_RON5676Y2" contenttype="text/plain">
+            <itemClass qcode="icls:text" />
+            <altId type="idType:USN" rtr:isOriginal="1">RON5676Y2</altId>
+            <headline>Headline for In Depth story 2</headline>
+            <description>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</description>
+          </itemRef>
+          <itemRef residref="tag:reuters.com,0000:text_RON5676Y3" contenttype="text/plain">
+            <itemClass qcode="icls:text" />
+            <altId type="idType:USN" rtr:isOriginal="1">RON5676Y3</altId>
+            <headline>Headline for In Depth story 3</headline>
+            <description>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</description>
+          </itemRef>
+          <itemRef residref="tag:reuters.com,0000:text_RON5676Y4" contenttype="text/plain">
+            <itemClass qcode="icls:text" />
+            <altId type="idType:USN" rtr:isOriginal="1">RON5676Y4</altId>
+            <headline>Headline for In Depth story 4</headline>
+            <description>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</description>
+          </itemRef>
+          <itemRef residref="tag:reuters.com,0000:text_RON5676Y5" contenttype="text/plain">
+            <itemClass qcode="icls:text" />
+            <altId type="idType:USN" rtr:isOriginal="1">RON5676Y5</altId>
+            <headline>Headline for In Depth story 5</headline>
+            <description>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</description>
+          </itemRef>
+          <itemRef residref="tag:reuters.com,0000:text_RON5676Y6" contenttype="text/plain">
+            <itemClass qcode="icls:text" />
+            <altId type="idType:USN" rtr:isOriginal="1">RON5676Y6</altId>
+            <headline>Headline for In Depth story 6</headline>
+            <description>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</description>
+          </itemRef>
+        </group>
+      </groupSet>
+    </packageItem>
+    <packageItem guid="tag:reuters.com,2011:newsml_KDE73E00Y" version="1" standard="NewsML-G2" standardversion="2.8" conformance="power" xml:lang="en-US">
+      <catalogRef href="http://xml.media.reuters.com/g2-standards/catalogs/ReutersMedia_G2-Standards-Catalog_v1.xml" />
+      <rightsInfo>
+        <copyrightHolder literal="Thomson Reuters" />
+        <copyrightNotice>(c) Copyright Thomson Reuters 2011. Click For Restrictions - http://about.reuters.com/fulllegal.asp</copyrightNotice>
+      </rightsInfo>
+      <itemMeta>
+        <itemClass qcode="icls:composite" />
+        <provider literal="reuters.com" />
+        <versionCreated>2011-04-15T09:11:58.207Z</versionCreated>
+        <firstCreated>2011-04-15T09:11:58.207Z</firstCreated>
+        <fileName>2011-04-15T091158Z_1_KDE73E00Y_RTRLXPC_0_APPLE-S-STEVE-JOBS-TAKES-MEDICAL-LEAVE.XML</fileName>
+        <generator versioninfo="00.00.01">Lynx Packager</generator>
+        <profile versioninfo="00.00.01">NEP-External</profile>
+        <service qcode="svc:RTR_TNS" />
+        <signal qcode="prodId:TXT" />
+        <signal qcode="edStat:N" />
+        <signal qcode="pmt:composite" />
+        <rtr:versionedId guid="tag:reuters.com,2011:newsml_KDE73E00Y:1" />
+      </itemMeta>
+      <contentMeta>
+        <urgency>4</urgency>
+        <infoSource role="cRole:origProv" literal="Reuters" />
+        <infoSource role="cRole:source" literal="Reuters" />
+        <creator literal="Reuters" role="cRole:source" />
+        <altId type="idType:USN" rtr:isOriginal="1">KDE73E00Y</altId>
+        <language tag="en-US" />
+        <slugline separator="-">APPLE'S-STEVE-JOBS-TAKES-MEDICAL-LEAVE</slugline>
+        <headline>Apple's Steve Jobs takes medical leave</headline>
+        <dateline>April 15 (Reuters)</dateline>
+        <creditline>Reuters</creditline>
+      </contentMeta>
+      <groupSet root="root-nep1">
+        <group role="grpRole:NEP" id="root-nep1">
+          <groupRef idref="main-nep1" />
+        </group>
+        <group role="grpRole:Main" id="main-nep1">
+          <itemRef residref="tag:reuters.com,0000:text_LDE70G1NI" contenttype="text/plain" modified="2011-01-17T07:08:09.000">
+            <itemClass qcode="icls:text" />
+            <altId type="idType:USN" rtr:isOriginal="1">LDE70G1NI</altId>
+            <headline>Apple's Steve Jobs takes medical leave</headline>
+            <description>Apple Inc's &lt;AAPL.O&gt; Steve Jobs said the board has granted him medical leave to concentrate on his health. Apple stock fell as much as 7 percent on the Frankfurt Stock Exchange following the news.</description>
+            <by>Sweta Singh</by>
+            <dateline>Jan 17 (Reuters)</dateline>
+          </itemRef>
+          <itemRef residref="tag:reuters.com,2010:nml1_GM1E6AL098R01" contenttype="text/vnd.IPTC.NewsML" href="2010-10-20T191934Z_01_WAS714_RTRIDSP_0_APPLE.xml">
+            <itemClass qcode="icls:picture" />
+            <versionCreated>2010-10-20T00:00:00.000Z</versionCreated>
+            <firstCreated>2010-10-20T00:00:00.000Z</firstCreated>
+            <fileName>2010-10-20T191934Z_01_WAS714_RTRIDSP_0_APPLE.xml</fileName>
+            <altId type="idType:IID" rtr:isOriginal="1">GM1E6AL098R01</altId>
+            <headline>Apple CEO Steve Jobs unveils the company's latest high-end ultra-thin MacBook Air laptop models during a news conference at Apple Inc. headquarters in Cupertino</headline>
+            <description role="descRole:caption">Apple CEO Steve Jobs unveils the company's latest high-end ultra-thin MacBook Air laptop models during a news conference at Apple Inc. headquarters in Cupertino, California, October 20, 2010. REUTERS/Norbert von der Groeben (UNITED STATES - Tags: SCI TECH BUSINESS)</description>
+            <by>NORBERT VON DER GROEBEN</by>
+            <dateline>CUPERTINO, Oct 20</dateline>
+            <remoteContent residref="tag:reuters.com,2010:nml1_GM1E6AL098R01-THUMBNAIL" rendition="rend:thumbnail" contenttype="image/jpeg" format="fmt:jpegBaseline">
+              <altId type="fileBIN">2010-10-20T191934Z_01_WAS714_RTRIDSP_1_APPLE.jpg</altId>
+            </remoteContent>
+            <remoteContent residref="tag:reuters.com,2010:nml1_GM1E6AL098R01-VIEWIMAGE" rendition="rend:viewImage" contenttype="image/jpeg" format="fmt:jpegBaseline">
+              <altId type="fileBIN">2010-10-20T191934Z_01_WAS714_RTRIDSP_2_APPLE.jpg</altId>
+            </remoteContent>
+          </itemRef>
+          <itemRef residref="tag:reuters.com,2010:nml1_GM1E6AL08RR01" contenttype="text/vnd.IPTC.NewsML" href="2010-10-20T201333Z_01_WAS713_RTRIDSP_0_APPLE.xml">
+            <itemClass qcode="icls:picture" />
+            <versionCreated>2010-10-20T00:00:00.000Z</versionCreated>
+            <firstCreated>2010-10-20T00:00:00.000Z</firstCreated>
+            <fileName>2010-10-20T201333Z_01_WAS713_RTRIDSP_0_APPLE.xml</fileName>
+            <altId type="idType:IID" rtr:isOriginal="1">GM1E6AL08RR01</altId>
+            <headline>Apple CEO Steve Jobs unveils the latest Mac operating system software named "Lion" during a news conference at Apple Inc. headquarters in Cupertino</headline>
+            <description role="descRole:caption">Apple CEO Steve Jobs unveils the latest Mac operating system software named "Lion" during a news conference at Apple Inc. headquarters in Cupertino, California, October 20, 2010. The company is expected to tout a new version of its high-end ultra-thin MacBook Air laptop, sporting a smaller screen and better battery life. REUTERS/Norbert von der Groeben (UNITED STATES - Tags: SCI TECH BUSINESS IMAGES OF THE DAY)</description>
+            <by>NORBERT VON DER GROEBEN</by>
+            <dateline>CUPERTINO, Oct 20</dateline>
+            <remoteContent residref="tag:reuters.com,2010:nml1_GM1E6AL08RR01-THUMBNAIL" rendition="rend:thumbnail" contenttype="image/jpeg" format="fmt:jpegBaseline">
+              <altId type="fileBIN">2010-10-20T201333Z_01_WAS713_RTRIDSP_1_APPLE.jpg</altId>
+            </remoteContent>
+            <remoteContent residref="tag:reuters.com,2010:nml1_GM1E6AL08RR01-VIEWIMAGE" rendition="rend:viewImage" contenttype="image/jpeg" format="fmt:jpegBaseline">
+              <altId type="fileBIN">2010-10-20T201333Z_01_WAS713_RTRIDSP_2_APPLE.jpg</altId>
+            </remoteContent>
+          </itemRef>
+          <itemRef residref="tag:reuters.com,0000:text_BW157046A" contenttype="text/plain">
+            <itemClass qcode="icls:text" />
+            <altId type="idType:USN" rtr:isOriginal="1">BW157046A</altId>
+            <headline>Strategy Analytics: Apple Takes Lion's Share of Smartphone Revenue in 2010</headline>
+            <description>While Apple trailed Nokia in 2010 smartphone volume, Apple dominated the market in revenue, and took 29 percent share of the market value. The top 3 players-Apple, Nokia and RIM-generated 64 percent of the revenue in the smartphone market, as reported in, "Smartphone Revenues Hit $99 Billion in 2010 and Apple Takes Lion's Share of 29 Percent," from Strategy Analytics.</description>
+          </itemRef>
+          <itemRef residref="tag:reuters.com,0000:text_RON68TNN2" contenttype="text/plain">
+            <itemClass qcode="icls:text" />
+            <altId type="idType:USN" rtr:isOriginal="1">RON68TNN2</altId>
+            <headline>Apple CEO Steve Jobs unveils the latest Mac operating system software named "Lion" during a news conference at Apple Inc. headquarters in Cupertino</headline>
+          </itemRef>
+          <itemRef residref="tag:reuters.com,0000:text_ASA01MW9" contenttype="text/plain">
+            <itemClass qcode="icls:text" />
+            <altId type="idType:USN" rtr:isOriginal="1">ASA01MW9</altId>
+            <headline>BRIEF-Apple releases developer preview of Mac OS X Lion</headline>
+          </itemRef>
+        </group>
+      </groupSet>
+    </packageItem>
+    <packageItem guid="tag:reuters.com,2011:newsml_KDE73E00Z" version="1" standard="NewsML-G2" standardversion="2.8" conformance="power" xml:lang="en-US">
+      <catalogRef href="http://xml.media.reuters.com/g2-standards/catalogs/ReutersMedia_G2-Standards-Catalog_v1.xml" />
+      <rightsInfo>
+        <copyrightHolder literal="Thomson Reuters" />
+        <copyrightNotice>(c) Copyright Thomson Reuters 2011. Click For Restrictions - http://about.reuters.com/fulllegal.asp</copyrightNotice>
+      </rightsInfo>
+      <itemMeta>
+        <itemClass qcode="icls:composite" />
+        <provider literal="reuters.com" />
+        <versionCreated>2011-04-15T09:11:58.213Z</versionCreated>
+        <firstCreated>2011-04-15T09:11:58.213Z</firstCreated>
+        <fileName>2011-04-15T091158Z_1_KDE73E00Z_RTRLXPC_0_UK-SPENDING-CUTS-TO-RELY-ON-WILL-AND-LUCK.XML</fileName>
+        <generator versioninfo="00.00.01">Lynx Packager</generator>
+        <profile versioninfo="00.00.01">NEP-External</profile>
+        <service qcode="svc:RTR_TNS" />
+        <signal qcode="prodId:TXT" />
+        <signal qcode="edStat:N" />
+        <signal qcode="pmt:composite" />
+        <rtr:versionedId guid="tag:reuters.com,2011:newsml_KDE73E00Z:1" />
+      </itemMeta>
+      <contentMeta>
+        <urgency>4</urgency>
+        <infoSource role="cRole:origProv" literal="Reuters" />
+        <infoSource role="cRole:source" literal="Reuters" />
+        <creator literal="Reuters" role="cRole:source" />
+        <altId type="idType:USN" rtr:isOriginal="1">KDE73E00Z</altId>
+        <language tag="en-US" />
+        <slugline separator="-">UK-SPENDING-CUTS-TO-RELY-ON-WILL-AND-LUCK</slugline>
+        <headline>UK spending cuts to rely on will and luck</headline>
+        <dateline>April 15 (Reuters)</dateline>
+        <creditline>Reuters</creditline>
+      </contentMeta>
+      <groupSet root="root-nep2">
+        <group role="grpRole:NEP" id="root-nep2">
+          <groupRef idref="main-nep2" />
+        </group>
+        <group role="grpRole:Main" id="main-nep2">
+          <itemRef residref="tag:reuters.com,2010:text_LDE69J1MU" contenttype="text/plain">
+            <itemClass qcode="icls:text" />
+            <versionCreated>2010-10-20T00:00:00.000Z</versionCreated>
+            <firstCreated>2010-10-20T00:00:00.000Z</firstCreated>
+            <altId type="idType:USN" rtr:isOriginal="1">LDE69J1MU</altId>
+            <headline>UK spending cuts to rely on will and luck</headline>
+            <description>Britain's toughest public spending cuts in living memory will be achieved only with a mix of unprecedented political will and a dollop of economic good luck.</description>
+            <by>David Milliken</by>
+            <dateline>LONDON, Oct 20 (Reuters)</dateline>
+          </itemRef>
+          <itemRef residref="tag:reuters.com,2011:nml1_BTRE72M0U6700" contenttype="text/vnd.IPTC.NewsML" href="2011-03-24T161843Z_01_BTRE72M0U6700_RTROPTP_0_BRITAIN-BUDGET.XML">
+            <itemClass qcode="icls:picture" />
+            <versionCreated>2011-03-24T00:00:00.000Z</versionCreated>
+            <firstCreated>2011-03-24T00:00:00.000Z</firstCreated>
+            <fileName>2011-03-24T161843Z_01_BTRE72M0U6700_RTROPTP_0_BRITAIN-BUDGET.XML</fileName>
+            <altId type="idType:IID" rtr:isOriginal="1">BTRE72M0U6700</altId>
+            <headline>Prime Minister David Cameron leaves after attending a meeting at number 10 Downing Street in London</headline>
+            <description role="descRole:caption">Prime Minister David Cameron leaves after attending a cabinet meeting at number 10 Downing Street, March 23, 2011. REUTERS/Stefan Wermuth</description>
+            <by>Stefan Wermuth</by>
+            <dateline>LONDON, Mar 24</dateline>
+            <remoteContent residref="tag:reuters.com,2011:nml1_BTRE72M0U6700-THUMBNAIL" rendition="rend:thumbnail" contenttype="image/jpeg" format="fmt:jpegBaseline">
+              <altId type="fileBIN">2011-03-24T161843Z_01_BTRE72M0U6700_RTROPTP_1_BRITAIN-BUDGET.JPG</altId>
+            </remoteContent>
+            <remoteContent residref="tag:reuters.com,2011:nml1_BTRE72M0U6700-VIEWIMAGE" rendition="rend:viewImage" contenttype="image/jpeg" format="fmt:jpegBaseline">
+              <altId type="fileBIN">2011-03-24T161843Z_01_BTRE72M0U6700_RTROPTP_2_BRITAIN-BUDGET.JPG</altId>
+            </remoteContent>
+          </itemRef>
+        </group>
+      </groupSet>
+    </packageItem>
+    <packageItem guid="tag:reuters.com,2011:newsml_KDE73E010" version="1" standard="NewsML-G2" standardversion="2.8" conformance="power" xml:lang="en-US">
+      <catalogRef href="http://xml.media.reuters.com/g2-standards/catalogs/ReutersMedia_G2-Standards-Catalog_v1.xml" />
+      <rightsInfo>
+        <copyrightHolder literal="Thomson Reuters" />
+        <copyrightNotice>(c) Copyright Thomson Reuters 2011. Click For Restrictions - http://about.reuters.com/fulllegal.asp</copyrightNotice>
+      </rightsInfo>
+      <itemMeta>
+        <itemClass qcode="icls:composite" />
+        <provider literal="reuters.com" />
+        <versionCreated>2011-04-15T09:11:58.213Z</versionCreated>
+        <firstCreated>2011-04-15T09:11:58.213Z</firstCreated>
+        <fileName>2011-04-15T091158Z_1_KDE73E010_RTRLXPC_0_CREDIT-SUISSE-CEO-PAY-DOWN-34-PCT-IN-2010.XML</fileName>
+        <generator versioninfo="00.00.01">Lynx Packager</generator>
+        <profile versioninfo="00.00.01">NEP-External</profile>
+        <service qcode="svc:RTR_TNS" />
+        <signal qcode="prodId:TXT" />
+        <signal qcode="edStat:N" />
+        <signal qcode="pmt:composite" />
+        <rtr:versionedId guid="tag:reuters.com,2011:newsml_KDE73E010:1" />
+      </itemMeta>
+      <contentMeta>
+        <urgency>4</urgency>
+        <infoSource role="cRole:origProv" literal="Reuters" />
+        <infoSource role="cRole:source" literal="Reuters" />
+        <creator literal="Reuters" role="cRole:source" />
+        <altId type="idType:USN" rtr:isOriginal="1">KDE73E010</altId>
+        <language tag="en-US" />
+        <slugline separator="-">CREDIT-SUISSE-CEO-PAY-DOWN-34-PCT-IN-2010</slugline>
+        <headline>Credit Suisse CEO pay down 34 pct in 2010</headline>
+        <dateline>April 15 (Reuters)</dateline>
+        <creditline>Reuters</creditline>
+      </contentMeta>
+      <groupSet root="root-nep3">
+        <group role="grpRole:NEP" id="root-nep3">
+          <groupRef idref="main-nep3" />
+        </group>
+        <group role="grpRole:Main" id="main-nep3">
+          <itemRef residref="tag:reuters.com,2011:text_LDE72M2A7" contenttype="text/plain">
+            <itemClass qcode="icls:text" />
+            <versionCreated>2011-03-24T00:00:00.000Z</versionCreated>
+            <firstCreated>2011-03-24T00:00:00.000Z</firstCreated>
+            <altId type="idType:USN" rtr:isOriginal="1">LDE72M2A7</altId>
+            <headline>Credit Suisse CEO pay down 34 pct in 2010</headline>
+            <description>Credit Suisse chief Brady Dougan was paid 10.2 million Swiss francs in bonuses for 2010, the bank's annual report showed, putting his total earnings at four times those of rival UBS CEO Oswald Gruebel, who waived his bonus for the year.</description>
+            <by>Martin de Sa'Pinto</by>
+            <dateline>ZURICH, March 24 (Reuters)</dateline>
+          </itemRef>
+        </group>
+      </groupSet>
+    </packageItem>
+    <packageItem guid="tag:reuters.com,2011:newsml_KDE73E011" version="1" standard="NewsML-G2" standardversion="2.8" conformance="power" xml:lang="en-US">
+      <catalogRef href="http://xml.media.reuters.com/g2-standards/catalogs/ReutersMedia_G2-Standards-Catalog_v1.xml" />
+      <rightsInfo>
+        <copyrightHolder literal="Thomson Reuters" />
+        <copyrightNotice>(c) Copyright Thomson Reuters 2011. Click For Restrictions - http://about.reuters.com/fulllegal.asp</copyrightNotice>
+      </rightsInfo>
+      <itemMeta>
+        <itemClass qcode="icls:composite" />
+        <provider literal="reuters.com" />
+        <versionCreated>2011-04-15T09:11:58.213Z</versionCreated>
+        <firstCreated>2011-04-15T09:11:58.213Z</firstCreated>
+        <fileName>2011-04-15T091158Z_1_KDE73E011_RTRLXPC_0_WPP-MAY-RELOCATE-TAX-BASE-BACK-TO-UK.XML</fileName>
+        <generator versioninfo="00.00.01">Lynx Packager</generator>
+        <profile versioninfo="00.00.01">NEP-External</profile>
+        <service qcode="svc:RTR_TNS" />
+        <signal qcode="prodId:TXT" />
+        <signal qcode="edStat:N" />
+        <signal qcode="pmt:composite" />
+        <rtr:versionedId guid="tag:reuters.com,2011:newsml_KDE73E011:1" />
+      </itemMeta>
+      <contentMeta>
+        <urgency>4</urgency>
+        <infoSource role="cRole:origProv" literal="Reuters" />
+        <infoSource role="cRole:source" literal="Reuters" />
+        <creator literal="Reuters" role="cRole:source" />
+        <altId type="idType:USN" rtr:isOriginal="1">KDE73E011</altId>
+        <language tag="en-US" />
+        <slugline separator="-">WPP-MAY-RELOCATE-TAX-BASE-BACK-TO-UK</slugline>
+        <headline>WPP may relocate tax base back to UK</headline>
+        <dateline>April 15 (Reuters)</dateline>
+        <creditline>Reuters</creditline>
+      </contentMeta>
+      <groupSet root="root-nep4">
+        <group role="grpRole:NEP" id="root-nep4">
+          <groupRef idref="main-nep4" />
+        </group>
+        <group role="grpRole:Main" id="main-nep4">
+          <itemRef residref="tag:reuters.com,2011:text_LDE72N066" contenttype="text/plain">
+            <itemClass qcode="icls:text" />
+            <versionCreated>2011-03-24T00:00:00.000Z</versionCreated>
+            <firstCreated>2011-03-24T00:00:00.000Z</firstCreated>
+            <altId type="idType:USN" rtr:isOriginal="1">LDE72N066</altId>
+            <headline>WPP may relocate tax base back to UK</headline>
+            <description>Advertising giant WPP &lt;WPP.L&gt; is likely to move its tax base back to the UK from Ireland following changes to taxation proposed in Wednesday's budget.</description>
+            <dateline>LONDON, March 24 (Reuters)</dateline>
+          </itemRef>
+        </group>
+      </groupSet>
+    </packageItem>
+    <packageItem guid="tag:reuters.com,2011:newsml_KDE73E012" version="1" standard="NewsML-G2" standardversion="2.8" conformance="power" xml:lang="en-US">
+      <catalogRef href="http://xml.media.reuters.com/g2-standards/catalogs/ReutersMedia_G2-Standards-Catalog_v1.xml" />
+      <rightsInfo>
+        <copyrightHolder literal="Thomson Reuters" />
+        <copyrightNotice>(c) Copyright Thomson Reuters 2011. Click For Restrictions - http://about.reuters.com/fulllegal.asp</copyrightNotice>
+      </rightsInfo>
+      <itemMeta>
+        <itemClass qcode="icls:composite" />
+        <provider literal="reuters.com" />
+        <versionCreated>2011-04-15T09:11:58.213Z</versionCreated>
+        <firstCreated>2011-04-15T09:11:58.213Z</firstCreated>
+        <fileName>2011-04-15T091158Z_1_KDE73E012_RTRLXPC_0_IMPERIAL-SEES-PAIN-IN-SPAIN-AS-GROWTH-SLOWS.XML</fileName>
+        <generator versioninfo="00.00.01">Lynx Packager</generator>
+        <profile versioninfo="00.00.01">NEP-External</profile>
+        <service qcode="svc:RTR_TNS" />
+        <signal qcode="prodId:TXT" />
+        <signal qcode="edStat:N" />
+        <signal qcode="pmt:composite" />
+        <rtr:versionedId guid="tag:reuters.com,2011:newsml_KDE73E012:1" />
+      </itemMeta>
+      <contentMeta>
+        <urgency>4</urgency>
+        <infoSource role="cRole:origProv" literal="Reuters" />
+        <infoSource role="cRole:source" literal="Reuters" />
+        <creator literal="Reuters" role="cRole:source" />
+        <altId type="idType:USN" rtr:isOriginal="1">KDE73E012</altId>
+        <language tag="en-US" />
+        <slugline separator="-">IMPERIAL-SEES-PAIN-IN-SPAIN-AS-GROWTH-SLOWS</slugline>
+        <headline>Imperial sees pain in Spain as growth slows</headline>
+        <dateline>April 15 (Reuters)</dateline>
+        <creditline>Reuters</creditline>
+      </contentMeta>
+      <groupSet root="root-nep5">
+        <group role="grpRole:NEP" id="root-nep5">
+          <groupRef idref="main-nep5" />
+        </group>
+        <group role="grpRole:Main" id="main-nep5">
+          <itemRef residref="tag:reuters.com,2011:text_LDE72M1FH" contenttype="text/plain">
+            <itemClass qcode="icls:text" />
+            <versionCreated>2011-03-24T00:00:00.000Z</versionCreated>
+            <firstCreated>2011-03-24T00:00:00.000Z</firstCreated>
+            <altId type="idType:USN" rtr:isOriginal="1">LDE72M1FH</altId>
+            <headline>Imperial sees pain in Spain as growth slows</headline>
+            <description>Imperial Tobacco &lt;IMT.L&gt;, the world's fourth-biggest cigarette maker, saw a slowdown in sales growth in the first three months of 2011 due to a tough market in Spain and a shift in trade buying patterns in Britain.</description>
+            <by>David Jones</by>
+            <dateline>LONDON, March 24 (Reuters)</dateline>
+          </itemRef>
+        </group>
+      </groupSet>
+    </packageItem>
+    <packageItem guid="tag:reuters.com,2011:newsml_KDE73E013" version="1" standard="NewsML-G2" standardversion="2.8" conformance="power" xml:lang="en-US">
+      <catalogRef href="http://xml.media.reuters.com/g2-standards/catalogs/ReutersMedia_G2-Standards-Catalog_v1.xml" />
+      <rightsInfo>
+        <copyrightHolder literal="Thomson Reuters" />
+        <copyrightNotice>(c) Copyright Thomson Reuters 2011. Click For Restrictions - http://about.reuters.com/fulllegal.asp</copyrightNotice>
+      </rightsInfo>
+      <itemMeta>
+        <itemClass qcode="icls:composite" />
+        <provider literal="reuters.com" />
+        <versionCreated>2011-04-15T09:11:58.213Z</versionCreated>
+        <firstCreated>2011-04-15T09:11:58.213Z</firstCreated>
+        <fileName>2011-04-15T091158Z_1_KDE73E013_RTRLXPC_0_KINGFISHER-TO-STEP-UP-EXPANSION-IN-TOUGH-MARKET.XML</fileName>
+        <generator versioninfo="00.00.01">Lynx Packager</generator>
+        <profile versioninfo="00.00.01">NEP-External</profile>
+        <service qcode="svc:RTR_TNS" />
+        <signal qcode="prodId:TXT" />
+        <signal qcode="edStat:N" />
+        <signal qcode="pmt:composite" />
+        <rtr:versionedId guid="tag:reuters.com,2011:newsml_KDE73E013:1" />
+      </itemMeta>
+      <contentMeta>
+        <urgency>4</urgency>
+        <infoSource role="cRole:origProv" literal="Reuters" />
+        <infoSource role="cRole:source" literal="Reuters" />
+        <creator literal="Reuters" role="cRole:source" />
+        <altId type="idType:USN" rtr:isOriginal="1">KDE73E013</altId>
+        <language tag="en-US" />
+        <slugline separator="-">KINGFISHER-TO-STEP-UP-EXPANSION-IN-TOUGH-MARKET</slugline>
+        <headline>Kingfisher to step up expansion in tough market</headline>
+        <dateline>April 15 (Reuters)</dateline>
+        <creditline>Reuters</creditline>
+      </contentMeta>
+      <groupSet root="root-nep6">
+        <group role="grpRole:NEP" id="root-nep6">
+          <groupRef idref="main-nep6" />
+        </group>
+        <group role="grpRole:Main" id="main-nep6">
+          <itemRef residref="tag:reuters.com,2011:text_LDE72M1C5" contenttype="text/plain">
+            <itemClass qcode="icls:text" />
+            <versionCreated>2011-03-24T00:00:00.000Z</versionCreated>
+            <firstCreated>2011-03-24T00:00:00.000Z</firstCreated>
+            <altId type="idType:USN" rtr:isOriginal="1">LDE72M1C5</altId>
+            <headline>Kingfisher to step up expansion in tough market</headline>
+            <description>Kingfisher &lt;KGF.L&gt;, Europe's biggest home improvement retailer, plans to step up its expansion as well as measures to boost profit margins, as it battles tough trading conditions in many markets.</description>
+            <dateline>LONDON, March 24 (Reuters)</dateline>
+          </itemRef>
+        </group>
+      </groupSet>
+    </packageItem>
+    <packageItem guid="tag:reuters.com,2011:newsml_KDE73E014" version="1" standard="NewsML-G2" standardversion="2.8" conformance="power" xml:lang="en-US">
+      <catalogRef href="http://xml.media.reuters.com/g2-standards/catalogs/ReutersMedia_G2-Standards-Catalog_v1.xml" />
+      <rightsInfo>
+        <copyrightHolder literal="Thomson Reuters" />
+        <copyrightNotice>(c) Copyright Thomson Reuters 2011. Click For Restrictions - http://about.reuters.com/fulllegal.asp</copyrightNotice>
+      </rightsInfo>
+      <itemMeta>
+        <itemClass qcode="icls:composite" />
+        <provider literal="reuters.com" />
+        <versionCreated>2011-04-15T09:11:58.213Z</versionCreated>
+        <firstCreated>2011-04-15T09:11:58.213Z</firstCreated>
+        <fileName>2011-04-15T091158Z_1_KDE73E014_RTRLXPC_0_LACTALIS-FERRERO-TO-TEAM-UP-OVER-PARMALAT-PAPER.XML</fileName>
+        <generator versioninfo="00.00.01">Lynx Packager</generator>
+        <profile versioninfo="00.00.01">NEP-External</profile>
+        <service qcode="svc:RTR_TNS" />
+        <signal qcode="prodId:TXT" />
+        <signal qcode="edStat:N" />
+        <signal qcode="pmt:composite" />
+        <rtr:versionedId guid="tag:reuters.com,2011:newsml_KDE73E014:1" />
+      </itemMeta>
+      <contentMeta>
+        <urgency>4</urgency>
+        <infoSource role="cRole:origProv" literal="Reuters" />
+        <infoSource role="cRole:source" literal="Reuters" />
+        <creator literal="Reuters" role="cRole:source" />
+        <altId type="idType:USN" rtr:isOriginal="1">KDE73E014</altId>
+        <language tag="en-US" />
+        <slugline separator="-">LACTALIS,-FERRERO-TO-TEAM-UP-OVER-PARMALAT-PAPER</slugline>
+        <headline>Lactalis, Ferrero to team up over Parmalat-paper</headline>
+        <dateline>April 15 (Reuters)</dateline>
+        <creditline>Reuters</creditline>
+      </contentMeta>
+      <groupSet root="root-nep7">
+        <group role="grpRole:NEP" id="root-nep7">
+          <groupRef idref="main-nep7" />
+        </group>
+        <group role="grpRole:Main" id="main-nep7">
+          <itemRef residref="tag:reuters.com,2011:text_LDE72N057" contenttype="text/plain">
+            <itemClass qcode="icls:text" />
+            <versionCreated>2011-03-24T00:00:00.000Z</versionCreated>
+            <firstCreated>2011-03-24T00:00:00.000Z</firstCreated>
+            <altId type="idType:USN" rtr:isOriginal="1">LDE72N057</altId>
+            <headline>Lactalis, Ferrero to team up over Parmalat-paper</headline>
+            <description>Italy's top food group Ferrero and France's dairy group Lactalis may end up joining forces for control of Italian dairy company Parmalat &lt;PLT.MI&gt; at the centre of a tussle between potential Italian buyers and Lactalis, Les Echos newspaper said on Thursday.</description>
+            <by>Reporting by Dominique Vidalon; Additional reporting bu Ian Simpson in Milan; Editing by Hans Peters</by>
+            <dateline>PARIS, March 24 (Reuters)</dateline>
+          </itemRef>
+        </group>
+      </groupSet>
+    </packageItem>
+    <packageItem guid="tag:reuters.com,2011:newsml_KDE73E015" version="1" standard="NewsML-G2" standardversion="2.8" conformance="power" xml:lang="en-US">
+      <catalogRef href="http://xml.media.reuters.com/g2-standards/catalogs/ReutersMedia_G2-Standards-Catalog_v1.xml" />
+      <rightsInfo>
+        <copyrightHolder literal="Thomson Reuters" />
+        <copyrightNotice>(c) Copyright Thomson Reuters 2011. Click For Restrictions - http://about.reuters.com/fulllegal.asp</copyrightNotice>
+      </rightsInfo>
+      <itemMeta>
+        <itemClass qcode="icls:composite" />
+        <provider literal="reuters.com" />
+        <versionCreated>2011-04-15T09:11:58.213Z</versionCreated>
+        <firstCreated>2011-04-15T09:11:58.213Z</firstCreated>
+        <fileName>2011-04-15T091158Z_1_KDE73E015_RTRLXPC_0_EU-PREPARES-TO-HELP-BANKS-AMID-WORRIES-ON-IRELAND.XML</fileName>
+        <generator versioninfo="00.00.01">Lynx Packager</generator>
+        <profile versioninfo="00.00.01">NEP-External</profile>
+        <service qcode="svc:RTR_TNS" />
+        <signal qcode="prodId:TXT" />
+        <signal qcode="edStat:N" />
+        <signal qcode="pmt:composite" />
+        <rtr:versionedId guid="tag:reuters.com,2011:newsml_KDE73E015:1" />
+      </itemMeta>
+      <contentMeta>
+        <urgency>4</urgency>
+        <infoSource role="cRole:origProv" literal="Reuters" />
+        <infoSource role="cRole:source" literal="Reuters" />
+        <creator literal="Reuters" role="cRole:source" />
+        <altId type="idType:USN" rtr:isOriginal="1">KDE73E015</altId>
+        <language tag="en-US" />
+        <slugline separator="-">EU-PREPARES-TO-HELP-BANKS-AMID-WORRIES-ON-IRELAND</slugline>
+        <headline>EU prepares to help banks amid worries on Ireland</headline>
+        <dateline>April 15 (Reuters)</dateline>
+        <creditline>Reuters</creditline>
+      </contentMeta>
+      <groupSet root="root-nep8">
+        <group role="grpRole:NEP" id="root-nep8">
+          <groupRef idref="main-nep8" />
+        </group>
+        <group role="grpRole:Main" id="main-nep8">
+          <itemRef residref="tag:reuters.com,2011:text_LDE72M2MS" contenttype="text/plain">
+            <itemClass qcode="icls:text" />
+            <versionCreated>2011-03-23T00:00:00.000Z</versionCreated>
+            <firstCreated>2011-03-23T00:00:00.000Z</firstCreated>
+            <altId type="idType:USN" rtr:isOriginal="1">LDE72M2MS</altId>
+            <headline>EU prepares to help banks amid worries on Ireland</headline>
+            <description>European Union leaders will agree this week to prepare to recapitalise banks that fail upcoming stress tests, according to a draft statement obtained by Reuters on Wednesday.</description>
+            <by>John O'Donnell and Julien Toyer</by>
+            <dateline>BRUSSELS, March 23 (Reuters)</dateline>
+          </itemRef>
+        </group>
+      </groupSet>
+    </packageItem>
+    <packageItem guid="tag:reuters.com,2011:newsml_KDE73E016" version="1" standard="NewsML-G2" standardversion="2.8" conformance="power" xml:lang="en-US">
+      <catalogRef href="http://xml.media.reuters.com/g2-standards/catalogs/ReutersMedia_G2-Standards-Catalog_v1.xml" />
+      <rightsInfo>
+        <copyrightHolder literal="Thomson Reuters" />
+        <copyrightNotice>(c) Copyright Thomson Reuters 2011. Click For Restrictions - http://about.reuters.com/fulllegal.asp</copyrightNotice>
+      </rightsInfo>
+      <itemMeta>
+        <itemClass qcode="icls:composite" />
+        <provider literal="reuters.com" />
+        <versionCreated>2011-04-15T09:11:58.213Z</versionCreated>
+        <firstCreated>2011-04-15T09:11:58.213Z</firstCreated>
+        <fileName>2011-04-15T091158Z_1_KDE73E016_RTRLXPC_0_RIO-NO-MATERIAL-IMPACT-ON-JAPAN-IRON-ORE-SHIPMENTS.XML</fileName>
+        <generator versioninfo="00.00.01">Lynx Packager</generator>
+        <profile versioninfo="00.00.01">NEP-External</profile>
+        <service qcode="svc:RTR_TNS" />
+        <signal qcode="prodId:TXT" />
+        <signal qcode="edStat:N" />
+        <signal qcode="pmt:composite" />
+        <rtr:versionedId guid="tag:reuters.com,2011:newsml_KDE73E016:1" />
+      </itemMeta>
+      <contentMeta>
+        <urgency>4</urgency>
+        <infoSource role="cRole:origProv" literal="Reuters" />
+        <infoSource role="cRole:source" literal="Reuters" />
+        <creator literal="Reuters" role="cRole:source" />
+        <altId type="idType:USN" rtr:isOriginal="1">KDE73E016</altId>
+        <language tag="en-US" />
+        <slugline separator="-">RIO:NO-MATERIAL-IMPACT-ON-JAPAN-IRON-ORE-SHIPMENTS</slugline>
+        <headline>Rio:no material impact on Japan iron ore shipments</headline>
+        <dateline>April 15 (Reuters)</dateline>
+        <creditline>Reuters</creditline>
+      </contentMeta>
+      <groupSet root="root-nep9">
+        <group role="grpRole:NEP" id="root-nep9">
+          <groupRef idref="main-nep9" />
+        </group>
+        <group role="grpRole:Main" id="main-nep9">
+          <itemRef residref="tag:reuters.com,2011:text_L3E7EO04C" contenttype="text/plain">
+            <itemClass qcode="icls:text" />
+            <versionCreated>2011-03-24T00:00:00.000Z</versionCreated>
+            <firstCreated>2011-03-24T00:00:00.000Z</firstCreated>
+            <altId type="idType:USN" rtr:isOriginal="1">L3E7EO04C</altId>
+            <headline>Rio:no material impact on Japan iron ore shipments</headline>
+            <description>Global miner Rio Tinto &lt;RIO.AX&gt; &lt;RIO.L&gt; said the jury was still out on whether the current system of quarterly iron ore pricing would stay as more producers moved to shorter-term arrangements to reflect wild swings in spot prices.</description>
+            <by>David Stanway and Ruby Lian</by>
+            <dateline>BEIJING, March 24 (Reuters)</dateline>
+          </itemRef>
+        </group>
+      </groupSet>
+    </packageItem>
+    <packageItem guid="tag:reuters.com,2011:newsml_KDE73E017" version="1" standard="NewsML-G2" standardversion="2.8" conformance="power" xml:lang="en-US">
+      <catalogRef href="http://xml.media.reuters.com/g2-standards/catalogs/ReutersMedia_G2-Standards-Catalog_v1.xml" />
+      <rightsInfo>
+        <copyrightHolder literal="Thomson Reuters" />
+        <copyrightNotice>(c) Copyright Thomson Reuters 2011. Click For Restrictions - http://about.reuters.com/fulllegal.asp</copyrightNotice>
+      </rightsInfo>
+      <itemMeta>
+        <itemClass qcode="icls:composite" />
+        <provider literal="reuters.com" />
+        <versionCreated>2011-04-15T09:11:58.213Z</versionCreated>
+        <firstCreated>2011-04-15T09:11:58.213Z</firstCreated>
+        <fileName>2011-04-15T091158Z_1_KDE73E017_RTRLXPC_0_THIS-IS-THE-HEADLINE-OF-THE-GRAPHIC.XML</fileName>
+        <generator versioninfo="00.00.01">Lynx Packager</generator>
+        <profile versioninfo="00.00.01">NEP-External</profile>
+        <service qcode="svc:RTR_TNS" />
+        <signal qcode="prodId:TXT" />
+        <signal qcode="edStat:N" />
+        <signal qcode="pmt:composite" />
+        <rtr:versionedId guid="tag:reuters.com,2011:newsml_KDE73E017:1" />
+      </itemMeta>
+      <contentMeta>
+        <urgency>4</urgency>
+        <infoSource role="cRole:origProv" literal="Reuters" />
+        <infoSource role="cRole:source" literal="Reuters" />
+        <creator literal="Reuters" role="cRole:source" />
+        <altId type="idType:USN" rtr:isOriginal="1">KDE73E017</altId>
+        <language tag="en-US" />
+        <slugline separator="-">THIS-IS-THE-HEADLINE-OF-THE-GRAPHIC</slugline>
+        <headline>This is the headline of the graphic</headline>
+        <dateline>April 15 (Reuters)</dateline>
+        <creditline>Reuters</creditline>
+      </contentMeta>
+      <groupSet root="root-nep10">
+        <group role="grpRole:NEP" id="root-nep10">
+          <groupRef idref="main-nep10" />
+        </group>
+        <group role="grpRole:Main" id="main-nep10">
+          <itemRef contenttype="application/x-shockwave-flash" href="http://url_to_the_graphic.swf">
+            <itemClass qcode="icls:graphic" />
+            <versionCreated>2011-04-13T00:00:00.000Z</versionCreated>
+            <firstCreated>2011-04-13T00:00:00.000Z</firstCreated>
+            <altId type="idType:URL" rtr:isOriginal="1">http://url_to_the_graphic.swf</altId>
+            <headline>This is the headline of the graphic</headline>
+            <description>This is the caption of the graphic--Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</description>
+            <by>The author of the graphic</by>
+            <dateline>CITY, Date (Reuters)</dateline>
+          </itemRef>
+        </group>
+      </groupSet>
+    </packageItem>
+    <packageItem guid="tag:reuters.com,2011:newsml_KDE73E018" version="1" standard="NewsML-G2" standardversion="2.8" conformance="power" xml:lang="en-US">
+      <catalogRef href="http://xml.media.reuters.com/g2-standards/catalogs/ReutersMedia_G2-Standards-Catalog_v1.xml" />
+      <rightsInfo>
+        <copyrightHolder literal="Thomson Reuters" />
+        <copyrightNotice>(c) Copyright Thomson Reuters 2011. Click For Restrictions - http://about.reuters.com/fulllegal.asp</copyrightNotice>
+      </rightsInfo>
+      <itemMeta>
+        <itemClass qcode="icls:composite" />
+        <provider literal="reuters.com" />
+        <versionCreated>2011-04-15T09:11:58.214Z</versionCreated>
+        <firstCreated>2011-04-15T09:11:58.214Z</firstCreated>
+        <fileName>2011-04-15T091158Z_1_KDE73E018_RTRLXPC_0_THIS-IS-THE-HEADLINE-OF-THE-VIDEO.XML</fileName>
+        <generator versioninfo="00.00.01">Lynx Packager</generator>
+        <profile versioninfo="00.00.01">NEP-External</profile>
+        <service qcode="svc:RTR_TNS" />
+        <signal qcode="prodId:TXT" />
+        <signal qcode="edStat:N" />
+        <signal qcode="pmt:composite" />
+        <rtr:versionedId guid="tag:reuters.com,2011:newsml_KDE73E018:1" />
+      </itemMeta>
+      <contentMeta>
+        <urgency>4</urgency>
+        <infoSource role="cRole:origProv" literal="Reuters" />
+        <infoSource role="cRole:source" literal="Reuters" />
+        <creator literal="Reuters" role="cRole:source" />
+        <altId type="idType:USN" rtr:isOriginal="1">KDE73E018</altId>
+        <language tag="en-US" />
+        <slugline separator="-">THIS-IS-THE-HEADLINE-OF-THE-VIDEO</slugline>
+        <headline>This is the headline of the video</headline>
+        <dateline>April 15 (Reuters)</dateline>
+        <creditline>Reuters</creditline>
+      </contentMeta>
+      <groupSet root="root-nep11">
+        <group role="grpRole:NEP" id="root-nep11">
+          <groupRef idref="main-nep11" />
+        </group>
+        <group role="grpRole:Main" id="main-nep11">
+          <itemRef contenttype="video/mpeg" href="http://url_to_the_video.mpg">
+            <itemClass qcode="icls:video" />
+            <versionCreated>2011-03-14T00:00:00.000Z</versionCreated>
+            <firstCreated>2011-04-14T00:00:00.000Z</firstCreated>
+            <altId type="idType:URL" rtr:isOriginal="1">http://url_to_the_video.mpg</altId>
+            <headline>This is the headline of the video</headline>
+            <description>This is the caption of the video--Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</description>
+            <by>The author of the video</by>
+            <dateline>CITY, Date (Reuters)</dateline>
+          </itemRef>
+        </group>
+      </groupSet>
+    </packageItem>
+  </itemSet>
+</newsMessage>

@@ -1,0 +1,20 @@
+﻿<Window x:Class="AsyncWrappers.Window1"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="Window1" Height="500" Width="700">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition Height="25" />
+        </Grid.RowDefinitions>
+        <ScrollViewer Grid.Row="0">
+            <TextBox Name="OutputText"/>
+        </ScrollViewer>
+        <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Right">
+            <Button Name="RaiseSpecificButton" Content="Raise specific" Click="RaiseSpecificButton_Click" />
+            <Button Name="RaiseGeneralButton" Content="Raise general" Click="RaiseGeneralButton_Click" />
+            <Button Name="RaiseSpecific2Button" Content="Raise specific 2" Click="RaiseSpecific2Button_Click" />
+            <Button Name="RaiseGeneral2Button" Content="Raise general 2" Click="RaiseGeneral2Button_Click" />
+        </StackPanel>
+    </Grid>
+</Window>
