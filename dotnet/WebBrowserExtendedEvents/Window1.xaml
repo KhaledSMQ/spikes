@@ -1,0 +1,15 @@
+﻿<Window x:Class="WpfApplication1.Window1"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="Window1" Height="552" Width="657">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="214*" />
+            <ColumnDefinition Width="84*" />
+        </Grid.ColumnDefinitions>
+        <WebBrowser x:Name="myWebBrowser" Grid.ColumnSpan="2" Margin="0,44,0,0" />
+        <Button Height="23" Margin="0,15,12,0" Name="button1" VerticalAlignment="Top" Click="button1_Click" HorizontalAlignment="Right" Width="135" Grid.ColumnSpan="2">Hook NewWindow2 Event</Button>
+        <Button Height="23" Margin="12,15,69,0" Name="button2" VerticalAlignment="Top" Click="button2_Click">Navigate to Test Page</Button>
+        
+    </Grid>
+</Window>
