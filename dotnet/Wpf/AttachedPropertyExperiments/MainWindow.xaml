@@ -1,0 +1,30 @@
+﻿<Window x:Class="AttachedPropertyExperiments.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:dpe="clr-namespace:AttachedPropertyExperiments"
+        Title="MainWindow"
+        Height="600" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <StackPanel Grid.Column="0">
+            <dpe:QuoteButton x:Name="PlainQuoteButton">Plain QuoteButton</dpe:QuoteButton>
+            <dpe:QuoteButton x:Name="QuoteButton">
+                <dpe:QuoteButton.Content>
+                    <TextBox>
+                        <dpe:QuoteButton.Quote>
+                            <dpe:QuoteData Symbol="AAPL" Price="100.0"/>
+                        </dpe:QuoteButton.Quote>
+                        <TextBox.Text>Inner Button</TextBox.Text>
+                    </TextBox>
+                </dpe:QuoteButton.Content>
+                <dpe:QuoteButton.Quote>
+                    <dpe:QuoteData Symbol="MSFT" Price="25.5"/>
+                </dpe:QuoteButton.Quote>
+            </dpe:QuoteButton>
+        </StackPanel>
+        <TextBlock Grid.Column="1" Name="Output" TextWrapping="Wrap"/>
+    </Grid>
+</Window>
