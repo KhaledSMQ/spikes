@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="3420afa85168453dace5819846477a0e" Name="Diagram1" DisplayType="true">
+        <EntityTypeShape EntityType="AdventureWorks2012Model.Employee" Width="2.25" PointX="7.875" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="AdventureWorks2012Model.BusinessEntity" Width="2.125" PointX="0.75" PointY="2.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="AdventureWorks2012Model.Person" Width="2.375" PointX="4.5" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="AdventureWorks2012Model.vEmployee" Width="2.125" PointX="0.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="AdventureWorks2012Model.vAdditionalContactInfo" Width="2.625" PointX="3.875" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="AdventureWorks2012Model.vPersonDemographic" Width="2.375" PointX="7.125" PointY="6.625" IsExpanded="true" />
+        <AssociationConnector Association="AdventureWorks2012Model.FK_Employee_Person_BusinessEntityID" ManuallyRouted="false" />
+        <AssociationConnector Association="AdventureWorks2012Model.FK_Person_BusinessEntity_BusinessEntityID" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
