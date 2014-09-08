@@ -32,4 +32,4 @@ img = Rasem::SVGImage.new(full_width + h_border, full_height + 2 * v_border - 3 
 end
 
 #puts img.output
-File.open("output.svg", "w") { |file| file.write(img.output) }
+File.open("dna.svg", "w") { |file| file.write(img.output) }
