@@ -1,0 +1,7 @@
+/* place a really long buffer here, something like 1 hour long, of interesting material, run the code and optimize the parameters for your source material*/
+
+b=Buffer.read(s, "/Volumes/Untitled 1/a.aif"); 
+	
+play({Mix.new(Array.fill(4, {Warp1.ar(b.numChannels, b.bufnum, rrand(0.0, 1.0) + TRand.kr(0,0.01,Impulse.kr(rrand(40,400))), [0.001, 2].choose, rrand(0.2,2.0), overlaps: 2, interp:4,mul:0.3)}))})
+
+/* thanks to Joel Ryan, Stelios Manousakis, Darien Brito, and Jan Truschzler Van Falkenstein (hope I spelled all the names properly*/
