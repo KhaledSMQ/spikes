@@ -1,0 +1,15 @@
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+	<Target Name="clean">
+		<ItemGroup>
+			<BinFiles Include=".\**\bin\**\*"/>
+			<ObjFiles Include=".\**\obj\**\*" />
+			<PackageFiles Include=".\**\packages\**\*" />
+			<BinDirectories Include="@(BinFiles->'%(RootDir)%(Directory)')" />
+			<ObjDirectories Include="@(ObjFiles->'%(RootDir)%(Directory)')" />
+			<PackageDirectories Include="@(PackageFiles->'%(RootDir)%(Directory)')" />
+		</ItemGroup>
+		<RemoveDir Directories="%(BinDirectories.RelativeDir)" Condition="Exists('%(BinDirectories.RelativeDir)')" ContinueOnError="true" />
+		<RemoveDir Directories="%(ObjDirectories.RelativeDir)" Condition="Exists('%(ObjDirectories.RelativeDir)')" ContinueOnError="true" />
+		<RemoveDir Directories="%(PackageDirectories.RelativeDir)" Condition="Exists('%(PackageDirectories.RelativeDir)')" ContinueOnError="true" />
+	</Target>
+</Project>

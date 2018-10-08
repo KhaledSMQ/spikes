@@ -1,0 +1,59 @@
+﻿NormalSerialization:
+
+<?xml version="1.0" encoding="utf-16"?>
+<SerializedRoot2 xmlns:i="http://www.w3.org/2001/XMLSchema-instance"
+                 xmlns="http://schemas.datacontract.org/2004/07/SerializationExperiments">
+    <Root>
+		<ContainedObject>
+			<Content>Some content</Content>
+			<Value>11</Value>
+		</ContainedObject>
+		<Id>10</Id>
+		<InnerObject>
+			<Content>More content</Content>
+			<Value>12</Value>
+		</InnerObject>
+		<Name>Hello</Name>
+	</Root>
+</SerializedRoot2>
+
+
+SerialiationWithKnownTypesInCtor:
+
+<?xml version="1.0" encoding="utf-16"?>
+<SerializedRoot xmlns:i="http://www.w3.org/2001/XMLSchema-instance"
+                xmlns="http://schemas.datacontract.org/2004/07/SerializationExperiments">
+    <Root i:type="OuterObjectWithInner">
+		<ContainedObject i:type="InnerObject">
+			<Content>Some content</Content>
+			<Value>11</Value>
+		</ContainedObject>
+		<Id>10</Id>
+		<InnerObject>
+			<Content>More content</Content>
+			<Value>12</Value>
+		</InnerObject>
+		<Name>Hello</Name>
+	</Root>
+</SerializedRoot>
+
+
+SerializationWithResolverAndNoKnownTypes:
+
+<?xml version="1.0" encoding="utf-16"?>
+<SerializedRoot xmlns:i="http://www.w3.org/2001/XMLSchema-instance"
+                xmlns="http://schemas.datacontract.org/2004/07/SerializationExperiments">
+	<Root xmlns:d2p1="http://the.namespace.com/SerializationExperiments"
+	      i:type="d2p1:OuterObjectWithInner">
+		<ContainedObject i:type="d2p1:InnerObject">
+			<Content>Some content</Content>
+			<Value>11</Value>
+		</ContainedObject>
+		<Id>10</Id>
+		<InnerObject>
+			<Content>More content</Content>
+			<Value>12</Value>
+		</InnerObject>
+		<Name>Hello</Name>
+	</Root>
+</SerializedRoot>

@@ -1,0 +1,4068 @@
+{
+	"query": {
+		"startIndex": 1,
+		"startPage": 1,
+		"count": 100,
+		"id": "397e5eb7-bbcc-41e2-ab67-7c7a7959fb63"
+	},
+	"id": "397e5eb7-bbcc-41e2-ab67-7c7a7959fb63",
+	"totalResults": 21,
+	"startIndex": 1,
+	"itemsPerPage": 100,
+	"links": [],
+	"facets": [],
+	"results": [{
+			"content": {
+				"id": "https://ded8da95-eaff-4085-9417-04177825bb00-catalog.api.datacatalog.azure.com/catalogs/catalog/views/tables/35d3dd9d-6011-4349-b072-1629eed875e9",
+				"type": "Microsoft.DataSource.Table.1",
+				"timestamp": "2018-01-10T21:31:26.6790278Z",
+				"properties": {
+					"name": "BatchSubmissionAudit",
+					"dsl": {
+						"address": {
+							"server": "genpowerrtdbtest.eastus2.cloudapp.azure.com,1433",
+							"database": "DataLanding_DEV",
+							"schema": "entitlement",
+							"object": "BatchSubmissionAudit"
+						},
+						"protocol": "tds",
+						"authentication": "windows"
+					},
+					"dataSource": {
+						"sourceType": "SQL Server",
+						"objectType": "Table"
+					},
+					"lastRegisteredBy": {
+						"objectId": "c8717d13-2556-460a-94a7-a95eedace5f0",
+						"upn": "pmouat@spikesco.com",
+						"firstName": "Paulo",
+						"lastName": "Mouat"
+					},
+					"fromSourceSystem": true,
+					"containerId": "https://ded8da95-eaff-4085-9417-04177825bb00-catalog.api.datacatalog.azure.com/catalogs/catalog/views/containers/bfa11552-6ac0-46d9-8bac-06eac62e4c2d"
+				},
+				"annotations": {
+					"columnsDataProfiles": [{
+							"id": "https://ded8da95-eaff-4085-9417-04177825bb00-catalog.api.datacatalog.azure.com/catalogs/catalog/views/tables/35d3dd9d-6011-4349-b072-1629eed875e9/columnsDataProfiles/Microsoft",
+							"type": "Microsoft.DataSource.ColumnsDataProfile.1",
+							"timestamp": "2018-01-10T21:31:26.6790278Z",
+							"properties": {
+								"fromSourceSystem": true,
+								"key": "Microsoft"
+							},
+							"roles": [{
+									"role": "Contributor",
+									"members": [{
+											"objectId": "00000000-0000-0000-0000-000000000201"
+										}
+									]
+								}
+							],
+							"effectiveRights": [
+								"Read",
+								"Delete",
+								"ViewRoles",
+								"Update"
+							]
+						}
+					],
+					"schema": {
+						"id": "https://ded8da95-eaff-4085-9417-04177825bb00-catalog.api.datacatalog.azure.com/catalogs/catalog/views/tables/35d3dd9d-6011-4349-b072-1629eed875e9/schema",
+						"type": "Microsoft.DataSource.Schema.1",
+						"timestamp": "2018-01-10T21:31:26.6790278Z",
+						"properties": {
+							"columns": [{
+									"name": "BatchSubmissionId",
+									"type": "int",
+									"maxLength": 4,
+									"precision": 10,
+									"isNullable": false
+								}, {
+									"name": "SubmissionStartDate",
+									"type": "datetime",
+									"maxLength": 8,
+									"precision": 23,
+									"isNullable": false
+								}, {
+									"name": "SubmissionEndDate",
+									"type": "datetime",
+									"maxLength": 8,
+									"precision": 23,
+									"isNullable": true
+								}, {
+									"name": "SubmittedUsers",
+									"type": "int",
+									"maxLength": 4,
+									"precision": 10,
+									"isNullable": false
+								}, {
+									"name": "IsSuccessful",
+									"type": "bit",
+									"maxLength": 1,
+									"precision": 1,
+									"isNullable": false
+								}
+							],
+							"fromSourceSystem": true
+						},
+						"roles": [{
+								"role": "Contributor",
+								"members": [{
+										"objectId": "00000000-0000-0000-0000-000000000201"
+									}
+								]
+							}
+						],
+						"effectiveRights": [
+							"Read",
+							"Delete",
+							"ViewRoles",
+							"Update"
+						]
+					},
+					"previews": [{
+							"id": "https://ded8da95-eaff-4085-9417-04177825bb00-catalog.api.datacatalog.azure.com/catalogs/catalog/views/tables/35d3dd9d-6011-4349-b072-1629eed875e9/previews/Microsoft",
+							"type": "Microsoft.DataSource.Preview.1",
+							"timestamp": "2018-01-10T21:31:26.6790278Z",
+							"properties": {
+								"fromSourceSystem": true,
+								"key": "Microsoft"
+							},
+							"roles": [{
+									"role": "Contributor",
+									"members": [{
+											"objectId": "00000000-0000-0000-0000-000000000201"
+										}
+									]
+								}
+							],
+							"effectiveRights": [
+								"Read",
+								"Delete",
+								"ViewRoles",
+								"Update"
+							]
+						}
+					],
+					"tableDataProfiles": [{
+							"id": "https://ded8da95-eaff-4085-9417-04177825bb00-catalog.api.datacatalog.azure.com/catalogs/catalog/views/tables/35d3dd9d-6011-4349-b072-1629eed875e9/tableDataProfiles/Microsoft",
+							"type": "Microsoft.DataSource.TableDataProfile.1",
+							"timestamp": "2018-01-10T21:31:26.6790278Z",
+							"properties": {
+								"numberOfRows": 300,
+								"size": 16384,
+								"schemaModifiedTime": "2017-09-15T10:38:41.247",
+								"fromSourceSystem": true,
+								"key": "Microsoft"
+							},
+							"roles": [{
+									"role": "Contributor",
+									"members": [{
+											"objectId": "00000000-0000-0000-0000-000000000201"
+										}
+									]
+								}
+							],
+							"effectiveRights": [
+								"Read",
+								"Delete",
+								"ViewRoles",
+								"Update"
+							]
+						}
+					]
+				},
+				"roles": [{
+						"role": "Contributor",
+						"members": [{
+								"objectId": "00000000-0000-0000-0000-000000000201"
+							}
+						]
+					}
+				],
+				"effectiveRights": [
+					"Read",
+					"Delete",
+					"ChangeOwnership",
+					"ChangeVisibility",
+					"ViewPermissions",
+					"ViewRoles",
+					"Move",
+					"Update",
+					"TakeOwnership"
+				]
+			},
+			"hitProperties": []
+		}, {
+			"content": {
+				"id": "https://ded8da95-eaff-4085-9417-04177825bb00-catalog.api.datacatalog.azure.com/catalogs/catalog/views/tables/3bd01d90-b1d1-4f0c-b0f7-0449570e2c90",
+				"type": "Microsoft.DataSource.Table.1",
+				"timestamp": "2017-02-16T15:44:40.6622363Z",
+				"properties": {
+					"name": "Wyoming State Data Customer Database",
+					"dsl": {
+						"address": {
+							"contentType": "application/x-ms-import",
+							"url": "https://ded8da95-eaff-4085-9417-04177825bb00.de-users-preview.sqlazurelabs.com/Data/58b2f4c8-e997-4d26-b027-20b4c7303234"
+						},
+						"protocol": "power-query",
+						"authentication": "oauth"
+					},
+					"dataSource": {
+						"sourceType": "Power Query",
+						"objectType": "Data Mashup"
+					},
+					"lastRegisteredBy": {
+						"upn": "bsimmons@spikesco.com"
+					},
+					"fromSourceSystem": false
+				},
+				"annotations": {
+					"documentation": {
+						"id": "https://ded8da95-eaff-4085-9417-04177825bb00-catalog.api.datacatalog.azure.com/catalogs/catalog/views/tables/3bd01d90-b1d1-4f0c-b0f7-0449570e2c90/documentation",
+						"type": "Microsoft.Documentation.1",
+						"timestamp": "2017-02-16T15:44:40.6622363Z",
+						"properties": {
+							"mimeType": "text/html",
+							"content": "",
+							"fromSourceSystem": false
+						},
+						"roles": [{
+								"role": "Contributor",
+								"members": [{
+										"objectId": "00000000-0000-0000-0000-000000000201"
+									}
+								]
+							}
+						],
+						"effectiveRights": [
+							"Read",
+							"Delete",
+							"ViewRoles",
+							"Update"
+						]
+					},
+					"schema": {
+						"id": "https://ded8da95-eaff-4085-9417-04177825bb00-catalog.api.datacatalog.azure.com/catalogs/catalog/views/tables/3bd01d90-b1d1-4f0c-b0f7-0449570e2c90/schema",
+						"type": "Microsoft.DataSource.Schema.1",
+						"timestamp": "2017-02-16T15:44:40.6622363Z",
+						"properties": {
+							"columns": [{
+									"name": "ReportDate",
+									"type": "string"
+								}, {
+									"name": "PlantName",
+									"type": "string"
+								}, {
+									"name": "Company",
+									"type": "string"
+								}, {
+									"name": "County",
+									"type": "string"
+								}, {
+									"name": "C2Mbd",
+									"type": "string"
+								}, {
+									"name": "C3Mbd",
+									"type": "string"
+								}, {
+									"name": "IC4Mbd",
+									"type": "string"
+								}, {
+									"name": "NC4Mbd",
+									"type": "string"
+								}, {
+									"name": "C5PlusMbd",
+									"type": "string"
+								}, {
+									"name": "NGLMixMbd",
+									"type": "string"
+								}, {
+									"name": "OtherMbd",
+									"type": "string"
+								}, {
+									"name": "RawStreamMbd",
+									"type": "string"
+								}, {
+									"name": "CondyMbd",
+									"type": "string"
+								}, {
+									"name": "ProcessedGasMmcfd",
+									"type": "string"
+								}, {
+									"name": "ResidueGasMmcfd",
+									"type": "string"
+								}, {
+									"name": "GPMOfProcessedGas",
+									"type": "string"
+								}, {
+									"name": "ShrinkageMmcfd",
+									"type": "string"
+								}, {
+									"name": "PlantFuelMCF",
+									"type": "string"
+								}, {
+									"name": "LeaseFuelMCF",
+									"type": "string"
+								}, {
+									"name": "ReinjectedMCF",
+									"type": "string"
+								}, {
+									"name": "MeterDiffMCF",
+									"type": "string"
+								}, {
+									"name": "VentedMCF",
+									"type": "string"
+								}, {
+									"name": "FlaredMCF",
+									"type": "string"
+								}, {
+									"name": "C02Gal",
+									"type": "string"
+								}, {
+									"name": "HeliumGal",
+									"type": "string"
+								}, {
+									"name": "SulphurLongTons",
+									"type": "string"
+								}
+							],
+							"fromSourceSystem": false
+						},
+						"roles": [{
+								"role": "Contributor",
+								"members": [{
+										"objectId": "490e5d06-be91-4026-86a3-e9b9eb821184"
+									}
+								]
+							}
+						],
+						"effectiveRights": [
+							"Read",
+							"Delete",
+							"ViewRoles"
+						]
+					},
+					"previews": [{
+							"id": "https://ded8da95-eaff-4085-9417-04177825bb00-catalog.api.datacatalog.azure.com/catalogs/catalog/views/tables/3bd01d90-b1d1-4f0c-b0f7-0449570e2c90/previews/~c1537bce-dba1-e3e4-1449-64f0f4695a53",
+							"type": "Microsoft.DataSource.Preview.1",
+							"timestamp": "2017-02-16T15:44:40.6622363Z",
+							"properties": {
+								"fromSourceSystem": false,
+								"key": "https://ded8da95-eaff-4085-9417-04177825bb00.de-users-preview.sqlazurelabs.com/Preview/58b2f4c8-e997-4d26-b027-20b4c7303234/f05138ef-1c1e-48a7-ac2f-eae448d0bab4"
+							},
+							"roles": [{
+									"role": "Contributor",
+									"members": [{
+											"objectId": "00000000-0000-0000-0000-000000000201"
+										}
+									]
+								}
+							],
+							"effectiveRights": [
+								"Read",
+								"Delete",
+								"ViewRoles",
+								"Update"
+							]
+						}
+					],
+					"descriptions": [{
+							"id": "https://ded8da95-eaff-4085-9417-04177825bb00-catalog.api.datacatalog.azure.com/catalogs/catalog/views/tables/3bd01d90-b1d1-4f0c-b0f7-0449570e2c90/descriptions/31b0f99d4ce24930b1cc8a57a9e7f4ff",
+							"type": "Microsoft.Description.1",
+							"timestamp": "2017-02-16T15:44:40.6622363Z",
+							"properties": {
+								"description": "Wyoming State Data",
+								"fromSourceSystem": false,
+								"key": "31b0f99d4ce24930b1cc8a57a9e7f4ff"
+							},
+							"roles": [{
+									"role": "Contributor",
+									"members": [{
+											"objectId": "490e5d06-be91-4026-86a3-e9b9eb821184"
+										}
+									]
+								}
+							],
+							"effectiveRights": [
+								"Read",
+								"Delete",
+								"ViewRoles"
+							]
+						}
+					]
+				},
+				"roles": [{
+						"role": "Contributor",
+						"members": [{
+								"objectId": "490e5d06-be91-4026-86a3-e9b9eb821184"
+							}
+						]
+					}, {
+						"role": "Owner",
+						"members": [{
+								"objectId": "490e5d06-be91-4026-86a3-e9b9eb821184"
+							}
+						]
+					}
+				],
+				"permissions": [{
+						"rights": [{
+								"right": "Update"
+							}
+						],
+						"principal": {
+							"objectId": "00000000-0000-0000-0000-000000000201"
+						}
+					}
+				],
+				"effectiveRights": [
+					"Read",
+					"Delete",
+					"ChangeOwnership",
+					"ChangeVisibility",
+					"ViewPermissions",
+					"ViewRoles",
+					"Move"
+				]
+			},
+			"hitProperties": []
+		}, {
+			"content": {
+				"id": "https://ded8da95-eaff-4085-9417-04177825bb00-catalog.api.datacatalog.azure.com/catalogs/catalog/views/tables/4b31530a-0f9e-471c-91e3-07dc32fcf28a",
+				"type": "Microsoft.DataSource.Table.1",
+				"timestamp": "2018-01-10T21:31:26.1834805Z",
+				"properties": {
+					"name": "BatchReplicationType",
+					"dsl": {
+						"address": {
+							"server": "genpowerrtdbtest.eastus2.cloudapp.azure.com,1433",
+							"database": "DataLanding_DEV",
+							"schema": "entitlement",
+							"object": "BatchReplicationType"
+						},
+						"protocol": "tds",
+						"authentication": "windows"
+					},
+					"dataSource": {
+						"sourceType": "SQL Server",
+						"objectType": "Table"
+					},
+					"lastRegisteredBy": {
+						"objectId": "c8717d13-2556-460a-94a7-a95eedace5f0",
+						"upn": "pmouat@spikesco.com",
+						"firstName": "Paulo",
+						"lastName": "Mouat"
+					},
+					"fromSourceSystem": true,
+					"containerId": "https://ded8da95-eaff-4085-9417-04177825bb00-catalog.api.datacatalog.azure.com/catalogs/catalog/views/containers/bfa11552-6ac0-46d9-8bac-06eac62e4c2d"
+				},
+				"annotations": {
+					"columnsDataProfiles": [{
+							"id": "https://ded8da95-eaff-4085-9417-04177825bb00-catalog.api.datacatalog.azure.com/catalogs/catalog/views/tables/4b31530a-0f9e-471c-91e3-07dc32fcf28a/columnsDataProfiles/Microsoft",
+							"type": "Microsoft.DataSource.ColumnsDataProfile.1",
+							"timestamp": "2018-01-10T21:31:26.1834805Z",
+							"properties": {
+								"fromSourceSystem": true,
+								"key": "Microsoft"
+							},
+							"roles": [{
+									"role": "Contributor",
+									"members": [{
+											"objectId": "00000000-0000-0000-0000-000000000201"
+										}
+									]
+								}
+							],
+							"effectiveRights": [
+								"Read",
+								"Delete",
+								"ViewRoles",
+								"Update"
+							]
+						}
+					],
+					"schema": {
+						"id": "https://ded8da95-eaff-4085-9417-04177825bb00-catalog.api.datacatalog.azure.com/catalogs/catalog/views/tables/4b31530a-0f9e-471c-91e3-07dc32fcf28a/schema",
+						"type": "Microsoft.DataSource.Schema.1",
+						"timestamp": "2018-01-10T21:31:26.1834805Z",
+						"properties": {
+							"columns": [{
+									"name": "BatchReplicationTypeId",
+									"type": "int",
+									"maxLength": 4,
+									"precision": 10,
+									"isNullable": false
+								}, {
+									"name": "ReplicationTypeName",
+									"type": "varchar",
+									"maxLength": 100,
+									"precision": 0,
+									"isNullable": true
+								}
+							],
+							"fromSourceSystem": true
+						},
+						"roles": [{
+								"role": "Contributor",
+								"members": [{
+										"objectId": "00000000-0000-0000-0000-000000000201"
+									}
+								]
+							}
+						],
+						"effectiveRights": [
+							"Read",
+							"Delete",
+							"ViewRoles",
+							"Update"
+						]
+					},
+					"previews": [{
+							"id": "https://ded8da95-eaff-4085-9417-04177825bb00-catalog.api.datacatalog.azure.com/catalogs/catalog/views/tables/4b31530a-0f9e-471c-91e3-07dc32fcf28a/previews/Microsoft",
+							"type": "Microsoft.DataSource.Preview.1",
+							"timestamp": "2018-01-10T21:31:26.1834805Z",
+							"properties": {
+								"fromSourceSystem": true,
+								"key": "Microsoft"
+							},
+							"roles": [{
+									"role": "Contributor",
+									"members": [{
+											"objectId": "00000000-0000-0000-0000-000000000201"
+										}
+									]
+								}
+							],
+							"effectiveRights": [
+								"Read",
+								"Delete",
+								"ViewRoles",
+								"Update"
+							]
+						}
+					],
+					"tableDataProfiles": [{
+							"id": "https://ded8da95-eaff-4085-9417-04177825bb00-catalog.api.datacatalog.azure.com/catalogs/catalog/views/tables/4b31530a-0f9e-471c-91e3-07dc32fcf28a/tableDataProfiles/Microsoft",
+							"type": "Microsoft.DataSource.TableDataProfile.1",
+							"timestamp": "2018-01-10T21:31:26.1834805Z",
+							"properties": {
+								"numberOfRows": 2,
+								"size": 8192,
+								"schemaModifiedTime": "2017-09-27T04:16:18.297",
+								"fromSourceSystem": true,
+								"key": "Microsoft"
+							},
+							"roles": [{
+									"role": "Contributor",
+									"members": [{
+											"objectId": "00000000-0000-0000-0000-000000000201"
+										}
+									]
+								}
+							],
+							"effectiveRights": [
+								"Read",
+								"Delete",
+								"ViewRoles",
+								"Update"
+							]
+						}
+					]
+				},
+				"roles": [{
+						"role": "Contributor",
+						"members": [{
+								"objectId": "00000000-0000-0000-0000-000000000201"
+							}
+						]
+					}
+				],
+				"effectiveRights": [
+					"Read",
+					"Delete",
+					"ChangeOwnership",
+					"ChangeVisibility",
+					"ViewPermissions",
+					"ViewRoles",
+					"Move",
+					"Update",
+					"TakeOwnership"
+				]
+			},
+			"hitProperties": []
+		}, {
+			"content": {
+				"id": "https://ded8da95-eaff-4085-9417-04177825bb00-catalog.api.datacatalog.azure.com/catalogs/catalog/views/tables/4b718d15-99d1-4b38-aa45-51b3f5557eb1",
+				"type": "Microsoft.DataSource.Table.1",
+				"timestamp": "2018-01-10T21:27:54.5383388Z",
+				"properties": {
+					"name": "SkusDeltaUnchanged",
+					"dsl": {
+						"address": {
+							"server": "genentitlements-dev.database.windows.net",
+							"database": "entitlement",
+							"schema": "dbo",
+							"object": "SkusDeltaUnchanged"
+						},
+						"protocol": "tds",
+						"authentication": "protocol"
+					},
+					"dataSource": {
+						"sourceType": "SQL Server",
+						"objectType": "View"
+					},
+					"lastRegisteredBy": {
+						"objectId": "c8717d13-2556-460a-94a7-a95eedace5f0",
+						"upn": "pmouat@spikesco.com",
+						"firstName": "Paulo",
+						"lastName": "Mouat"
+					},
+					"fromSourceSystem": true,
+					"containerId": "https://ded8da95-eaff-4085-9417-04177825bb00-catalog.api.datacatalog.azure.com/catalogs/catalog/views/containers/a932ba39-0295-48db-93ee-a4ee3d281b99"
+				},
+				"annotations": {
+					"columnsDataProfiles": [{
+							"id": "https://ded8da95-eaff-4085-9417-04177825bb00-catalog.api.datacatalog.azure.com/catalogs/catalog/views/tables/4b718d15-99d1-4b38-aa45-51b3f5557eb1/columnsDataProfiles/Microsoft",
+							"type": "Microsoft.DataSource.ColumnsDataProfile.1",
+							"timestamp": "2018-01-10T21:27:54.5383388Z",
+							"properties": {
+								"fromSourceSystem": true,
+								"key": "Microsoft"
+							},
+							"roles": [{
+									"role": "Contributor",
+									"members": [{
+											"objectId": "00000000-0000-0000-0000-000000000201"
+										}
+									]
+								}
+							],
+							"effectiveRights": [
+								"Read",
+								"Delete",
+								"ViewRoles",
+								"Update"
+							]
+						}
+					],
+					"schema": {
+						"id": "https://ded8da95-eaff-4085-9417-04177825bb00-catalog.api.datacatalog.azure.com/catalogs/catalog/views/tables/4b718d15-99d1-4b38-aa45-51b3f5557eb1/schema",
+						"type": "Microsoft.DataSource.Schema.1",
+						"timestamp": "2018-01-10T21:27:54.5383388Z",
+						"properties": {
+							"columns": [{
+									"name": "Id",
+									"type": "int",
+									"maxLength": 4,
+									"precision": 10,
+									"isNullable": false
+								}, {
+									"name": "Name",
+									"type": "nvarchar",
+									"maxLength": 1000,
+									"precision": 0,
+									"isNullable": true
+								}, {
+									"name": "Number",
+									"type": "nvarchar",
+									"maxLength": 1000,
+									"precision": 0,
+									"isNullable": true
+								}, {
+									"name": "Status",
+									"type": "nvarchar",
+									"maxLength": 100,
+									"precision": 0,
+									"isNullable": true
+								}, {
+									"name": "SalesforceId",
+									"type": "nvarchar",
+									"maxLength": 36,
+									"precision": 0,
+									"isNullable": true
+								}, {
+									"name": "IsDeleted",
+									"type": "bit",
+									"maxLength": 1,
+									"precision": 1,
+									"isNullable": false
+								}
+							],
+							"fromSourceSystem": true
+						},
+						"roles": [{
+								"role": "Contributor",
+								"members": [{
+										"objectId": "00000000-0000-0000-0000-000000000201"
+									}
+								]
+							}
+						],
+						"effectiveRights": [
+							"Read",
+							"Delete",
+							"ViewRoles",
+							"Update"
+						]
+					},
+					"previews": [{
+							"id": "https://ded8da95-eaff-4085-9417-04177825bb00-catalog.api.datacatalog.azure.com/catalogs/catalog/views/tables/4b718d15-99d1-4b38-aa45-51b3f5557eb1/previews/Microsoft",
+							"type": "Microsoft.DataSource.Preview.1",
+							"timestamp": "2018-01-10T21:27:54.5383388Z",
+							"properties": {
+								"fromSourceSystem": true,
+								"key": "Microsoft"
+							},
+							"roles": [{
+									"role": "Contributor",
+									"members": [{
+											"objectId": "00000000-0000-0000-0000-000000000201"
+										}
+									]
+								}
+							],
+							"effectiveRights": [
+								"Read",
+								"Delete",
+								"ViewRoles",
+								"Update"
+							]
+						}
+					],
+					"tableDataProfiles": [{
+							"id": "https://ded8da95-eaff-4085-9417-04177825bb00-catalog.api.datacatalog.azure.com/catalogs/catalog/views/tables/4b718d15-99d1-4b38-aa45-51b3f5557eb1/tableDataProfiles/Microsoft",
+							"type": "Microsoft.DataSource.TableDataProfile.1",
+							"timestamp": "2018-01-10T21:27:54.5383388Z",
+							"properties": {
+								"numberOfRows": 711,
+								"schemaModifiedTime": "2017-10-25T15:27:24.84",
+								"fromSourceSystem": true,
+								"key": "Microsoft"
+							},
+							"roles": [{
+									"role": "Contributor",
+									"members": [{
+											"objectId": "00000000-0000-0000-0000-000000000201"
+										}
+									]
+								}
+							],
+							"effectiveRights": [
+								"Read",
+								"Delete",
+								"ViewRoles",
+								"Update"
+							]
+						}
+					],
+					"experts": [{
+							"id": "https://ded8da95-eaff-4085-9417-04177825bb00-catalog.api.datacatalog.azure.com/catalogs/catalog/views/tables/4b718d15-99d1-4b38-aa45-51b3f5557eb1/experts/c8717d132556460a94a7a95eedace5f0--c8717d132556460a94a7a95eedace5f0",
+							"type": "Microsoft.Expert.1",
+							"timestamp": "2018-01-10T21:27:54.5383388Z",
+							"properties": {
+								"expert": {
+									"objectId": "c8717d13-2556-460a-94a7-a95eedace5f0",
+									"upn": "pmouat@spikesco.com"
+								},
+								"fromSourceSystem": false,
+								"key": "c8717d132556460a94a7a95eedace5f0--c8717d132556460a94a7a95eedace5f0"
+							},
+							"roles": [{
+									"role": "Contributor",
+									"members": [{
+											"objectId": "c8717d13-2556-460a-94a7-a95eedace5f0"
+										}
+									]
+								}
+							],
+							"effectiveRights": [
+								"Read",
+								"Delete",
+								"ViewRoles",
+								"Update"
+							]
+						}
+					]
+				},
+				"roles": [{
+						"role": "Contributor",
+						"members": [{
+								"objectId": "00000000-0000-0000-0000-000000000201"
+							}
+						]
+					}
+				],
+				"effectiveRights": [
+					"Read",
+					"Delete",
+					"ChangeOwnership",
+					"ChangeVisibility",
+					"ViewPermissions",
+					"ViewRoles",
+					"Move",
+					"Update",
+					"TakeOwnership"
+				]
+			},
+			"hitProperties": []
+		}, {
+			"content": {
+				"id": "https://ded8da95-eaff-4085-9417-04177825bb00-catalog.api.datacatalog.azure.com/catalogs/catalog/views/tables/4ba60d58-1afe-413d-abd4-07f1b54b4823",
+				"type": "Microsoft.DataSource.Table.1",
+				"timestamp": "2017-02-16T15:46:56.2884484Z",
+				"properties": {
+					"name": "Alabama State Data Customer Database",
+					"dsl": {
+						"address": {
+							"contentType": "application/x-ms-import",
+							"url": "https://ded8da95-eaff-4085-9417-04177825bb00.de-users-preview.sqlazurelabs.com/Data/edc5c55a-db9d-4d70-b15f-55beb34a96e9"
+						},
+						"protocol": "power-query",
+						"authentication": "oauth"
+					},
+					"dataSource": {
+						"sourceType": "Power Query",
+						"objectType": "Data Mashup"
+					},
+					"lastRegisteredBy": {
+						"upn": "bsimmons@spikesco.com"
+					},
+					"fromSourceSystem": false
+				},
+				"annotations": {
+					"descriptions": [{
+							"id": "https://ded8da95-eaff-4085-9417-04177825bb00-catalog.api.datacatalog.azure.com/catalogs/catalog/views/tables/4ba60d58-1afe-413d-abd4-07f1b54b4823/descriptions/bf580051301c4dd8993d77fc49f13714",
+							"type": "Microsoft.Description.1",
+							"timestamp": "2017-02-16T15:46:56.2884484Z",
+							"properties": {
+								"description": "SpringRock vwAlabamaModelFinal",
+								"fromSourceSystem": false,
+								"key": "bf580051301c4dd8993d77fc49f13714"
+							},
+							"roles": [{
+									"role": "Contributor",
+									"members": [{
+											"objectId": "490e5d06-be91-4026-86a3-e9b9eb821184"
+										}
+									]
+								}
+							],
+							"effectiveRights": [
+								"Read",
+								"Delete",
+								"ViewRoles"
+							]
+						}
+					],
+					"documentation": {
+						"id": "https://ded8da95-eaff-4085-9417-04177825bb00-catalog.api.datacatalog.azure.com/catalogs/catalog/views/tables/4ba60d58-1afe-413d-abd4-07f1b54b4823/documentation",
+						"type": "Microsoft.Documentation.1",
+						"timestamp": "2017-02-16T15:46:56.2884484Z",
+						"properties": {
+							"mimeType": "text/html",
+							"content": "",
+							"fromSourceSystem": false
+						},
+						"roles": [{
+								"role": "Contributor",
+								"members": [{
+										"objectId": "00000000-0000-0000-0000-000000000201"
+									}
+								]
+							}
+						],
+						"effectiveRights": [
+							"Read",
+							"Delete",
+							"ViewRoles",
+							"Update"
+						]
+					},
+					"schema": {
+						"id": "https://ded8da95-eaff-4085-9417-04177825bb00-catalog.api.datacatalog.azure.com/catalogs/catalog/views/tables/4ba60d58-1afe-413d-abd4-07f1b54b4823/schema",
+						"type": "Microsoft.DataSource.Schema.1",
+						"timestamp": "2017-02-16T15:46:56.2884484Z",
+						"properties": {
+							"columns": [{
+									"name": "ReportDate",
+									"type": "string"
+								}, {
+									"name": "PlantName",
+									"type": "string"
+								}, {
+									"name": "Company",
+									"type": "string"
+								}, {
+									"name": "County",
+									"type": "string"
+								}, {
+									"name": "C2Mbd",
+									"type": "string"
+								}, {
+									"name": "C3Mbd",
+									"type": "string"
+								}, {
+									"name": "IC4Mbd",
+									"type": "string"
+								}, {
+									"name": "NC4Mbd",
+									"type": "string"
+								}, {
+									"name": "C5PlusMbd",
+									"type": "string"
+								}, {
+									"name": "NGLMixMbd",
+									"type": "string"
+								}, {
+									"name": "OtherMbd",
+									"type": "string"
+								}, {
+									"name": "RawStreamMbd",
+									"type": "string"
+								}, {
+									"name": "CondyMbd",
+									"type": "string"
+								}, {
+									"name": "Wet Gas MMcfd",
+									"type": "string"
+								}, {
+									"name": "Dry Gas MMcfd",
+									"type": "string"
+								}, {
+									"name": "GPM",
+									"type": "string"
+								}, {
+									"name": "Shrinkage MMcfd",
+									"type": "string"
+								}, {
+									"name": "PlantFuel",
+									"type": "string"
+								}, {
+									"name": "Sulphur",
+									"type": "string"
+								}, {
+									"name": "GasVented",
+									"type": "string"
+								}
+							],
+							"fromSourceSystem": false
+						},
+						"roles": [{
+								"role": "Contributor",
+								"members": [{
+										"objectId": "490e5d06-be91-4026-86a3-e9b9eb821184"
+									}
+								]
+							}
+						],
+						"effectiveRights": [
+							"Read",
+							"Delete",
+							"ViewRoles"
+						]
+					},
+					"previews": [{
+							"id": "https://ded8da95-eaff-4085-9417-04177825bb00-catalog.api.datacatalog.azure.com/catalogs/catalog/views/tables/4ba60d58-1afe-413d-abd4-07f1b54b4823/previews/~b1ca39ef-bfc1-1ca8-32a2-4a1d18a7660a",
+							"type": "Microsoft.DataSource.Preview.1",
+							"timestamp": "2017-02-16T15:46:56.2884484Z",
+							"properties": {
+								"fromSourceSystem": false,
+								"key": "https://ded8da95-eaff-4085-9417-04177825bb00.de-users-preview.sqlazurelabs.com/Preview/edc5c55a-db9d-4d70-b15f-55beb34a96e9/40deb1bb-76fb-4ce7-8ac4-565d08c2a743"
+							},
+							"roles": [{
+									"role": "Contributor",
+									"members": [{
+											"objectId": "00000000-0000-0000-0000-000000000201"
+										}
+									]
+								}
+							],
+							"effectiveRights": [
+								"Read",
+								"Delete",
+								"ViewRoles",
+								"Update"
+							]
+						}
+					]
+				},
+				"roles": [{
+						"role": "Contributor",
+						"members": [{
+								"objectId": "490e5d06-be91-4026-86a3-e9b9eb821184"
+							}
+						]
+					}, {
+						"role": "Owner",
+						"members": [{
+								"objectId": "490e5d06-be91-4026-86a3-e9b9eb821184"
+							}
+						]
+					}
+				],
+				"permissions": [{
+						"rights": [{
+								"right": "Update"
+							}
+						],
+						"principal": {
+							"objectId": "00000000-0000-0000-0000-000000000201"
+						}
+					}
+				],
+				"effectiveRights": [
+					"Read",
+					"Delete",
+					"ChangeOwnership",
+					"ChangeVisibility",
+					"ViewPermissions",
+					"ViewRoles",
+					"Move"
+				]
+			},
+			"hitProperties": []
+		}, {
+			"content": {
+				"id": "https://ded8da95-eaff-4085-9417-04177825bb00-catalog.api.datacatalog.azure.com/catalogs/catalog/views/tables/5fa33e18-b3dc-4e57-bdc3-eca12856b140",
+				"type": "Microsoft.DataSource.Table.1",
+				"timestamp": "2018-01-10T21:27:54.1629299Z",
+				"properties": {
+					"name": "SkusDeltaRemoved",
+					"dsl": {
+						"address": {
+							"server": "genentitlements-dev.database.windows.net",
+							"database": "entitlement",
+							"schema": "dbo",
+							"object": "SkusDeltaRemoved"
+						},
+						"protocol": "tds",
+						"authentication": "protocol"
+					},
+					"dataSource": {
+						"sourceType": "SQL Server",
+						"objectType": "View"
+					},
+					"lastRegisteredBy": {
+						"objectId": "c8717d13-2556-460a-94a7-a95eedace5f0",
+						"upn": "pmouat@spikesco.com",
+						"firstName": "Paulo",
+						"lastName": "Mouat"
+					},
+					"fromSourceSystem": true,
+					"containerId": "https://ded8da95-eaff-4085-9417-04177825bb00-catalog.api.datacatalog.azure.com/catalogs/catalog/views/containers/a932ba39-0295-48db-93ee-a4ee3d281b99"
+				},
+				"annotations": {
+					"schema": {
+						"id": "https://ded8da95-eaff-4085-9417-04177825bb00-catalog.api.datacatalog.azure.com/catalogs/catalog/views/tables/5fa33e18-b3dc-4e57-bdc3-eca12856b140/schema",
+						"type": "Microsoft.DataSource.Schema.1",
+						"timestamp": "2018-01-10T21:27:54.1629299Z",
+						"properties": {
+							"columns": [{
+									"name": "Id",
+									"type": "int",
+									"maxLength": 4,
+									"precision": 10,
+									"isNullable": false
+								}, {
+									"name": "Name",
+									"type": "nvarchar",
+									"maxLength": 1000,
+									"precision": 0,
+									"isNullable": false
+								}, {
+									"name": "Number",
+									"type": "nvarchar",
+									"maxLength": 100,
+									"precision": 0,
+									"isNullable": true
+								}, {
+									"name": "Status",
+									"type": "nvarchar",
+									"maxLength": 100,
+									"precision": 0,
+									"isNullable": true
+								}, {
+									"name": "SalesforceId",
+									"type": "nvarchar",
+									"maxLength": 36,
+									"precision": 0,
+									"isNullable": true
+								}, {
+									"name": "IsDeleted",
+									"type": "bit",
+									"maxLength": 1,
+									"precision": 1,
+									"isNullable": false
+								}
+							],
+							"fromSourceSystem": true
+						},
+						"roles": [{
+								"role": "Contributor",
+								"members": [{
+										"objectId": "00000000-0000-0000-0000-000000000201"
+									}
+								]
+							}
+						],
+						"effectiveRights": [
+							"Read",
+							"Delete",
+							"ViewRoles",
+							"Update"
+						]
+					},
+					"previews": [{
+							"id": "https://ded8da95-eaff-4085-9417-04177825bb00-catalog.api.datacatalog.azure.com/catalogs/catalog/views/tables/5fa33e18-b3dc-4e57-bdc3-eca12856b140/previews/Microsoft",
+							"type": "Microsoft.DataSource.Preview.1",
+							"timestamp": "2018-01-10T21:27:54.1629299Z",
+							"properties": {
+								"fromSourceSystem": true,
+								"key": "Microsoft"
+							},
+							"roles": [{
+									"role": "Contributor",
+									"members": [{
+											"objectId": "00000000-0000-0000-0000-000000000201"
+										}
+									]
+								}
+							],
+							"effectiveRights": [
+								"Read",
+								"Delete",
+								"ViewRoles",
+								"Update"
+							]
+						}
+					],
+					"tableDataProfiles": [{
+							"id": "https://ded8da95-eaff-4085-9417-04177825bb00-catalog.api.datacatalog.azure.com/catalogs/catalog/views/tables/5fa33e18-b3dc-4e57-bdc3-eca12856b140/tableDataProfiles/Microsoft",
+							"type": "Microsoft.DataSource.TableDataProfile.1",
+							"timestamp": "2018-01-10T21:27:54.1629299Z",
+							"properties": {
+								"numberOfRows": 0,
+								"schemaModifiedTime": "2017-10-25T15:27:24.763",
+								"fromSourceSystem": true,
+								"key": "Microsoft"
+							},
+							"roles": [{
+									"role": "Contributor",
+									"members": [{
+											"objectId": "00000000-0000-0000-0000-000000000201"
+										}
+									]
+								}
+							],
+							"effectiveRights": [
+								"Read",
+								"Delete",
+								"ViewRoles",
+								"Update"
+							]
+						}
+					],
+					"experts": [{
+							"id": "https://ded8da95-eaff-4085-9417-04177825bb00-catalog.api.datacatalog.azure.com/catalogs/catalog/views/tables/5fa33e18-b3dc-4e57-bdc3-eca12856b140/experts/c8717d132556460a94a7a95eedace5f0--c8717d132556460a94a7a95eedace5f0",
+							"type": "Microsoft.Expert.1",
+							"timestamp": "2018-01-10T21:27:54.1629299Z",
+							"properties": {
+								"expert": {
+									"objectId": "c8717d13-2556-460a-94a7-a95eedace5f0",
+									"upn": "pmouat@spikesco.com"
+								},
+								"fromSourceSystem": false,
+								"key": "c8717d132556460a94a7a95eedace5f0--c8717d132556460a94a7a95eedace5f0"
+							},
+							"roles": [{
+									"role": "Contributor",
+									"members": [{
+											"objectId": "c8717d13-2556-460a-94a7-a95eedace5f0"
+										}
+									]
+								}
+							],
+							"effectiveRights": [
+								"Read",
+								"Delete",
+								"ViewRoles",
+								"Update"
+							]
+						}
+					]
+				},
+				"roles": [{
+						"role": "Contributor",
+						"members": [{
+								"objectId": "00000000-0000-0000-0000-000000000201"
+							}
+						]
+					}
+				],
+				"effectiveRights": [
+					"Read",
+					"Delete",
+					"ChangeOwnership",
+					"ChangeVisibility",
+					"ViewPermissions",
+					"ViewRoles",
+					"Move",
+					"Update",
+					"TakeOwnership"
+				]
+			},
+			"hitProperties": []
+		}, {
+			"content": {
+				"id": "https://ded8da95-eaff-4085-9417-04177825bb00-catalog.api.datacatalog.azure.com/catalogs/catalog/views/tables/6c32f4f5-ae14-4ee3-8344-e5e8feedcca9",
+				"type": "Microsoft.DataSource.Table.1",
+				"timestamp": "2017-02-16T15:39:04.6162391Z",
+				"properties": {
+					"name": "North Dakota State Data Customer Database",
+					"dsl": {
+						"address": {
+							"contentType": "application/x-ms-import",
+							"url": "https://ded8da95-eaff-4085-9417-04177825bb00.de-users-preview.sqlazurelabs.com/Data/623dac07-6560-432b-a267-65a3490a2d0b"
+						},
+						"protocol": "power-query",
+						"authentication": "oauth"
+					},
+					"dataSource": {
+						"sourceType": "Power Query",
+						"objectType": "Data Mashup"
+					},
+					"lastRegisteredBy": {
+						"upn": "bsimmons@spikesco.com"
+					},
+					"fromSourceSystem": false
+				},
+				"annotations": {
+					"documentation": {
+						"id": "https://ded8da95-eaff-4085-9417-04177825bb00-catalog.api.datacatalog.azure.com/catalogs/catalog/views/tables/6c32f4f5-ae14-4ee3-8344-e5e8feedcca9/documentation",
+						"type": "Microsoft.Documentation.1",
+						"timestamp": "2017-02-16T15:39:04.6162391Z",
+						"properties": {
+							"mimeType": "text/html",
+							"content": "",
+							"fromSourceSystem": false
+						},
+						"roles": [{
+								"role": "Contributor",
+								"members": [{
+										"objectId": "00000000-0000-0000-0000-000000000201"
+									}
+								]
+							}
+						],
+						"effectiveRights": [
+							"Read",
+							"Delete",
+							"ViewRoles",
+							"Update"
+						]
+					},
+					"schema": {
+						"id": "https://ded8da95-eaff-4085-9417-04177825bb00-catalog.api.datacatalog.azure.com/catalogs/catalog/views/tables/6c32f4f5-ae14-4ee3-8344-e5e8feedcca9/schema",
+						"type": "Microsoft.DataSource.Schema.1",
+						"timestamp": "2017-02-16T15:39:04.6162391Z",
+						"properties": {
+							"columns": [{
+									"name": "ReportDate",
+									"type": "string"
+								}, {
+									"name": "PlantName",
+									"type": "string"
+								}, {
+									"name": "Owner",
+									"type": "string"
+								}, {
+									"name": "County",
+									"type": "string"
+								}, {
+									"name": "C2Mbd",
+									"type": "string"
+								}, {
+									"name": "C3Mbd",
+									"type": "string"
+								}, {
+									"name": "IC4Mbd",
+									"type": "string"
+								}, {
+									"name": "NC4Mbd",
+									"type": "string"
+								}, {
+									"name": "C5PlusMbd",
+									"type": "string"
+								}, {
+									"name": "NGLMixMbd",
+									"type": "string"
+								}, {
+									"name": "Other Mbd",
+									"type": "string"
+								}, {
+									"name": "RawStreamMbd",
+									"type": "string"
+								}, {
+									"name": "Condy",
+									"type": "string"
+								}, {
+									"name": "WetGasProcessedMMCFd",
+									"type": "string"
+								}, {
+									"name": "DryGasProcessedMMCFd",
+									"type": "string"
+								}, {
+									"name": "GPMOfProcessedGas",
+									"type": "string"
+								}, {
+									"name": "ReportedShrinkageMMCFd",
+									"type": "string"
+								}, {
+									"name": "PlantUseMCF",
+									"type": "string"
+								}, {
+									"name": "ReturnToLeaseMCF",
+									"type": "string"
+								}, {
+									"name": "VentedFlaredMCF",
+									"type": "string"
+								}, {
+									"name": "SulphurTon",
+									"type": "string"
+								}
+							],
+							"fromSourceSystem": false
+						},
+						"roles": [{
+								"role": "Contributor",
+								"members": [{
+										"objectId": "490e5d06-be91-4026-86a3-e9b9eb821184"
+									}
+								]
+							}
+						],
+						"effectiveRights": [
+							"Read",
+							"Delete",
+							"ViewRoles"
+						]
+					},
+					"descriptions": [{
+							"id": "https://ded8da95-eaff-4085-9417-04177825bb00-catalog.api.datacatalog.azure.com/catalogs/catalog/views/tables/6c32f4f5-ae14-4ee3-8344-e5e8feedcca9/descriptions/ad5efb7f0d944cb9ac1ffd6693e9631a",
+							"type": "Microsoft.Description.1",
+							"timestamp": "2017-02-16T15:39:04.6162391Z",
+							"properties": {
+								"description": "NorthDakotaGasPlantData",
+								"fromSourceSystem": false,
+								"key": "ad5efb7f0d944cb9ac1ffd6693e9631a"
+							},
+							"roles": [{
+									"role": "Contributor",
+									"members": [{
+											"objectId": "490e5d06-be91-4026-86a3-e9b9eb821184"
+										}
+									]
+								}
+							],
+							"effectiveRights": [
+								"Read",
+								"Delete",
+								"ViewRoles"
+							]
+						}
+					],
+					"previews": [{
+							"id": "https://ded8da95-eaff-4085-9417-04177825bb00-catalog.api.datacatalog.azure.com/catalogs/catalog/views/tables/6c32f4f5-ae14-4ee3-8344-e5e8feedcca9/previews/~e2970160-e952-c693-63b8-b4135a70a244",
+							"type": "Microsoft.DataSource.Preview.1",
+							"timestamp": "2017-02-16T15:39:04.6162391Z",
+							"properties": {
+								"fromSourceSystem": false,
+								"key": "https://ded8da95-eaff-4085-9417-04177825bb00.de-users-preview.sqlazurelabs.com/Preview/623dac07-6560-432b-a267-65a3490a2d0b/9751ac11-3395-4de9-accf-8a6859cc5d65"
+							},
+							"roles": [{
+									"role": "Contributor",
+									"members": [{
+											"objectId": "00000000-0000-0000-0000-000000000201"
+										}
+									]
+								}
+							],
+							"effectiveRights": [
+								"Read",
+								"Delete",
+								"ViewRoles",
+								"Update"
+							]
+						}
+					]
+				},
+				"roles": [{
+						"role": "Contributor",
+						"members": [{
+								"objectId": "490e5d06-be91-4026-86a3-e9b9eb821184"
+							}
+						]
+					}, {
+						"role": "Owner",
+						"members": [{
+								"objectId": "490e5d06-be91-4026-86a3-e9b9eb821184"
+							}
+						]
+					}
+				],
+				"permissions": [{
+						"rights": [{
+								"right": "Update"
+							}
+						],
+						"principal": {
+							"objectId": "00000000-0000-0000-0000-000000000201"
+						}
+					}
+				],
+				"effectiveRights": [
+					"Read",
+					"Delete",
+					"ChangeOwnership",
+					"ChangeVisibility",
+					"ViewPermissions",
+					"ViewRoles",
+					"Move"
+				]
+			},
+			"hitProperties": []
+		}, {
+			"content": {
+				"id": "https://ded8da95-eaff-4085-9417-04177825bb00-catalog.api.datacatalog.azure.com/catalogs/catalog/views/tables/787f5b29-6bea-4ebf-a058-023e6e1cee68",
+				"type": "Microsoft.DataSource.Table.1",
+				"timestamp": "2018-01-10T21:31:26.7720334Z",
+				"properties": {
+					"name": "BatchSubmissionStage",
+					"dsl": {
+						"address": {
+							"server": "genpowerrtdbtest.eastus2.cloudapp.azure.com,1433",
+							"database": "DataLanding_DEV",
+							"schema": "entitlement",
+							"object": "BatchSubmissionStage"
+						},
+						"protocol": "tds",
+						"authentication": "windows"
+					},
+					"dataSource": {
+						"sourceType": "SQL Server",
+						"objectType": "Table"
+					},
+					"lastRegisteredBy": {
+						"objectId": "c8717d13-2556-460a-94a7-a95eedace5f0",
+						"upn": "pmouat@spikesco.com",
+						"firstName": "Paulo",
+						"lastName": "Mouat"
+					},
+					"fromSourceSystem": true,
+					"containerId": "https://ded8da95-eaff-4085-9417-04177825bb00-catalog.api.datacatalog.azure.com/catalogs/catalog/views/containers/bfa11552-6ac0-46d9-8bac-06eac62e4c2d"
+				},
+				"annotations": {
+					"schema": {
+						"id": "https://ded8da95-eaff-4085-9417-04177825bb00-catalog.api.datacatalog.azure.com/catalogs/catalog/views/tables/787f5b29-6bea-4ebf-a058-023e6e1cee68/schema",
+						"type": "Microsoft.DataSource.Schema.1",
+						"timestamp": "2018-01-10T21:31:26.7720334Z",
+						"properties": {
+							"columns": [{
+									"name": "BatchSubmissionId",
+									"type": "int",
+									"maxLength": 4,
+									"precision": 10,
+									"isNullable": true
+								}, {
+									"name": "BatchReplicationId",
+									"type": "int",
+									"maxLength": 4,
+									"precision": 10,
+									"isNullable": true
+								}
+							],
+							"fromSourceSystem": true
+						},
+						"roles": [{
+								"role": "Contributor",
+								"members": [{
+										"objectId": "00000000-0000-0000-0000-000000000201"
+									}
+								]
+							}
+						],
+						"effectiveRights": [
+							"Read",
+							"Delete",
+							"ViewRoles",
+							"Update"
+						]
+					},
+					"previews": [{
+							"id": "https://ded8da95-eaff-4085-9417-04177825bb00-catalog.api.datacatalog.azure.com/catalogs/catalog/views/tables/787f5b29-6bea-4ebf-a058-023e6e1cee68/previews/Microsoft",
+							"type": "Microsoft.DataSource.Preview.1",
+							"timestamp": "2018-01-10T21:31:26.7720334Z",
+							"properties": {
+								"fromSourceSystem": true,
+								"key": "Microsoft"
+							},
+							"roles": [{
+									"role": "Contributor",
+									"members": [{
+											"objectId": "00000000-0000-0000-0000-000000000201"
+										}
+									]
+								}
+							],
+							"effectiveRights": [
+								"Read",
+								"Delete",
+								"ViewRoles",
+								"Update"
+							]
+						}
+					],
+					"tableDataProfiles": [{
+							"id": "https://ded8da95-eaff-4085-9417-04177825bb00-catalog.api.datacatalog.azure.com/catalogs/catalog/views/tables/787f5b29-6bea-4ebf-a058-023e6e1cee68/tableDataProfiles/Microsoft",
+							"type": "Microsoft.DataSource.TableDataProfile.1",
+							"timestamp": "2018-01-10T21:31:26.7720334Z",
+							"properties": {
+								"numberOfRows": 0,
+								"size": 0,
+								"schemaModifiedTime": "2017-09-13T04:06:07.12",
+								"fromSourceSystem": true,
+								"key": "Microsoft"
+							},
+							"roles": [{
+									"role": "Contributor",
+									"members": [{
+											"objectId": "00000000-0000-0000-0000-000000000201"
+										}
+									]
+								}
+							],
+							"effectiveRights": [
+								"Read",
+								"Delete",
+								"ViewRoles",
+								"Update"
+							]
+						}
+					]
+				},
+				"roles": [{
+						"role": "Contributor",
+						"members": [{
+								"objectId": "00000000-0000-0000-0000-000000000201"
+							}
+						]
+					}
+				],
+				"effectiveRights": [
+					"Read",
+					"Delete",
+					"ChangeOwnership",
+					"ChangeVisibility",
+					"ViewPermissions",
+					"ViewRoles",
+					"Move",
+					"Update",
+					"TakeOwnership"
+				]
+			},
+			"hitProperties": []
+		}, {
+			"content": {
+				"id": "https://ded8da95-eaff-4085-9417-04177825bb00-catalog.api.datacatalog.azure.com/catalogs/catalog/views/tables/89399ac2-4a4c-44f5-803e-1690ff739ea9",
+				"type": "Microsoft.DataSource.Table.1",
+				"timestamp": "2018-01-10T21:27:56.4933748Z",
+				"properties": {
+					"name": "SkusDeltaAdded",
+					"dsl": {
+						"address": {
+							"server": "genentitlements-dev.database.windows.net",
+							"database": "entitlement",
+							"schema": "dbo",
+							"object": "SkusDeltaAdded"
+						},
+						"protocol": "tds",
+						"authentication": "protocol"
+					},
+					"dataSource": {
+						"sourceType": "SQL Server",
+						"objectType": "View"
+					},
+					"lastRegisteredBy": {
+						"objectId": "c8717d13-2556-460a-94a7-a95eedace5f0",
+						"upn": "pmouat@spikesco.com",
+						"firstName": "Paulo",
+						"lastName": "Mouat"
+					},
+					"fromSourceSystem": true,
+					"containerId": "https://ded8da95-eaff-4085-9417-04177825bb00-catalog.api.datacatalog.azure.com/catalogs/catalog/views/containers/a932ba39-0295-48db-93ee-a4ee3d281b99"
+				},
+				"annotations": {
+					"columnsDataProfiles": [{
+							"id": "https://ded8da95-eaff-4085-9417-04177825bb00-catalog.api.datacatalog.azure.com/catalogs/catalog/views/tables/89399ac2-4a4c-44f5-803e-1690ff739ea9/columnsDataProfiles/Microsoft",
+							"type": "Microsoft.DataSource.ColumnsDataProfile.1",
+							"timestamp": "2018-01-10T21:27:56.4933748Z",
+							"properties": {
+								"fromSourceSystem": true,
+								"key": "Microsoft"
+							},
+							"roles": [{
+									"role": "Contributor",
+									"members": [{
+											"objectId": "00000000-0000-0000-0000-000000000201"
+										}
+									]
+								}
+							],
+							"effectiveRights": [
+								"Read",
+								"Delete",
+								"ViewRoles",
+								"Update"
+							]
+						}
+					],
+					"schema": {
+						"id": "https://ded8da95-eaff-4085-9417-04177825bb00-catalog.api.datacatalog.azure.com/catalogs/catalog/views/tables/89399ac2-4a4c-44f5-803e-1690ff739ea9/schema",
+						"type": "Microsoft.DataSource.Schema.1",
+						"timestamp": "2018-01-10T21:27:56.4933748Z",
+						"properties": {
+							"columns": [{
+									"name": "Id",
+									"type": "int",
+									"maxLength": 4,
+									"precision": 10,
+									"isNullable": false
+								}, {
+									"name": "Name",
+									"type": "nvarchar",
+									"maxLength": 1000,
+									"precision": 0,
+									"isNullable": true
+								}, {
+									"name": "Number",
+									"type": "nvarchar",
+									"maxLength": 1000,
+									"precision": 0,
+									"isNullable": true
+								}, {
+									"name": "Status",
+									"type": "nvarchar",
+									"maxLength": 100,
+									"precision": 0,
+									"isNullable": true
+								}, {
+									"name": "SalesforceId",
+									"type": "nvarchar",
+									"maxLength": 36,
+									"precision": 0,
+									"isNullable": false
+								}, {
+									"name": "IsDeleted",
+									"type": "bit",
+									"maxLength": 1,
+									"precision": 1,
+									"isNullable": false
+								}
+							],
+							"fromSourceSystem": true
+						},
+						"roles": [{
+								"role": "Contributor",
+								"members": [{
+										"objectId": "00000000-0000-0000-0000-000000000201"
+									}
+								]
+							}
+						],
+						"effectiveRights": [
+							"Read",
+							"Delete",
+							"ViewRoles",
+							"Update"
+						]
+					},
+					"previews": [{
+							"id": "https://ded8da95-eaff-4085-9417-04177825bb00-catalog.api.datacatalog.azure.com/catalogs/catalog/views/tables/89399ac2-4a4c-44f5-803e-1690ff739ea9/previews/Microsoft",
+							"type": "Microsoft.DataSource.Preview.1",
+							"timestamp": "2018-01-10T21:27:56.4933748Z",
+							"properties": {
+								"fromSourceSystem": true,
+								"key": "Microsoft"
+							},
+							"roles": [{
+									"role": "Contributor",
+									"members": [{
+											"objectId": "00000000-0000-0000-0000-000000000201"
+										}
+									]
+								}
+							],
+							"effectiveRights": [
+								"Read",
+								"Delete",
+								"ViewRoles",
+								"Update"
+							]
+						}
+					],
+					"tableDataProfiles": [{
+							"id": "https://ded8da95-eaff-4085-9417-04177825bb00-catalog.api.datacatalog.azure.com/catalogs/catalog/views/tables/89399ac2-4a4c-44f5-803e-1690ff739ea9/tableDataProfiles/Microsoft",
+							"type": "Microsoft.DataSource.TableDataProfile.1",
+							"timestamp": "2018-01-10T21:27:56.4933748Z",
+							"properties": {
+								"numberOfRows": 299,
+								"schemaModifiedTime": "2017-10-25T15:27:24.63",
+								"fromSourceSystem": true,
+								"key": "Microsoft"
+							},
+							"roles": [{
+									"role": "Contributor",
+									"members": [{
+											"objectId": "00000000-0000-0000-0000-000000000201"
+										}
+									]
+								}
+							],
+							"effectiveRights": [
+								"Read",
+								"Delete",
+								"ViewRoles",
+								"Update"
+							]
+						}
+					],
+					"experts": [{
+							"id": "https://ded8da95-eaff-4085-9417-04177825bb00-catalog.api.datacatalog.azure.com/catalogs/catalog/views/tables/89399ac2-4a4c-44f5-803e-1690ff739ea9/experts/c8717d132556460a94a7a95eedace5f0--c8717d132556460a94a7a95eedace5f0",
+							"type": "Microsoft.Expert.1",
+							"timestamp": "2018-01-10T21:27:56.4933748Z",
+							"properties": {
+								"expert": {
+									"objectId": "c8717d13-2556-460a-94a7-a95eedace5f0",
+									"upn": "pmouat@spikesco.com"
+								},
+								"fromSourceSystem": false,
+								"key": "c8717d132556460a94a7a95eedace5f0--c8717d132556460a94a7a95eedace5f0"
+							},
+							"roles": [{
+									"role": "Contributor",
+									"members": [{
+											"objectId": "c8717d13-2556-460a-94a7-a95eedace5f0"
+										}
+									]
+								}
+							],
+							"effectiveRights": [
+								"Read",
+								"Delete",
+								"ViewRoles",
+								"Update"
+							]
+						}
+					]
+				},
+				"roles": [{
+						"role": "Contributor",
+						"members": [{
+								"objectId": "00000000-0000-0000-0000-000000000201"
+							}
+						]
+					}
+				],
+				"effectiveRights": [
+					"Read",
+					"Delete",
+					"ChangeOwnership",
+					"ChangeVisibility",
+					"ViewPermissions",
+					"ViewRoles",
+					"Move",
+					"Update",
+					"TakeOwnership"
+				]
+			},
+			"hitProperties": []
+		}, {
+			"content": {
+				"id": "https://ded8da95-eaff-4085-9417-04177825bb00-catalog.api.datacatalog.azure.com/catalogs/catalog/views/tables/8d672246-8078-46ed-8c22-a9451fa13f5e",
+				"type": "Microsoft.DataSource.Table.1",
+				"timestamp": "2018-01-10T21:27:56.1183887Z",
+				"properties": {
+					"name": "Skus",
+					"dsl": {
+						"address": {
+							"server": "genentitlements-dev.database.windows.net",
+							"database": "entitlement",
+							"schema": "dbo",
+							"object": "Skus"
+						},
+						"protocol": "tds",
+						"authentication": "protocol"
+					},
+					"dataSource": {
+						"sourceType": "SQL Server",
+						"objectType": "Table"
+					},
+					"lastRegisteredBy": {
+						"objectId": "c8717d13-2556-460a-94a7-a95eedace5f0",
+						"upn": "pmouat@spikesco.com",
+						"firstName": "Paulo",
+						"lastName": "Mouat"
+					},
+					"fromSourceSystem": true,
+					"containerId": "https://ded8da95-eaff-4085-9417-04177825bb00-catalog.api.datacatalog.azure.com/catalogs/catalog/views/containers/a932ba39-0295-48db-93ee-a4ee3d281b99"
+				},
+				"annotations": {
+					"columnsDataProfiles": [{
+							"id": "https://ded8da95-eaff-4085-9417-04177825bb00-catalog.api.datacatalog.azure.com/catalogs/catalog/views/tables/8d672246-8078-46ed-8c22-a9451fa13f5e/columnsDataProfiles/Microsoft",
+							"type": "Microsoft.DataSource.ColumnsDataProfile.1",
+							"timestamp": "2018-01-10T21:27:56.1183887Z",
+							"properties": {
+								"fromSourceSystem": true,
+								"key": "Microsoft"
+							},
+							"roles": [{
+									"role": "Contributor",
+									"members": [{
+											"objectId": "00000000-0000-0000-0000-000000000201"
+										}
+									]
+								}
+							],
+							"effectiveRights": [
+								"Read",
+								"Delete",
+								"ViewRoles",
+								"Update"
+							]
+						}
+					],
+					"schema": {
+						"id": "https://ded8da95-eaff-4085-9417-04177825bb00-catalog.api.datacatalog.azure.com/catalogs/catalog/views/tables/8d672246-8078-46ed-8c22-a9451fa13f5e/schema",
+						"type": "Microsoft.DataSource.Schema.1",
+						"timestamp": "2018-01-10T21:27:56.1183887Z",
+						"properties": {
+							"columns": [{
+									"name": "Id",
+									"type": "int",
+									"maxLength": 4,
+									"precision": 10,
+									"isNullable": false
+								}, {
+									"name": "Name",
+									"type": "nvarchar",
+									"maxLength": 1000,
+									"precision": 0,
+									"isNullable": false
+								}, {
+									"name": "Description",
+									"type": "nvarchar",
+									"maxLength": 4000,
+									"precision": 0,
+									"isNullable": false
+								}, {
+									"name": "Number",
+									"type": "nvarchar",
+									"maxLength": 100,
+									"precision": 0,
+									"isNullable": true
+								}, {
+									"name": "IsDeleted",
+									"type": "bit",
+									"maxLength": 1,
+									"precision": 1,
+									"isNullable": false
+								}, {
+									"name": "CreationDate",
+									"type": "datetime",
+									"maxLength": 8,
+									"precision": 23,
+									"isNullable": false
+								}, {
+									"name": "Status",
+									"type": "nvarchar",
+									"maxLength": 100,
+									"precision": 0,
+									"isNullable": true
+								}, {
+									"name": "SalesforceId",
+									"type": "nvarchar",
+									"maxLength": 36,
+									"precision": 0,
+									"isNullable": true
+								}
+							],
+							"fromSourceSystem": true
+						},
+						"roles": [{
+								"role": "Contributor",
+								"members": [{
+										"objectId": "00000000-0000-0000-0000-000000000201"
+									}
+								]
+							}
+						],
+						"effectiveRights": [
+							"Read",
+							"Delete",
+							"ViewRoles",
+							"Update"
+						]
+					},
+					"previews": [{
+							"id": "https://ded8da95-eaff-4085-9417-04177825bb00-catalog.api.datacatalog.azure.com/catalogs/catalog/views/tables/8d672246-8078-46ed-8c22-a9451fa13f5e/previews/Microsoft",
+							"type": "Microsoft.DataSource.Preview.1",
+							"timestamp": "2018-01-10T21:27:56.1183887Z",
+							"properties": {
+								"fromSourceSystem": true,
+								"key": "Microsoft"
+							},
+							"roles": [{
+									"role": "Contributor",
+									"members": [{
+											"objectId": "00000000-0000-0000-0000-000000000201"
+										}
+									]
+								}
+							],
+							"effectiveRights": [
+								"Read",
+								"Delete",
+								"ViewRoles",
+								"Update"
+							]
+						}
+					],
+					"tableDataProfiles": [{
+							"id": "https://ded8da95-eaff-4085-9417-04177825bb00-catalog.api.datacatalog.azure.com/catalogs/catalog/views/tables/8d672246-8078-46ed-8c22-a9451fa13f5e/tableDataProfiles/Microsoft",
+							"type": "Microsoft.DataSource.TableDataProfile.1",
+							"timestamp": "2018-01-10T21:27:56.1183887Z",
+							"properties": {
+								"numberOfRows": 810,
+								"size": 335872,
+								"schemaModifiedTime": "2017-10-25T15:32:57.083",
+								"fromSourceSystem": true,
+								"key": "Microsoft"
+							},
+							"roles": [{
+									"role": "Contributor",
+									"members": [{
+											"objectId": "00000000-0000-0000-0000-000000000201"
+										}
+									]
+								}
+							],
+							"effectiveRights": [
+								"Read",
+								"Delete",
+								"ViewRoles",
+								"Update"
+							]
+						}
+					],
+					"experts": [{
+							"id": "https://ded8da95-eaff-4085-9417-04177825bb00-catalog.api.datacatalog.azure.com/catalogs/catalog/views/tables/8d672246-8078-46ed-8c22-a9451fa13f5e/experts/c8717d132556460a94a7a95eedace5f0--c8717d132556460a94a7a95eedace5f0",
+							"type": "Microsoft.Expert.1",
+							"timestamp": "2018-01-10T21:27:56.1183887Z",
+							"properties": {
+								"expert": {
+									"objectId": "c8717d13-2556-460a-94a7-a95eedace5f0",
+									"upn": "pmouat@spikesco.com"
+								},
+								"fromSourceSystem": false,
+								"key": "c8717d132556460a94a7a95eedace5f0--c8717d132556460a94a7a95eedace5f0"
+							},
+							"roles": [{
+									"role": "Contributor",
+									"members": [{
+											"objectId": "c8717d13-2556-460a-94a7-a95eedace5f0"
+										}
+									]
+								}
+							],
+							"effectiveRights": [
+								"Read",
+								"Delete",
+								"ViewRoles",
+								"Update"
+							]
+						}
+					]
+				},
+				"roles": [{
+						"role": "Contributor",
+						"members": [{
+								"objectId": "00000000-0000-0000-0000-000000000201"
+							}
+						]
+					}
+				],
+				"effectiveRights": [
+					"Read",
+					"Delete",
+					"ChangeOwnership",
+					"ChangeVisibility",
+					"ViewPermissions",
+					"ViewRoles",
+					"Move",
+					"Update",
+					"TakeOwnership"
+				]
+			},
+			"hitProperties": []
+		}, {
+			"content": {
+				"id": "https://ded8da95-eaff-4085-9417-04177825bb00-catalog.api.datacatalog.azure.com/catalogs/catalog/views/tables/958421cc-d136-473f-9e22-169c686e60c3",
+				"type": "Microsoft.DataSource.Table.1",
+				"timestamp": "2017-02-16T15:28:22.1381421Z",
+				"properties": {
+					"name": "Texas State Data Customer Database",
+					"dsl": {
+						"address": {
+							"contentType": "application/x-ms-import",
+							"url": "https://ded8da95-eaff-4085-9417-04177825bb00.de-users-preview.sqlazurelabs.com/Data/3b4d3ad5-3203-404a-a10b-3eaf3a309169"
+						},
+						"protocol": "power-query",
+						"authentication": "oauth"
+					},
+					"dataSource": {
+						"sourceType": "Power Query",
+						"objectType": "Data Mashup"
+					},
+					"lastRegisteredBy": {
+						"upn": "bsimmons@spikesco.com"
+					},
+					"fromSourceSystem": false
+				},
+				"annotations": {
+					"descriptions": [{
+							"id": "https://ded8da95-eaff-4085-9417-04177825bb00-catalog.api.datacatalog.azure.com/catalogs/catalog/views/tables/958421cc-d136-473f-9e22-169c686e60c3/descriptions/2c5c3d1c3a164010a548ead273262470",
+							"type": "Microsoft.Description.1",
+							"timestamp": "2017-02-16T15:28:22.1381421Z",
+							"properties": {
+								"description": "SpringRock TexasGasPlantModel",
+								"fromSourceSystem": false,
+								"key": "2c5c3d1c3a164010a548ead273262470"
+							},
+							"roles": [{
+									"role": "Contributor",
+									"members": [{
+											"objectId": "490e5d06-be91-4026-86a3-e9b9eb821184"
+										}
+									]
+								}
+							],
+							"effectiveRights": [
+								"Read",
+								"Delete",
+								"ViewRoles"
+							]
+						}
+					],
+					"documentation": {
+						"id": "https://ded8da95-eaff-4085-9417-04177825bb00-catalog.api.datacatalog.azure.com/catalogs/catalog/views/tables/958421cc-d136-473f-9e22-169c686e60c3/documentation",
+						"type": "Microsoft.Documentation.1",
+						"timestamp": "2017-02-16T15:28:22.1381421Z",
+						"properties": {
+							"mimeType": "text/html",
+							"content": "",
+							"fromSourceSystem": false
+						},
+						"roles": [{
+								"role": "Contributor",
+								"members": [{
+										"objectId": "00000000-0000-0000-0000-000000000201"
+									}
+								]
+							}
+						],
+						"effectiveRights": [
+							"Read",
+							"Delete",
+							"ViewRoles",
+							"Update"
+						]
+					},
+					"schema": {
+						"id": "https://ded8da95-eaff-4085-9417-04177825bb00-catalog.api.datacatalog.azure.com/catalogs/catalog/views/tables/958421cc-d136-473f-9e22-169c686e60c3/schema",
+						"type": "Microsoft.DataSource.Schema.1",
+						"timestamp": "2017-02-16T15:28:22.1381421Z",
+						"properties": {
+							"columns": [{
+									"name": "EntityNo",
+									"type": "string"
+								}, {
+									"name": "MonthYear",
+									"type": "string"
+								}, {
+									"name": "TRRCGasPlantName",
+									"type": "string"
+								}, {
+									"name": "OwnerName",
+									"type": "string"
+								}, {
+									"name": "County",
+									"type": "string"
+								}, {
+									"name": "C2Mbd",
+									"type": "string"
+								}, {
+									"name": "C3Mbd",
+									"type": "string"
+								}, {
+									"name": "IC4Mbd",
+									"type": "string"
+								}, {
+									"name": "NC4Mbd",
+									"type": "string"
+								}, {
+									"name": "C5PlusMbd",
+									"type": "string"
+								}, {
+									"name": "NGLMixMbd",
+									"type": "string"
+								}, {
+									"name": "OtherMbd",
+									"type": "string"
+								}, {
+									"name": "RawStreamMbd",
+									"type": "string"
+								}, {
+									"name": "CondyMbd",
+									"type": "string"
+								}, {
+									"name": "WetGasMCFd",
+									"type": "string"
+								}, {
+									"name": "DryGasMCFd",
+									"type": "string"
+								}, {
+									"name": "GPM",
+									"type": "string"
+								}, {
+									"name": "Shrinkage",
+									"type": "string"
+								}, {
+									"name": "FromFacilities",
+									"type": "string"
+								}, {
+									"name": "FromMainLine",
+									"type": "string"
+								}, {
+									"name": "FromStorage",
+									"type": "string"
+								}, {
+									"name": "FromWellsToGatheringSystem",
+									"type": "string"
+								}, {
+									"name": "GatheringSystemToPlant",
+									"type": "string"
+								}, {
+									"name": "Imports",
+									"type": "string"
+								}, {
+									"name": "MeterDifferenceReceipts",
+									"type": "string"
+								}, {
+									"name": "MeteredIntake",
+									"type": "string"
+								}, {
+									"name": "TotalAcquisitionsAdjustments",
+									"type": "string"
+								}, {
+									"name": "Vapors",
+									"type": "string"
+								}, {
+									"name": "Cycled",
+									"type": "string"
+								}, {
+									"name": "ExtractionLoss",
+									"type": "string"
+								}, {
+									"name": "LeaseUse",
+									"type": "string"
+								}, {
+									"name": "MeterDifferenceDisposition",
+									"type": "string"
+								}, {
+									"name": "PlantFuel",
+									"type": "string"
+								}, {
+									"name": "PressureMaintenance",
+									"type": "string"
+								}, {
+									"name": "ToCarbonBlackPlant",
+									"type": "string"
+								}, {
+									"name": "ToFacilities",
+									"type": "string"
+								}, {
+									"name": "ToGasLift",
+									"type": "string"
+								}, {
+									"name": "ToStorage",
+									"type": "string"
+								}, {
+									"name": "ToTransmissionLine",
+									"type": "string"
+								}, {
+									"name": "TotalDispositionsAndAdjustments",
+									"type": "string"
+								}, {
+									"name": "Vented",
+									"type": "string"
+								}, {
+									"name": "C02",
+									"type": "string"
+								}, {
+									"name": "H2S",
+									"type": "string"
+								}
+							],
+							"fromSourceSystem": false
+						},
+						"roles": [{
+								"role": "Contributor",
+								"members": [{
+										"objectId": "490e5d06-be91-4026-86a3-e9b9eb821184"
+									}
+								]
+							}
+						],
+						"effectiveRights": [
+							"Read",
+							"Delete",
+							"ViewRoles"
+						]
+					},
+					"previews": [{
+							"id": "https://ded8da95-eaff-4085-9417-04177825bb00-catalog.api.datacatalog.azure.com/catalogs/catalog/views/tables/958421cc-d136-473f-9e22-169c686e60c3/previews/~8c710fd8-fc89-46a0-c05d-41819f52039e",
+							"type": "Microsoft.DataSource.Preview.1",
+							"timestamp": "2017-02-16T15:28:22.1381421Z",
+							"properties": {
+								"fromSourceSystem": false,
+								"key": "https://ded8da95-eaff-4085-9417-04177825bb00.de-users-preview.sqlazurelabs.com/Preview/3b4d3ad5-3203-404a-a10b-3eaf3a309169/1d04b3c8-194e-482e-842f-c204249576ee"
+							},
+							"roles": [{
+									"role": "Contributor",
+									"members": [{
+											"objectId": "00000000-0000-0000-0000-000000000201"
+										}
+									]
+								}
+							],
+							"effectiveRights": [
+								"Read",
+								"Delete",
+								"ViewRoles",
+								"Update"
+							]
+						}
+					]
+				},
+				"roles": [{
+						"role": "Contributor",
+						"members": [{
+								"objectId": "490e5d06-be91-4026-86a3-e9b9eb821184"
+							}
+						]
+					}, {
+						"role": "Owner",
+						"members": [{
+								"objectId": "490e5d06-be91-4026-86a3-e9b9eb821184"
+							}
+						]
+					}
+				],
+				"permissions": [{
+						"rights": [{
+								"right": "Update"
+							}
+						],
+						"principal": {
+							"objectId": "00000000-0000-0000-0000-000000000201"
+						}
+					}
+				],
+				"effectiveRights": [
+					"Read",
+					"Delete",
+					"ChangeOwnership",
+					"ChangeVisibility",
+					"ViewPermissions",
+					"ViewRoles",
+					"Move"
+				]
+			},
+			"hitProperties": []
+		}, {
+			"content": {
+				"id": "https://ded8da95-eaff-4085-9417-04177825bb00-catalog.api.datacatalog.azure.com/catalogs/catalog/views/tables/a1f8197f-87d5-488e-a813-6bda44089e07",
+				"type": "Microsoft.DataSource.Table.1",
+				"timestamp": "2018-01-10T21:31:27.0754196Z",
+				"properties": {
+					"name": "BatchSubmitedTemporaryUserAudit",
+					"dsl": {
+						"address": {
+							"server": "genpowerrtdbtest.eastus2.cloudapp.azure.com,1433",
+							"database": "DataLanding_DEV",
+							"schema": "entitlement",
+							"object": "BatchSubmitedTemporaryUserAudit"
+						},
+						"protocol": "tds",
+						"authentication": "windows"
+					},
+					"dataSource": {
+						"sourceType": "SQL Server",
+						"objectType": "Table"
+					},
+					"lastRegisteredBy": {
+						"objectId": "c8717d13-2556-460a-94a7-a95eedace5f0",
+						"upn": "pmouat@spikesco.com",
+						"firstName": "Paulo",
+						"lastName": "Mouat"
+					},
+					"fromSourceSystem": true,
+					"containerId": "https://ded8da95-eaff-4085-9417-04177825bb00-catalog.api.datacatalog.azure.com/catalogs/catalog/views/containers/bfa11552-6ac0-46d9-8bac-06eac62e4c2d"
+				},
+				"annotations": {
+					"columnsDataProfiles": [{
+							"id": "https://ded8da95-eaff-4085-9417-04177825bb00-catalog.api.datacatalog.azure.com/catalogs/catalog/views/tables/a1f8197f-87d5-488e-a813-6bda44089e07/columnsDataProfiles/Microsoft",
+							"type": "Microsoft.DataSource.ColumnsDataProfile.1",
+							"timestamp": "2018-01-10T21:31:27.0754196Z",
+							"properties": {
+								"fromSourceSystem": true,
+								"key": "Microsoft"
+							},
+							"roles": [{
+									"role": "Contributor",
+									"members": [{
+											"objectId": "00000000-0000-0000-0000-000000000201"
+										}
+									]
+								}
+							],
+							"effectiveRights": [
+								"Read",
+								"Delete",
+								"ViewRoles",
+								"Update"
+							]
+						}
+					],
+					"schema": {
+						"id": "https://ded8da95-eaff-4085-9417-04177825bb00-catalog.api.datacatalog.azure.com/catalogs/catalog/views/tables/a1f8197f-87d5-488e-a813-6bda44089e07/schema",
+						"type": "Microsoft.DataSource.Schema.1",
+						"timestamp": "2018-01-10T21:31:27.0754196Z",
+						"properties": {
+							"columns": [{
+									"name": "BatchSubmitedTemporaryUserId",
+									"type": "int",
+									"maxLength": 4,
+									"precision": 10,
+									"isNullable": false
+								}, {
+									"name": "UserGuidId",
+									"type": "uniqueidentifier",
+									"maxLength": 16,
+									"precision": 0,
+									"isNullable": false
+								}, {
+									"name": "Operation",
+									"type": "char",
+									"maxLength": 1,
+									"precision": 0,
+									"isNullable": false
+								}, {
+									"name": "AdminUserGuidId",
+									"type": "uniqueidentifier",
+									"maxLength": 16,
+									"precision": 0,
+									"isNullable": true
+								}, {
+									"name": "SubmissionDate",
+									"type": "datetime",
+									"maxLength": 8,
+									"precision": 23,
+									"isNullable": true
+								}
+							],
+							"fromSourceSystem": true
+						},
+						"roles": [{
+								"role": "Contributor",
+								"members": [{
+										"objectId": "00000000-0000-0000-0000-000000000201"
+									}
+								]
+							}
+						],
+						"effectiveRights": [
+							"Read",
+							"Delete",
+							"ViewRoles",
+							"Update"
+						]
+					},
+					"previews": [{
+							"id": "https://ded8da95-eaff-4085-9417-04177825bb00-catalog.api.datacatalog.azure.com/catalogs/catalog/views/tables/a1f8197f-87d5-488e-a813-6bda44089e07/previews/Microsoft",
+							"type": "Microsoft.DataSource.Preview.1",
+							"timestamp": "2018-01-10T21:31:27.0754196Z",
+							"properties": {
+								"fromSourceSystem": true,
+								"key": "Microsoft"
+							},
+							"roles": [{
+									"role": "Contributor",
+									"members": [{
+											"objectId": "00000000-0000-0000-0000-000000000201"
+										}
+									]
+								}
+							],
+							"effectiveRights": [
+								"Read",
+								"Delete",
+								"ViewRoles",
+								"Update"
+							]
+						}
+					],
+					"tableDataProfiles": [{
+							"id": "https://ded8da95-eaff-4085-9417-04177825bb00-catalog.api.datacatalog.azure.com/catalogs/catalog/views/tables/a1f8197f-87d5-488e-a813-6bda44089e07/tableDataProfiles/Microsoft",
+							"type": "Microsoft.DataSource.TableDataProfile.1",
+							"timestamp": "2018-01-10T21:31:27.0754196Z",
+							"properties": {
+								"numberOfRows": 35,
+								"size": 8192,
+								"schemaModifiedTime": "2017-09-19T04:26:52.253",
+								"fromSourceSystem": true,
+								"key": "Microsoft"
+							},
+							"roles": [{
+									"role": "Contributor",
+									"members": [{
+											"objectId": "00000000-0000-0000-0000-000000000201"
+										}
+									]
+								}
+							],
+							"effectiveRights": [
+								"Read",
+								"Delete",
+								"ViewRoles",
+								"Update"
+							]
+						}
+					]
+				},
+				"roles": [{
+						"role": "Contributor",
+						"members": [{
+								"objectId": "00000000-0000-0000-0000-000000000201"
+							}
+						]
+					}
+				],
+				"effectiveRights": [
+					"Read",
+					"Delete",
+					"ChangeOwnership",
+					"ChangeVisibility",
+					"ViewPermissions",
+					"ViewRoles",
+					"Move",
+					"Update",
+					"TakeOwnership"
+				]
+			},
+			"hitProperties": []
+		}, {
+			"content": {
+				"id": "https://ded8da95-eaff-4085-9417-04177825bb00-catalog.api.datacatalog.azure.com/catalogs/catalog/views/containers/a932ba39-0295-48db-93ee-a4ee3d281b99",
+				"type": "Microsoft.DataSource.Container.1",
+				"timestamp": "2018-01-10T21:27:50.8996872Z",
+				"properties": {
+					"name": "entitlement",
+					"dsl": {
+						"address": {
+							"server": "genentitlements-dev.database.windows.net",
+							"database": "entitlement"
+						},
+						"protocol": "tds",
+						"authentication": "protocol"
+					},
+					"dataSource": {
+						"sourceType": "SQL Server",
+						"objectType": "Database"
+					},
+					"lastRegisteredBy": {
+						"objectId": "c8717d13-2556-460a-94a7-a95eedace5f0",
+						"upn": "pmouat@spikesco.com",
+						"firstName": "Paulo",
+						"lastName": "Mouat"
+					},
+					"fromSourceSystem": true
+				},
+				"annotations": {
+					"experts": [{
+							"id": "https://ded8da95-eaff-4085-9417-04177825bb00-catalog.api.datacatalog.azure.com/catalogs/catalog/views/containers/a932ba39-0295-48db-93ee-a4ee3d281b99/experts/c8717d132556460a94a7a95eedace5f0--c8717d132556460a94a7a95eedace5f0",
+							"type": "Microsoft.Expert.1",
+							"timestamp": "2018-01-10T21:27:50.8996872Z",
+							"properties": {
+								"expert": {
+									"objectId": "c8717d13-2556-460a-94a7-a95eedace5f0",
+									"upn": "pmouat@spikesco.com"
+								},
+								"fromSourceSystem": false,
+								"key": "c8717d132556460a94a7a95eedace5f0--c8717d132556460a94a7a95eedace5f0"
+							},
+							"roles": [{
+									"role": "Contributor",
+									"members": [{
+											"objectId": "c8717d13-2556-460a-94a7-a95eedace5f0"
+										}
+									]
+								}
+							],
+							"effectiveRights": [
+								"Read",
+								"Delete",
+								"ViewRoles",
+								"Update"
+							]
+						}
+					]
+				},
+				"roles": [{
+						"role": "Contributor",
+						"members": [{
+								"objectId": "00000000-0000-0000-0000-000000000201"
+							}
+						]
+					}
+				],
+				"effectiveRights": [
+					"Read",
+					"Delete",
+					"ChangeOwnership",
+					"ChangeVisibility",
+					"ViewPermissions",
+					"ViewRoles",
+					"Move",
+					"Update",
+					"TakeOwnership"
+				]
+			},
+			"hitProperties": []
+		}, {
+			"content": {
+				"id": "https://ded8da95-eaff-4085-9417-04177825bb00-catalog.api.datacatalog.azure.com/catalogs/catalog/views/tables/ad2453e5-786b-478c-b0dd-c2d2eabb4f9c",
+				"type": "Microsoft.DataSource.Table.1",
+				"timestamp": "2018-01-10T21:31:27.5516102Z",
+				"properties": {
+					"name": "BatchSubmitedUserAudit",
+					"dsl": {
+						"address": {
+							"server": "genpowerrtdbtest.eastus2.cloudapp.azure.com,1433",
+							"database": "DataLanding_DEV",
+							"schema": "entitlement",
+							"object": "BatchSubmitedUserAudit"
+						},
+						"protocol": "tds",
+						"authentication": "windows"
+					},
+					"dataSource": {
+						"sourceType": "SQL Server",
+						"objectType": "Table"
+					},
+					"lastRegisteredBy": {
+						"objectId": "c8717d13-2556-460a-94a7-a95eedace5f0",
+						"upn": "pmouat@spikesco.com",
+						"firstName": "Paulo",
+						"lastName": "Mouat"
+					},
+					"fromSourceSystem": true,
+					"containerId": "https://ded8da95-eaff-4085-9417-04177825bb00-catalog.api.datacatalog.azure.com/catalogs/catalog/views/containers/bfa11552-6ac0-46d9-8bac-06eac62e4c2d"
+				},
+				"annotations": {
+					"columnsDataProfiles": [{
+							"id": "https://ded8da95-eaff-4085-9417-04177825bb00-catalog.api.datacatalog.azure.com/catalogs/catalog/views/tables/ad2453e5-786b-478c-b0dd-c2d2eabb4f9c/columnsDataProfiles/Microsoft",
+							"type": "Microsoft.DataSource.ColumnsDataProfile.1",
+							"timestamp": "2018-01-10T21:31:27.5516102Z",
+							"properties": {
+								"fromSourceSystem": true,
+								"key": "Microsoft"
+							},
+							"roles": [{
+									"role": "Contributor",
+									"members": [{
+											"objectId": "00000000-0000-0000-0000-000000000201"
+										}
+									]
+								}
+							],
+							"effectiveRights": [
+								"Read",
+								"Delete",
+								"ViewRoles",
+								"Update"
+							]
+						}
+					],
+					"schema": {
+						"id": "https://ded8da95-eaff-4085-9417-04177825bb00-catalog.api.datacatalog.azure.com/catalogs/catalog/views/tables/ad2453e5-786b-478c-b0dd-c2d2eabb4f9c/schema",
+						"type": "Microsoft.DataSource.Schema.1",
+						"timestamp": "2018-01-10T21:31:27.5516102Z",
+						"properties": {
+							"columns": [{
+									"name": "BatchSubmissionId",
+									"type": "int",
+									"maxLength": 4,
+									"precision": 10,
+									"isNullable": false
+								}, {
+									"name": "UserGuidId",
+									"type": "uniqueidentifier",
+									"maxLength": 16,
+									"precision": 0,
+									"isNullable": false
+								}, {
+									"name": "Operation",
+									"type": "char",
+									"maxLength": 1,
+									"precision": 0,
+									"isNullable": false
+								}, {
+									"name": "AdminUserGuidId",
+									"type": "uniqueidentifier",
+									"maxLength": 16,
+									"precision": 0,
+									"isNullable": true
+								}
+							],
+							"fromSourceSystem": true
+						},
+						"roles": [{
+								"role": "Contributor",
+								"members": [{
+										"objectId": "00000000-0000-0000-0000-000000000201"
+									}
+								]
+							}
+						],
+						"effectiveRights": [
+							"Read",
+							"Delete",
+							"ViewRoles",
+							"Update"
+						]
+					},
+					"previews": [{
+							"id": "https://ded8da95-eaff-4085-9417-04177825bb00-catalog.api.datacatalog.azure.com/catalogs/catalog/views/tables/ad2453e5-786b-478c-b0dd-c2d2eabb4f9c/previews/Microsoft",
+							"type": "Microsoft.DataSource.Preview.1",
+							"timestamp": "2018-01-10T21:31:27.5516102Z",
+							"properties": {
+								"fromSourceSystem": true,
+								"key": "Microsoft"
+							},
+							"roles": [{
+									"role": "Contributor",
+									"members": [{
+											"objectId": "00000000-0000-0000-0000-000000000201"
+										}
+									]
+								}
+							],
+							"effectiveRights": [
+								"Read",
+								"Delete",
+								"ViewRoles",
+								"Update"
+							]
+						}
+					],
+					"tableDataProfiles": [{
+							"id": "https://ded8da95-eaff-4085-9417-04177825bb00-catalog.api.datacatalog.azure.com/catalogs/catalog/views/tables/ad2453e5-786b-478c-b0dd-c2d2eabb4f9c/tableDataProfiles/Microsoft",
+							"type": "Microsoft.DataSource.TableDataProfile.1",
+							"timestamp": "2018-01-10T21:31:27.5516102Z",
+							"properties": {
+								"numberOfRows": 15871,
+								"size": 745472,
+								"schemaModifiedTime": "2017-09-13T05:01:50.357",
+								"fromSourceSystem": true,
+								"key": "Microsoft"
+							},
+							"roles": [{
+									"role": "Contributor",
+									"members": [{
+											"objectId": "00000000-0000-0000-0000-000000000201"
+										}
+									]
+								}
+							],
+							"effectiveRights": [
+								"Read",
+								"Delete",
+								"ViewRoles",
+								"Update"
+							]
+						}
+					]
+				},
+				"roles": [{
+						"role": "Contributor",
+						"members": [{
+								"objectId": "00000000-0000-0000-0000-000000000201"
+							}
+						]
+					}
+				],
+				"effectiveRights": [
+					"Read",
+					"Delete",
+					"ChangeOwnership",
+					"ChangeVisibility",
+					"ViewPermissions",
+					"ViewRoles",
+					"Move",
+					"Update",
+					"TakeOwnership"
+				]
+			},
+			"hitProperties": []
+		}, {
+			"content": {
+				"id": "https://ded8da95-eaff-4085-9417-04177825bb00-catalog.api.datacatalog.azure.com/catalogs/catalog/views/tables/b1cb4107-8859-4d4a-99cc-1589df93eab5",
+				"type": "Microsoft.DataSource.Table.1",
+				"timestamp": "2018-01-10T21:27:55.584561Z",
+				"properties": {
+					"name": "Users",
+					"dsl": {
+						"address": {
+							"server": "genentitlements-dev.database.windows.net",
+							"database": "entitlement",
+							"schema": "dbo",
+							"object": "Users"
+						},
+						"protocol": "tds",
+						"authentication": "protocol"
+					},
+					"dataSource": {
+						"sourceType": "SQL Server",
+						"objectType": "Table"
+					},
+					"lastRegisteredBy": {
+						"objectId": "c8717d13-2556-460a-94a7-a95eedace5f0",
+						"upn": "pmouat@spikesco.com",
+						"firstName": "Paulo",
+						"lastName": "Mouat"
+					},
+					"fromSourceSystem": true,
+					"containerId": "https://ded8da95-eaff-4085-9417-04177825bb00-catalog.api.datacatalog.azure.com/catalogs/catalog/views/containers/a932ba39-0295-48db-93ee-a4ee3d281b99"
+				},
+				"annotations": {
+					"columnsDataProfiles": [{
+							"id": "https://ded8da95-eaff-4085-9417-04177825bb00-catalog.api.datacatalog.azure.com/catalogs/catalog/views/tables/b1cb4107-8859-4d4a-99cc-1589df93eab5/columnsDataProfiles/Microsoft",
+							"type": "Microsoft.DataSource.ColumnsDataProfile.1",
+							"timestamp": "2018-01-10T21:27:55.584561Z",
+							"properties": {
+								"fromSourceSystem": true,
+								"key": "Microsoft"
+							},
+							"roles": [{
+									"role": "Contributor",
+									"members": [{
+											"objectId": "00000000-0000-0000-0000-000000000201"
+										}
+									]
+								}
+							],
+							"effectiveRights": [
+								"Read",
+								"Delete",
+								"ViewRoles",
+								"Update"
+							]
+						}
+					],
+					"schema": {
+						"id": "https://ded8da95-eaff-4085-9417-04177825bb00-catalog.api.datacatalog.azure.com/catalogs/catalog/views/tables/b1cb4107-8859-4d4a-99cc-1589df93eab5/schema",
+						"type": "Microsoft.DataSource.Schema.1",
+						"timestamp": "2018-01-10T21:27:55.584561Z",
+						"properties": {
+							"columns": [{
+									"name": "Id",
+									"type": "int",
+									"maxLength": 4,
+									"precision": 10,
+									"isNullable": false
+								}, {
+									"name": "ObjectId",
+									"type": "nvarchar",
+									"maxLength": 510,
+									"precision": 0,
+									"isNullable": true
+								}, {
+									"name": "Name",
+									"type": "nvarchar",
+									"maxLength": 510,
+									"precision": 0,
+									"isNullable": false
+								}, {
+									"name": "Email",
+									"type": "nvarchar",
+									"maxLength": 510,
+									"precision": 0,
+									"isNullable": false
+								}, {
+									"name": "IsDeleted",
+									"type": "bit",
+									"maxLength": 1,
+									"precision": 1,
+									"isNullable": false
+								}, {
+									"name": "SalesforceId",
+									"type": "nvarchar",
+									"maxLength": 36,
+									"precision": 0,
+									"isNullable": true
+								}, {
+									"name": "SpikeCoId",
+									"type": "int",
+									"maxLength": 4,
+									"precision": 10,
+									"isNullable": true
+								}, {
+									"name": "CompanyId",
+									"type": "int",
+									"maxLength": 4,
+									"precision": 10,
+									"isNullable": true
+								}, {
+									"name": "FirstName",
+									"type": "nvarchar",
+									"maxLength": 400,
+									"precision": 0,
+									"isNullable": true
+								}, {
+									"name": "LastName",
+									"type": "nvarchar",
+									"maxLength": 400,
+									"precision": 0,
+									"isNullable": true
+								}
+							],
+							"fromSourceSystem": true
+						},
+						"roles": [{
+								"role": "Contributor",
+								"members": [{
+										"objectId": "00000000-0000-0000-0000-000000000201"
+									}
+								]
+							}
+						],
+						"effectiveRights": [
+							"Read",
+							"Delete",
+							"ViewRoles",
+							"Update"
+						]
+					},
+					"previews": [{
+							"id": "https://ded8da95-eaff-4085-9417-04177825bb00-catalog.api.datacatalog.azure.com/catalogs/catalog/views/tables/b1cb4107-8859-4d4a-99cc-1589df93eab5/previews/Microsoft",
+							"type": "Microsoft.DataSource.Preview.1",
+							"timestamp": "2018-01-10T21:27:55.584561Z",
+							"properties": {
+								"fromSourceSystem": true,
+								"key": "Microsoft"
+							},
+							"roles": [{
+									"role": "Contributor",
+									"members": [{
+											"objectId": "00000000-0000-0000-0000-000000000201"
+										}
+									]
+								}
+							],
+							"effectiveRights": [
+								"Read",
+								"Delete",
+								"ViewRoles",
+								"Update"
+							]
+						}
+					],
+					"tableDataProfiles": [{
+							"id": "https://ded8da95-eaff-4085-9417-04177825bb00-catalog.api.datacatalog.azure.com/catalogs/catalog/views/tables/b1cb4107-8859-4d4a-99cc-1589df93eab5/tableDataProfiles/Microsoft",
+							"type": "Microsoft.DataSource.TableDataProfile.1",
+							"timestamp": "2018-01-10T21:27:55.584561Z",
+							"properties": {
+								"numberOfRows": 38,
+								"size": 1343488,
+								"schemaModifiedTime": "2017-10-25T15:32:58.7",
+								"fromSourceSystem": true,
+								"key": "Microsoft"
+							},
+							"roles": [{
+									"role": "Contributor",
+									"members": [{
+											"objectId": "00000000-0000-0000-0000-000000000201"
+										}
+									]
+								}
+							],
+							"effectiveRights": [
+								"Read",
+								"Delete",
+								"ViewRoles",
+								"Update"
+							]
+						}
+					],
+					"experts": [{
+							"id": "https://ded8da95-eaff-4085-9417-04177825bb00-catalog.api.datacatalog.azure.com/catalogs/catalog/views/tables/b1cb4107-8859-4d4a-99cc-1589df93eab5/experts/c8717d132556460a94a7a95eedace5f0--c8717d132556460a94a7a95eedace5f0",
+							"type": "Microsoft.Expert.1",
+							"timestamp": "2018-01-10T21:27:55.584561Z",
+							"properties": {
+								"expert": {
+									"objectId": "c8717d13-2556-460a-94a7-a95eedace5f0",
+									"upn": "pmouat@spikesco.com"
+								},
+								"fromSourceSystem": false,
+								"key": "c8717d132556460a94a7a95eedace5f0--c8717d132556460a94a7a95eedace5f0"
+							},
+							"roles": [{
+									"role": "Contributor",
+									"members": [{
+											"objectId": "c8717d13-2556-460a-94a7-a95eedace5f0"
+										}
+									]
+								}
+							],
+							"effectiveRights": [
+								"Read",
+								"Delete",
+								"ViewRoles",
+								"Update"
+							]
+						}
+					]
+				},
+				"roles": [{
+						"role": "Contributor",
+						"members": [{
+								"objectId": "00000000-0000-0000-0000-000000000201"
+							}
+						]
+					}
+				],
+				"effectiveRights": [
+					"Read",
+					"Delete",
+					"ChangeOwnership",
+					"ChangeVisibility",
+					"ViewPermissions",
+					"ViewRoles",
+					"Move",
+					"Update",
+					"TakeOwnership"
+				]
+			},
+			"hitProperties": []
+		}, {
+			"content": {
+				"id": "https://ded8da95-eaff-4085-9417-04177825bb00-catalog.api.datacatalog.azure.com/catalogs/catalog/views/tables/b8094e50-dfe2-48b0-845c-9f1120a94aad",
+				"type": "Microsoft.DataSource.Table.1",
+				"timestamp": "2018-01-10T21:27:53.8880095Z",
+				"properties": {
+					"name": "SkusDeltaModified",
+					"dsl": {
+						"address": {
+							"server": "genentitlements-dev.database.windows.net",
+							"database": "entitlement",
+							"schema": "dbo",
+							"object": "SkusDeltaModified"
+						},
+						"protocol": "tds",
+						"authentication": "protocol"
+					},
+					"dataSource": {
+						"sourceType": "SQL Server",
+						"objectType": "View"
+					},
+					"lastRegisteredBy": {
+						"objectId": "c8717d13-2556-460a-94a7-a95eedace5f0",
+						"upn": "pmouat@spikesco.com",
+						"firstName": "Paulo",
+						"lastName": "Mouat"
+					},
+					"fromSourceSystem": true,
+					"containerId": "https://ded8da95-eaff-4085-9417-04177825bb00-catalog.api.datacatalog.azure.com/catalogs/catalog/views/containers/a932ba39-0295-48db-93ee-a4ee3d281b99"
+				},
+				"annotations": {
+					"columnsDataProfiles": [{
+							"id": "https://ded8da95-eaff-4085-9417-04177825bb00-catalog.api.datacatalog.azure.com/catalogs/catalog/views/tables/b8094e50-dfe2-48b0-845c-9f1120a94aad/columnsDataProfiles/Microsoft",
+							"type": "Microsoft.DataSource.ColumnsDataProfile.1",
+							"timestamp": "2018-01-10T21:27:53.8880095Z",
+							"properties": {
+								"fromSourceSystem": true,
+								"key": "Microsoft"
+							},
+							"roles": [{
+									"role": "Contributor",
+									"members": [{
+											"objectId": "00000000-0000-0000-0000-000000000201"
+										}
+									]
+								}
+							],
+							"effectiveRights": [
+								"Read",
+								"Delete",
+								"ViewRoles",
+								"Update"
+							]
+						}
+					],
+					"schema": {
+						"id": "https://ded8da95-eaff-4085-9417-04177825bb00-catalog.api.datacatalog.azure.com/catalogs/catalog/views/tables/b8094e50-dfe2-48b0-845c-9f1120a94aad/schema",
+						"type": "Microsoft.DataSource.Schema.1",
+						"timestamp": "2018-01-10T21:27:53.8880095Z",
+						"properties": {
+							"columns": [{
+									"name": "Id",
+									"type": "int",
+									"maxLength": 4,
+									"precision": 10,
+									"isNullable": false
+								}, {
+									"name": "Name",
+									"type": "nvarchar",
+									"maxLength": 1000,
+									"precision": 0,
+									"isNullable": true
+								}, {
+									"name": "Number",
+									"type": "nvarchar",
+									"maxLength": 1000,
+									"precision": 0,
+									"isNullable": true
+								}, {
+									"name": "Status",
+									"type": "nvarchar",
+									"maxLength": 100,
+									"precision": 0,
+									"isNullable": true
+								}, {
+									"name": "SalesforceId",
+									"type": "nvarchar",
+									"maxLength": 36,
+									"precision": 0,
+									"isNullable": true
+								}, {
+									"name": "IsDeleted",
+									"type": "bit",
+									"maxLength": 1,
+									"precision": 1,
+									"isNullable": false
+								}
+							],
+							"fromSourceSystem": true
+						},
+						"roles": [{
+								"role": "Contributor",
+								"members": [{
+										"objectId": "00000000-0000-0000-0000-000000000201"
+									}
+								]
+							}
+						],
+						"effectiveRights": [
+							"Read",
+							"Delete",
+							"ViewRoles",
+							"Update"
+						]
+					},
+					"previews": [{
+							"id": "https://ded8da95-eaff-4085-9417-04177825bb00-catalog.api.datacatalog.azure.com/catalogs/catalog/views/tables/b8094e50-dfe2-48b0-845c-9f1120a94aad/previews/Microsoft",
+							"type": "Microsoft.DataSource.Preview.1",
+							"timestamp": "2018-01-10T21:27:53.8880095Z",
+							"properties": {
+								"fromSourceSystem": true,
+								"key": "Microsoft"
+							},
+							"roles": [{
+									"role": "Contributor",
+									"members": [{
+											"objectId": "00000000-0000-0000-0000-000000000201"
+										}
+									]
+								}
+							],
+							"effectiveRights": [
+								"Read",
+								"Delete",
+								"ViewRoles",
+								"Update"
+							]
+						}
+					],
+					"tableDataProfiles": [{
+							"id": "https://ded8da95-eaff-4085-9417-04177825bb00-catalog.api.datacatalog.azure.com/catalogs/catalog/views/tables/b8094e50-dfe2-48b0-845c-9f1120a94aad/tableDataProfiles/Microsoft",
+							"type": "Microsoft.DataSource.TableDataProfile.1",
+							"timestamp": "2018-01-10T21:27:53.8880095Z",
+							"properties": {
+								"numberOfRows": 99,
+								"schemaModifiedTime": "2017-10-25T15:27:24.7",
+								"fromSourceSystem": true,
+								"key": "Microsoft"
+							},
+							"roles": [{
+									"role": "Contributor",
+									"members": [{
+											"objectId": "00000000-0000-0000-0000-000000000201"
+										}
+									]
+								}
+							],
+							"effectiveRights": [
+								"Read",
+								"Delete",
+								"ViewRoles",
+								"Update"
+							]
+						}
+					],
+					"experts": [{
+							"id": "https://ded8da95-eaff-4085-9417-04177825bb00-catalog.api.datacatalog.azure.com/catalogs/catalog/views/tables/b8094e50-dfe2-48b0-845c-9f1120a94aad/experts/c8717d132556460a94a7a95eedace5f0--c8717d132556460a94a7a95eedace5f0",
+							"type": "Microsoft.Expert.1",
+							"timestamp": "2018-01-10T21:27:53.8880095Z",
+							"properties": {
+								"expert": {
+									"objectId": "c8717d13-2556-460a-94a7-a95eedace5f0",
+									"upn": "pmouat@spikesco.com"
+								},
+								"fromSourceSystem": false,
+								"key": "c8717d132556460a94a7a95eedace5f0--c8717d132556460a94a7a95eedace5f0"
+							},
+							"roles": [{
+									"role": "Contributor",
+									"members": [{
+											"objectId": "c8717d13-2556-460a-94a7-a95eedace5f0"
+										}
+									]
+								}
+							],
+							"effectiveRights": [
+								"Read",
+								"Delete",
+								"ViewRoles",
+								"Update"
+							]
+						}
+					]
+				},
+				"roles": [{
+						"role": "Contributor",
+						"members": [{
+								"objectId": "00000000-0000-0000-0000-000000000201"
+							}
+						]
+					}
+				],
+				"effectiveRights": [
+					"Read",
+					"Delete",
+					"ChangeOwnership",
+					"ChangeVisibility",
+					"ViewPermissions",
+					"ViewRoles",
+					"Move",
+					"Update",
+					"TakeOwnership"
+				]
+			},
+			"hitProperties": []
+		}, {
+			"content": {
+				"id": "https://ded8da95-eaff-4085-9417-04177825bb00-catalog.api.datacatalog.azure.com/catalogs/catalog/views/tables/bccbe680-99d1-465b-acdc-b0485217d504",
+				"type": "Microsoft.DataSource.Table.1",
+				"timestamp": "2018-01-10T21:27:55.8684117Z",
+				"properties": {
+					"name": "Companies",
+					"dsl": {
+						"address": {
+							"server": "genentitlements-dev.database.windows.net",
+							"database": "entitlement",
+							"schema": "dbo",
+							"object": "Companies"
+						},
+						"protocol": "tds",
+						"authentication": "protocol"
+					},
+					"dataSource": {
+						"sourceType": "SQL Server",
+						"objectType": "Table"
+					},
+					"lastRegisteredBy": {
+						"objectId": "c8717d13-2556-460a-94a7-a95eedace5f0",
+						"upn": "pmouat@spikesco.com",
+						"firstName": "Paulo",
+						"lastName": "Mouat"
+					},
+					"fromSourceSystem": true,
+					"containerId": "https://ded8da95-eaff-4085-9417-04177825bb00-catalog.api.datacatalog.azure.com/catalogs/catalog/views/containers/a932ba39-0295-48db-93ee-a4ee3d281b99"
+				},
+				"annotations": {
+					"columnsDataProfiles": [{
+							"id": "https://ded8da95-eaff-4085-9417-04177825bb00-catalog.api.datacatalog.azure.com/catalogs/catalog/views/tables/bccbe680-99d1-465b-acdc-b0485217d504/columnsDataProfiles/Microsoft",
+							"type": "Microsoft.DataSource.ColumnsDataProfile.1",
+							"timestamp": "2018-01-10T21:27:55.8684117Z",
+							"properties": {
+								"fromSourceSystem": true,
+								"key": "Microsoft"
+							},
+							"roles": [{
+									"role": "Contributor",
+									"members": [{
+											"objectId": "00000000-0000-0000-0000-000000000201"
+										}
+									]
+								}
+							],
+							"effectiveRights": [
+								"Read",
+								"Delete",
+								"ViewRoles",
+								"Update"
+							]
+						}
+					],
+					"schema": {
+						"id": "https://ded8da95-eaff-4085-9417-04177825bb00-catalog.api.datacatalog.azure.com/catalogs/catalog/views/tables/bccbe680-99d1-465b-acdc-b0485217d504/schema",
+						"type": "Microsoft.DataSource.Schema.1",
+						"timestamp": "2018-01-10T21:27:55.8684117Z",
+						"properties": {
+							"columns": [{
+									"name": "Id",
+									"type": "int",
+									"maxLength": 4,
+									"precision": 10,
+									"isNullable": false
+								}, {
+									"name": "SalesforceId",
+									"type": "nvarchar",
+									"maxLength": 36,
+									"precision": 0,
+									"isNullable": true
+								}, {
+									"name": "Name",
+									"type": "nvarchar",
+									"maxLength": 1000,
+									"precision": 0,
+									"isNullable": true
+								}, {
+									"name": "IsDeleted",
+									"type": "bit",
+									"maxLength": 1,
+									"precision": 1,
+									"isNullable": false
+								}
+							],
+							"fromSourceSystem": true
+						},
+						"roles": [{
+								"role": "Contributor",
+								"members": [{
+										"objectId": "00000000-0000-0000-0000-000000000201"
+									}
+								]
+							}
+						],
+						"effectiveRights": [
+							"Read",
+							"Delete",
+							"ViewRoles",
+							"Update"
+						]
+					},
+					"previews": [{
+							"id": "https://ded8da95-eaff-4085-9417-04177825bb00-catalog.api.datacatalog.azure.com/catalogs/catalog/views/tables/bccbe680-99d1-465b-acdc-b0485217d504/previews/Microsoft",
+							"type": "Microsoft.DataSource.Preview.1",
+							"timestamp": "2018-01-10T21:27:55.8684117Z",
+							"properties": {
+								"fromSourceSystem": true,
+								"key": "Microsoft"
+							},
+							"roles": [{
+									"role": "Contributor",
+									"members": [{
+											"objectId": "00000000-0000-0000-0000-000000000201"
+										}
+									]
+								}
+							],
+							"effectiveRights": [
+								"Read",
+								"Delete",
+								"ViewRoles",
+								"Update"
+							]
+						}
+					],
+					"tableDataProfiles": [{
+							"id": "https://ded8da95-eaff-4085-9417-04177825bb00-catalog.api.datacatalog.azure.com/catalogs/catalog/views/tables/bccbe680-99d1-465b-acdc-b0485217d504/tableDataProfiles/Microsoft",
+							"type": "Microsoft.DataSource.TableDataProfile.1",
+							"timestamp": "2018-01-10T21:27:55.8684117Z",
+							"properties": {
+								"numberOfRows": 6,
+								"size": 409600,
+								"schemaModifiedTime": "2017-10-25T15:32:58.39",
+								"fromSourceSystem": true,
+								"key": "Microsoft"
+							},
+							"roles": [{
+									"role": "Contributor",
+									"members": [{
+											"objectId": "00000000-0000-0000-0000-000000000201"
+										}
+									]
+								}
+							],
+							"effectiveRights": [
+								"Read",
+								"Delete",
+								"ViewRoles",
+								"Update"
+							]
+						}
+					],
+					"experts": [{
+							"id": "https://ded8da95-eaff-4085-9417-04177825bb00-catalog.api.datacatalog.azure.com/catalogs/catalog/views/tables/bccbe680-99d1-465b-acdc-b0485217d504/experts/c8717d132556460a94a7a95eedace5f0--c8717d132556460a94a7a95eedace5f0",
+							"type": "Microsoft.Expert.1",
+							"timestamp": "2018-01-10T21:27:55.8684117Z",
+							"properties": {
+								"expert": {
+									"objectId": "c8717d13-2556-460a-94a7-a95eedace5f0",
+									"upn": "pmouat@spikesco.com"
+								},
+								"fromSourceSystem": false,
+								"key": "c8717d132556460a94a7a95eedace5f0--c8717d132556460a94a7a95eedace5f0"
+							},
+							"roles": [{
+									"role": "Contributor",
+									"members": [{
+											"objectId": "c8717d13-2556-460a-94a7-a95eedace5f0"
+										}
+									]
+								}
+							],
+							"effectiveRights": [
+								"Read",
+								"Delete",
+								"ViewRoles",
+								"Update"
+							]
+						}
+					]
+				},
+				"roles": [{
+						"role": "Contributor",
+						"members": [{
+								"objectId": "00000000-0000-0000-0000-000000000201"
+							}
+						]
+					}
+				],
+				"effectiveRights": [
+					"Read",
+					"Delete",
+					"ChangeOwnership",
+					"ChangeVisibility",
+					"ViewPermissions",
+					"ViewRoles",
+					"Move",
+					"Update",
+					"TakeOwnership"
+				]
+			},
+			"hitProperties": []
+		}, {
+			"content": {
+				"id": "https://ded8da95-eaff-4085-9417-04177825bb00-catalog.api.datacatalog.azure.com/catalogs/catalog/views/containers/bfa11552-6ac0-46d9-8bac-06eac62e4c2d",
+				"type": "Microsoft.DataSource.Container.1",
+				"timestamp": "2018-01-10T21:31:24.8931631Z",
+				"properties": {
+					"name": "DataLanding_DEV",
+					"dsl": {
+						"address": {
+							"server": "genpowerrtdbtest.eastus2.cloudapp.azure.com,1433",
+							"database": "DataLanding_DEV"
+						},
+						"protocol": "tds",
+						"authentication": "windows"
+					},
+					"dataSource": {
+						"sourceType": "SQL Server",
+						"objectType": "Database"
+					},
+					"lastRegisteredBy": {
+						"objectId": "c8717d13-2556-460a-94a7-a95eedace5f0",
+						"upn": "pmouat@spikesco.com",
+						"firstName": "Paulo",
+						"lastName": "Mouat"
+					},
+					"fromSourceSystem": true
+				},
+				"roles": [{
+						"role": "Contributor",
+						"members": [{
+								"objectId": "00000000-0000-0000-0000-000000000201"
+							}
+						]
+					}
+				],
+				"effectiveRights": [
+					"Read",
+					"Delete",
+					"ChangeOwnership",
+					"ChangeVisibility",
+					"ViewPermissions",
+					"ViewRoles",
+					"Move",
+					"Update",
+					"TakeOwnership"
+				]
+			},
+			"hitProperties": []
+		}, {
+			"content": {
+				"id": "https://ded8da95-eaff-4085-9417-04177825bb00-catalog.api.datacatalog.azure.com/catalogs/catalog/views/tables/eadf9e2b-c584-4b84-b8be-eb2ad764ba63",
+				"type": "Microsoft.DataSource.Table.1",
+				"timestamp": "2018-01-10T21:27:55.2952821Z",
+				"properties": {
+					"name": "Subscriptions",
+					"dsl": {
+						"address": {
+							"server": "genentitlements-dev.database.windows.net",
+							"database": "entitlement",
+							"schema": "dbo",
+							"object": "Subscriptions"
+						},
+						"protocol": "tds",
+						"authentication": "protocol"
+					},
+					"dataSource": {
+						"sourceType": "SQL Server",
+						"objectType": "Table"
+					},
+					"lastRegisteredBy": {
+						"objectId": "c8717d13-2556-460a-94a7-a95eedace5f0",
+						"upn": "pmouat@spikesco.com",
+						"firstName": "Paulo",
+						"lastName": "Mouat"
+					},
+					"fromSourceSystem": true,
+					"containerId": "https://ded8da95-eaff-4085-9417-04177825bb00-catalog.api.datacatalog.azure.com/catalogs/catalog/views/containers/a932ba39-0295-48db-93ee-a4ee3d281b99"
+				},
+				"annotations": {
+					"columnsDataProfiles": [{
+							"id": "https://ded8da95-eaff-4085-9417-04177825bb00-catalog.api.datacatalog.azure.com/catalogs/catalog/views/tables/eadf9e2b-c584-4b84-b8be-eb2ad764ba63/columnsDataProfiles/Microsoft",
+							"type": "Microsoft.DataSource.ColumnsDataProfile.1",
+							"timestamp": "2018-01-10T21:27:55.2952821Z",
+							"properties": {
+								"fromSourceSystem": true,
+								"key": "Microsoft"
+							},
+							"roles": [{
+									"role": "Contributor",
+									"members": [{
+											"objectId": "00000000-0000-0000-0000-000000000201"
+										}
+									]
+								}
+							],
+							"effectiveRights": [
+								"Read",
+								"Delete",
+								"ViewRoles",
+								"Update"
+							]
+						}
+					],
+					"schema": {
+						"id": "https://ded8da95-eaff-4085-9417-04177825bb00-catalog.api.datacatalog.azure.com/catalogs/catalog/views/tables/eadf9e2b-c584-4b84-b8be-eb2ad764ba63/schema",
+						"type": "Microsoft.DataSource.Schema.1",
+						"timestamp": "2018-01-10T21:27:55.2952821Z",
+						"properties": {
+							"columns": [{
+									"name": "Id",
+									"type": "int",
+									"maxLength": 4,
+									"precision": 10,
+									"isNullable": false
+								}, {
+									"name": "SkuId",
+									"type": "int",
+									"maxLength": 4,
+									"precision": 10,
+									"isNullable": false
+								}, {
+									"name": "Name",
+									"type": "nvarchar",
+									"maxLength": 1000,
+									"precision": 0,
+									"isNullable": true
+								}, {
+									"name": "IsActive",
+									"type": "bit",
+									"maxLength": 1,
+									"precision": 1,
+									"isNullable": false
+								}, {
+									"name": "BeginDate",
+									"type": "datetime",
+									"maxLength": 8,
+									"precision": 23,
+									"isNullable": false
+								}, {
+									"name": "EndDate",
+									"type": "datetime",
+									"maxLength": 8,
+									"precision": 23,
+									"isNullable": false
+								}, {
+									"name": "HistoryBeginDate",
+									"type": "datetime",
+									"maxLength": 8,
+									"precision": 23,
+									"isNullable": false
+								}, {
+									"name": "HistoryEndDate",
+									"type": "datetime",
+									"maxLength": 8,
+									"precision": 23,
+									"isNullable": false
+								}, {
+									"name": "SalesforceId",
+									"type": "nvarchar",
+									"maxLength": 36,
+									"precision": 0,
+									"isNullable": true
+								}, {
+									"name": "UserId",
+									"type": "int",
+									"maxLength": 4,
+									"precision": 10,
+									"isNullable": false
+								}, {
+									"name": "IsTrial",
+									"type": "bit",
+									"maxLength": 1,
+									"precision": 1,
+									"isNullable": true
+								}
+							],
+							"fromSourceSystem": true
+						},
+						"roles": [{
+								"role": "Contributor",
+								"members": [{
+										"objectId": "00000000-0000-0000-0000-000000000201"
+									}
+								]
+							}
+						],
+						"effectiveRights": [
+							"Read",
+							"Delete",
+							"ViewRoles",
+							"Update"
+						]
+					},
+					"previews": [{
+							"id": "https://ded8da95-eaff-4085-9417-04177825bb00-catalog.api.datacatalog.azure.com/catalogs/catalog/views/tables/eadf9e2b-c584-4b84-b8be-eb2ad764ba63/previews/Microsoft",
+							"type": "Microsoft.DataSource.Preview.1",
+							"timestamp": "2018-01-10T21:27:55.2952821Z",
+							"properties": {
+								"fromSourceSystem": true,
+								"key": "Microsoft"
+							},
+							"roles": [{
+									"role": "Contributor",
+									"members": [{
+											"objectId": "00000000-0000-0000-0000-000000000201"
+										}
+									]
+								}
+							],
+							"effectiveRights": [
+								"Read",
+								"Delete",
+								"ViewRoles",
+								"Update"
+							]
+						}
+					],
+					"tableDataProfiles": [{
+							"id": "https://ded8da95-eaff-4085-9417-04177825bb00-catalog.api.datacatalog.azure.com/catalogs/catalog/views/tables/eadf9e2b-c584-4b84-b8be-eb2ad764ba63/tableDataProfiles/Microsoft",
+							"type": "Microsoft.DataSource.TableDataProfile.1",
+							"timestamp": "2018-01-10T21:27:55.2952821Z",
+							"properties": {
+								"numberOfRows": 91,
+								"size": 1458176,
+								"schemaModifiedTime": "2017-10-25T15:32:57.683",
+								"fromSourceSystem": true,
+								"key": "Microsoft"
+							},
+							"roles": [{
+									"role": "Contributor",
+									"members": [{
+											"objectId": "00000000-0000-0000-0000-000000000201"
+										}
+									]
+								}
+							],
+							"effectiveRights": [
+								"Read",
+								"Delete",
+								"ViewRoles",
+								"Update"
+							]
+						}
+					],
+					"experts": [{
+							"id": "https://ded8da95-eaff-4085-9417-04177825bb00-catalog.api.datacatalog.azure.com/catalogs/catalog/views/tables/eadf9e2b-c584-4b84-b8be-eb2ad764ba63/experts/c8717d132556460a94a7a95eedace5f0--c8717d132556460a94a7a95eedace5f0",
+							"type": "Microsoft.Expert.1",
+							"timestamp": "2018-01-10T21:27:55.2952821Z",
+							"properties": {
+								"expert": {
+									"objectId": "c8717d13-2556-460a-94a7-a95eedace5f0",
+									"upn": "pmouat@spikesco.com"
+								},
+								"fromSourceSystem": false,
+								"key": "c8717d132556460a94a7a95eedace5f0--c8717d132556460a94a7a95eedace5f0"
+							},
+							"roles": [{
+									"role": "Contributor",
+									"members": [{
+											"objectId": "c8717d13-2556-460a-94a7-a95eedace5f0"
+										}
+									]
+								}
+							],
+							"effectiveRights": [
+								"Read",
+								"Delete",
+								"ViewRoles",
+								"Update"
+							]
+						}
+					]
+				},
+				"roles": [{
+						"role": "Contributor",
+						"members": [{
+								"objectId": "00000000-0000-0000-0000-000000000201"
+							}
+						]
+					}
+				],
+				"effectiveRights": [
+					"Read",
+					"Delete",
+					"ChangeOwnership",
+					"ChangeVisibility",
+					"ViewPermissions",
+					"ViewRoles",
+					"Move",
+					"Update",
+					"TakeOwnership"
+				]
+			},
+			"hitProperties": []
+		}, {
+			"content": {
+				"id": "https://ded8da95-eaff-4085-9417-04177825bb00-catalog.api.datacatalog.azure.com/catalogs/catalog/views/tables/fa1c03f9-8e4e-4a67-85e4-6934c63a99e2",
+				"type": "Microsoft.DataSource.Table.1",
+				"timestamp": "2018-01-10T21:31:27.6770687Z",
+				"properties": {
+					"name": "BatchReplicationAudit",
+					"dsl": {
+						"address": {
+							"server": "genpowerrtdbtest.eastus2.cloudapp.azure.com,1433",
+							"database": "DataLanding_DEV",
+							"schema": "entitlement",
+							"object": "BatchReplicationAudit"
+						},
+						"protocol": "tds",
+						"authentication": "windows"
+					},
+					"dataSource": {
+						"sourceType": "SQL Server",
+						"objectType": "Table"
+					},
+					"lastRegisteredBy": {
+						"objectId": "c8717d13-2556-460a-94a7-a95eedace5f0",
+						"upn": "pmouat@spikesco.com",
+						"firstName": "Paulo",
+						"lastName": "Mouat"
+					},
+					"fromSourceSystem": true,
+					"containerId": "https://ded8da95-eaff-4085-9417-04177825bb00-catalog.api.datacatalog.azure.com/catalogs/catalog/views/containers/bfa11552-6ac0-46d9-8bac-06eac62e4c2d"
+				},
+				"annotations": {
+					"columnsDataProfiles": [{
+							"id": "https://ded8da95-eaff-4085-9417-04177825bb00-catalog.api.datacatalog.azure.com/catalogs/catalog/views/tables/fa1c03f9-8e4e-4a67-85e4-6934c63a99e2/columnsDataProfiles/Microsoft",
+							"type": "Microsoft.DataSource.ColumnsDataProfile.1",
+							"timestamp": "2018-01-10T21:31:27.6770687Z",
+							"properties": {
+								"fromSourceSystem": true,
+								"key": "Microsoft"
+							},
+							"roles": [{
+									"role": "Contributor",
+									"members": [{
+											"objectId": "00000000-0000-0000-0000-000000000201"
+										}
+									]
+								}
+							],
+							"effectiveRights": [
+								"Read",
+								"Delete",
+								"ViewRoles",
+								"Update"
+							]
+						}
+					],
+					"schema": {
+						"id": "https://ded8da95-eaff-4085-9417-04177825bb00-catalog.api.datacatalog.azure.com/catalogs/catalog/views/tables/fa1c03f9-8e4e-4a67-85e4-6934c63a99e2/schema",
+						"type": "Microsoft.DataSource.Schema.1",
+						"timestamp": "2018-01-10T21:31:27.6770687Z",
+						"properties": {
+							"columns": [{
+									"name": "BatchReplicationId",
+									"type": "int",
+									"maxLength": 4,
+									"precision": 10,
+									"isNullable": false
+								}, {
+									"name": "ReplicationStartDate",
+									"type": "datetime",
+									"maxLength": 8,
+									"precision": 23,
+									"isNullable": true
+								}, {
+									"name": "ReplicationEndDate",
+									"type": "datetime",
+									"maxLength": 8,
+									"precision": 23,
+									"isNullable": true
+								}, {
+									"name": "IsSuccessful",
+									"type": "bit",
+									"maxLength": 1,
+									"precision": 1,
+									"isNullable": true
+								}, {
+									"name": "ReplicatedBatches",
+									"type": "int",
+									"maxLength": 4,
+									"precision": 10,
+									"isNullable": true
+								}, {
+									"name": "MinLoadedBatchSubmissionId",
+									"type": "int",
+									"maxLength": 4,
+									"precision": 10,
+									"isNullable": true
+								}, {
+									"name": "MaxLoadedBatchSubmissionId",
+									"type": "int",
+									"maxLength": 4,
+									"precision": 10,
+									"isNullable": true
+								}, {
+									"name": "ServerName",
+									"type": "varchar",
+									"maxLength": 100,
+									"precision": 0,
+									"isNullable": true
+								}, {
+									"name": "BatchReplicationTypeId",
+									"type": "int",
+									"maxLength": 4,
+									"precision": 10,
+									"isNullable": true
+								}
+							],
+							"fromSourceSystem": true
+						},
+						"roles": [{
+								"role": "Contributor",
+								"members": [{
+										"objectId": "00000000-0000-0000-0000-000000000201"
+									}
+								]
+							}
+						],
+						"effectiveRights": [
+							"Read",
+							"Delete",
+							"ViewRoles",
+							"Update"
+						]
+					},
+					"previews": [{
+							"id": "https://ded8da95-eaff-4085-9417-04177825bb00-catalog.api.datacatalog.azure.com/catalogs/catalog/views/tables/fa1c03f9-8e4e-4a67-85e4-6934c63a99e2/previews/Microsoft",
+							"type": "Microsoft.DataSource.Preview.1",
+							"timestamp": "2018-01-10T21:31:27.6770687Z",
+							"properties": {
+								"fromSourceSystem": true,
+								"key": "Microsoft"
+							},
+							"roles": [{
+									"role": "Contributor",
+									"members": [{
+											"objectId": "00000000-0000-0000-0000-000000000201"
+										}
+									]
+								}
+							],
+							"effectiveRights": [
+								"Read",
+								"Delete",
+								"ViewRoles",
+								"Update"
+							]
+						}
+					],
+					"tableDataProfiles": [{
+							"id": "https://ded8da95-eaff-4085-9417-04177825bb00-catalog.api.datacatalog.azure.com/catalogs/catalog/views/tables/fa1c03f9-8e4e-4a67-85e4-6934c63a99e2/tableDataProfiles/Microsoft",
+							"type": "Microsoft.DataSource.TableDataProfile.1",
+							"timestamp": "2018-01-10T21:31:27.6770687Z",
+							"properties": {
+								"numberOfRows": 5150,
+								"size": 303104,
+								"schemaModifiedTime": "2017-09-27T04:22:11.277",
+								"fromSourceSystem": true,
+								"key": "Microsoft"
+							},
+							"roles": [{
+									"role": "Contributor",
+									"members": [{
+											"objectId": "00000000-0000-0000-0000-000000000201"
+										}
+									]
+								}
+							],
+							"effectiveRights": [
+								"Read",
+								"Delete",
+								"ViewRoles",
+								"Update"
+							]
+						}
+					]
+				},
+				"roles": [{
+						"role": "Contributor",
+						"members": [{
+								"objectId": "00000000-0000-0000-0000-000000000201"
+							}
+						]
+					}
+				],
+				"effectiveRights": [
+					"Read",
+					"Delete",
+					"ChangeOwnership",
+					"ChangeVisibility",
+					"ViewPermissions",
+					"ViewRoles",
+					"Move",
+					"Update",
+					"TakeOwnership"
+				]
+			},
+			"hitProperties": []
+		}, {
+			"content": {
+				"id": "https://ded8da95-eaff-4085-9417-04177825bb00-catalog.api.datacatalog.azure.com/catalogs/catalog/views/tables/fe782857-a957-40e9-86f0-e549d26a0e37",
+				"type": "Microsoft.DataSource.Table.1",
+				"timestamp": "2017-07-10T19:05:51.7072778Z",
+				"properties": {
+					"name": "U.S Refinery Coverage Stats",
+					"dsl": {
+						"address": {
+							"contentType": "application/x-ms-import",
+							"url": "https://ded8da95-eaff-4085-9417-04177825bb00.de-users-preview.sqlazurelabs.com/Data/d5791046-7210-4a6d-abe1-9c6996652368"
+						},
+						"protocol": "power-query",
+						"authentication": "oauth"
+					},
+					"dataSource": {
+						"sourceType": "Power Query",
+						"objectType": "Data Mashup"
+					},
+					"lastRegisteredBy": {
+						"upn": "eness@spikesco.com"
+					},
+					"fromSourceSystem": false
+				},
+				"annotations": {
+					"documentation": {
+						"id": "https://ded8da95-eaff-4085-9417-04177825bb00-catalog.api.datacatalog.azure.com/catalogs/catalog/views/tables/fe782857-a957-40e9-86f0-e549d26a0e37/documentation",
+						"type": "Microsoft.Documentation.1",
+						"timestamp": "2017-07-10T19:05:51.7072778Z",
+						"properties": {
+							"mimeType": "text/html",
+							"content": "",
+							"fromSourceSystem": false
+						},
+						"roles": [{
+								"role": "Contributor",
+								"members": [{
+										"objectId": "00000000-0000-0000-0000-000000000201"
+									}
+								]
+							}
+						],
+						"effectiveRights": [
+							"Read",
+							"Delete",
+							"ViewRoles",
+							"Update"
+						]
+					},
+					"previews": [{
+							"id": "https://ded8da95-eaff-4085-9417-04177825bb00-catalog.api.datacatalog.azure.com/catalogs/catalog/views/tables/fe782857-a957-40e9-86f0-e549d26a0e37/previews/~3cd0eab2-9466-837c-db63-eccb49f23be6",
+							"type": "Microsoft.DataSource.Preview.1",
+							"timestamp": "2017-07-10T19:05:51.7072778Z",
+							"properties": {
+								"fromSourceSystem": false,
+								"key": "https://ded8da95-eaff-4085-9417-04177825bb00.de-users-preview.sqlazurelabs.com/Preview/d5791046-7210-4a6d-abe1-9c6996652368/5e32ec15-61dd-4694-a393-aa7356551ada"
+							},
+							"roles": [{
+									"role": "Contributor",
+									"members": [{
+											"objectId": "00000000-0000-0000-0000-000000000201"
+										}
+									]
+								}
+							],
+							"effectiveRights": [
+								"Read",
+								"Delete",
+								"ViewRoles",
+								"Update"
+							]
+						}
+					],
+					"schema": {
+						"id": "https://ded8da95-eaff-4085-9417-04177825bb00-catalog.api.datacatalog.azure.com/catalogs/catalog/views/tables/fe782857-a957-40e9-86f0-e549d26a0e37/schema",
+						"type": "Microsoft.DataSource.Schema.1",
+						"timestamp": "2017-07-10T19:05:51.7072778Z",
+						"properties": {
+							"columns": [{
+									"name": "Column1",
+									"type": "string"
+								}, {
+									"name": "Column2",
+									"type": "string"
+								}, {
+									"name": "Column3",
+									"type": "string"
+								}, {
+									"name": "Column4",
+									"type": "string"
+								}
+							],
+							"fromSourceSystem": false
+						},
+						"roles": [{
+								"role": "Contributor",
+								"members": [{
+										"objectId": "40910578-cd11-4d2e-a4f2-a5bed1af15d6"
+									}
+								]
+							}
+						],
+						"effectiveRights": [
+							"Read",
+							"Delete",
+							"ViewRoles"
+						]
+					},
+					"descriptions": [{
+							"id": "https://ded8da95-eaff-4085-9417-04177825bb00-catalog.api.datacatalog.azure.com/catalogs/catalog/views/tables/fe782857-a957-40e9-86f0-e549d26a0e37/descriptions/9bad9f9a0d224d4598c6a58a48b96bb5",
+							"type": "Microsoft.Description.1",
+							"timestamp": "2017-07-10T19:05:51.7072778Z",
+							"properties": {
+								"description": "",
+								"fromSourceSystem": false,
+								"key": "9bad9f9a0d224d4598c6a58a48b96bb5"
+							},
+							"roles": [{
+									"role": "Contributor",
+									"members": [{
+											"objectId": "40910578-cd11-4d2e-a4f2-a5bed1af15d6"
+										}
+									]
+								}
+							],
+							"effectiveRights": [
+								"Read",
+								"Delete",
+								"ViewRoles"
+							]
+						}
+					]
+				},
+				"roles": [{
+						"role": "Contributor",
+						"members": [{
+								"objectId": "40910578-cd11-4d2e-a4f2-a5bed1af15d6"
+							}
+						]
+					}, {
+						"role": "Owner",
+						"members": [{
+								"objectId": "40910578-cd11-4d2e-a4f2-a5bed1af15d6"
+							}
+						]
+					}
+				],
+				"permissions": [{
+						"rights": [{
+								"right": "Update"
+							}
+						],
+						"principal": {
+							"objectId": "00000000-0000-0000-0000-000000000201"
+						}
+					}
+				],
+				"effectiveRights": [
+					"Read",
+					"Delete",
+					"ChangeOwnership",
+					"ChangeVisibility",
+					"ViewPermissions",
+					"ViewRoles",
+					"Move"
+				]
+			},
+			"hitProperties": []
+		}
+	]
+}

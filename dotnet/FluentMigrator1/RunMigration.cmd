@@ -1,0 +1,1 @@
+..\..\packages\FluentMigrator.Tools.1.0.6.0\tools\AnyCPU\40\migrate.exe /conn "Data Source=.;Initial Catalog=FluentMigrator1;Integrated Security=True;" /provider sqlserver2012 /assembly FluentMigrator1.exe /verbose=true

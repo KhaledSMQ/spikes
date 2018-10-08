@@ -1,0 +1,343 @@
+﻿@{
+    ViewBag.Title = "Results";
+}
+<div id="divChart" style="height: 100%; width: 100%; min-height:400px"></div>
+<table style="width:100%">
+    <tr>
+        <td style="width:50%">
+            <textarea id="textComments" rows="6" style="min-width:400px"></textarea>
+        </td>
+        <td style="width:50%">
+            <div id="divMeter" style="height: 100%; width: 100%; min-height:100px"></div> 
+        </td>
+    </tr>
+</table>
+@section scripts {
+    <script src="~/Scripts/jquery.signalR-2.0.2.min.js"></script>
+    <script src="~/signalr/hubs"></script>
+    <script src="~/Scripts/highstock.js"></script>
+    <script src="~/Scripts/highcharts.js"></script>
+    <script src="~/Scripts/highcharts-more.js"></script>
+    <script>
+
+        var TIMER_INTERVAL = 1000;
+        var _timerId;
+        var _liveFlags = "";
+        var _flagIndex = 65;
+        var _chart;
+        var _votes = new Array();
+        var _allVoteCount = 0;
+        var _currentVoteCount = 0;
+
+        var _config = {
+            chart: {
+                renderTo: 'divChart',
+                plotBackgroundImage: 'images/background.png'
+            },
+            rangeSelector: {
+                buttons: [{
+                    count: 1,
+                    type: 'minute',
+                    text: '1M'
+                }, {
+                    count: 5,
+                    type: 'minute',
+                    text: '5M'
+                }, {
+                    type: 'all',
+                    text: 'All'
+                }],
+                inputEnabled: false,
+                selected: 0
+            },
+            title: {
+                enabled: false
+            },
+            yAxis: {
+                max:50,
+                min:-50,
+                plotLines: [{ // mark the weekend
+                    color: 'black',
+                    width: 4,
+                    value: 0,
+                    dashStyle: 'solid'
+                }],
+            },
+            series: [{
+                name: 'Moody Real-Time',
+                id: 'liveSeries',
+                type: 'areaspline',
+                fillColor : {
+                    linearGradient : {
+                        x1: 0, 
+                        y1: 0, 
+                        x2: 0, 
+                        y2: 1
+                    },
+                    stops: [[0, 'rgba(255,255,255,.66)'], [1, 'rgba(255,255,255,.66)']]
+                },
+                data: (function () {
+                    // generate an array of random data
+                    var data = [], time = (new Date()).getTime(), i;
+
+                    for (i = -300; i <= 0; i++) {
+                        data.push([
+                            time + i * 1000,
+                            Math.round(Math.random() * 0)
+                        ]);
+                    }
+                    return data;
+                })()
+            },
+            {
+                name: 'User Comments',
+                type: 'flags',
+                onSeries: 'liveSeries',
+                data :[],
+                shape: 'circlepin',
+                width: 16
+            },
+            {
+                name: 'Admin Comments',
+                type: 'flags',
+                data: [],
+                shape: 'squarepin',
+                width: 16
+            }]
+        };
+
+
+        $(function () {
+            var voteResults = $.connection.voteResultsHub;
+            voteResults.client.receiveVote = function (value, message, timestamp) {
+                //$('#tally').append('<li>Received vote, ' + htmlEncode(value) +
+                //    ' with message ' + htmlEncode(message) +
+                //    ' and timestamp ' + htmlEncode(timestamp) +
+                //    '</li>');
+
+                var item = new Object();
+                item.date = new Date();
+                item.value = value;
+                _votes.push(item);
+
+                message = $.trim(message);
+                message = message.replace("\r", " ");
+                message = message.replace("\n", " ");
+
+                _allVoteCount += value;
+                _currentVoteCount += value;
+
+                if (value == 0) {
+                    var item = new Object();
+                    item.x = new Date();
+                    item.title = "!";
+                    item.text = message;
+                    _chart.series[2].addPoint(item);
+
+                    var color = "#404040";
+                    _chart.series[0].color = color;
+                    _chart.series[0].graph.attr({ stroke: color });
+
+                    _chart.series[0].xAxis.addPlotLine({
+                        value: item.x,
+                        width: 2,
+                        color: '#404040',
+                        dashStyle: 'dash'
+                    });
+            
+                    _currentVoteCount = 0;
+                }
+                else {
+                    if (message != "") {
+                        if (_liveFlags != "") { _liveFlags += "\r\n"; }
+                        _liveFlags += message;
+                    }
+                }
+
+            };
+
+            $.connection.hub.start().done(function () {
+            });
+
+            _chart = new Highcharts.StockChart(_config);
+            loadMeter();
+            _timerId = setInterval(timerHandler, TIMER_INTERVAL);
+        });
+
+
+        function htmlEncode(value) {
+            var encodedValue = $('<div />').text(value).html();
+            return encodedValue;
+        }
+        
+        function timerHandler() {
+            // Calc the impressions and remove any old items   
+            var liveTotal = 0;         
+            var now = (new Date()).getTime();
+            var expire = now - 15000;
+            var newVotes = new Array();
+            
+            for (var i = 0 ; i < _votes.length; i++) {
+                if (_votes[i].date.getTime() > expire)
+                {
+                    liveTotal = liveTotal + _votes[i].value; 
+                    newVotes.push(_votes[i]);
+                } 
+            }
+            _votes = newVotes;
+    
+            var item = new Object();
+            item.x = now;
+            item.y = liveTotal;
+            _chart.series[0].addPoint(item, true, true);
+
+            if (_liveFlags != "") {
+                var item = new Object();
+                item.x = now;
+                item.title = String.fromCharCode(_flagIndex);
+                item.text = _liveFlags;
+                _chart.series[1].addPoint(item);
+
+                var comments =  $("#textComments").val();
+                $("#textComments").val(comments = item.text + "\r\n" + comments);
+
+                _flagIndex++;
+                _liveFlags = "";
+                if (_flagIndex > 90) { _flagIndex = 65; }
+            }
+        }
+    
+
+        function loadMeter() {
+            $(function () {
+                $('#divMeter').highcharts({
+                    chart: {
+                        type: 'gauge',
+                        plotBorderWidth: 1,
+                        plotBackgroundColor: {
+                            linearGradient: { x1: 0, y1: 0, x2: 0, y2: 1 },
+                            stops: [
+                                [0, '#FFF4C6'],
+                                [0.3, '#FFFFFF'],
+                                [1, '#FFF4C6']
+                            ]
+                        },
+                        plotBackgroundImage: null,
+                        height: 200
+                    },
+
+                    title: {
+                        text: 'Aggregated Performance'
+                    },
+
+                    pane: [{
+                        startAngle: -45,
+                        endAngle: 45,
+                        background: null,
+                        center: ['25%', '145%'],
+                        size: 300
+                    }, {
+                        startAngle: -45,
+                        endAngle: 45,
+                        background: null,
+                        center: ['75%', '145%'],
+                        size: 300
+                    }],
+
+                    yAxis: [{
+                        min: -100,
+                        max: 100,
+                        minorTickPosition: 'outside',
+                        tickPosition: 'outside',
+                        labels: {
+                            rotation: 'auto',
+                            distance: 20
+                        },
+                        plotBands: [{
+                            from: -100,
+                            to: 0,
+                            color: '#f00000',
+                            innerRadius: '100%',
+                            outerRadius: '105%'
+                        },
+                        {
+                            from: 0,
+                            to: 100,
+                            color: '#00f000',
+                            innerRadius: '100%',
+                            outerRadius: '105%'
+                        }],
+                        pane: 0,
+                        title: {
+                            text: 'Current Speaker',
+                            y: -40
+                        }
+                    }, {
+                        min: -100,
+                        max: 100,
+                        minorTickPosition: 'outside',
+                        tickPosition: 'outside',
+                        labels: {
+                            rotation: 'auto',
+                            distance: 20
+                        },
+                        plotBands: [{
+                            from: -100,
+                            to: 0,
+                            color: '#f00000',
+                            innerRadius: '100%',
+                            outerRadius: '105%'
+                        },
+                        {
+                            from: 0,
+                            to: 100,
+                            color: '#00f000',
+                            innerRadius: '100%',
+                            outerRadius: '105%'
+                        }],
+                        pane: 1,
+                        title: {
+                            text: 'All Speakers',
+                            y: -40
+                        }
+                    }],
+
+                    plotOptions: {
+                        gauge: {
+                            dataLabels: {
+                                enabled: false
+                            },
+                            dial: {
+                                radius: '100%'
+                            }
+                        }
+                    },
+
+                    series: [{
+                        data: [-20],
+                        yAxis: 0
+                    }, {
+                        data: [-20],
+                        yAxis: 1
+                    }]
+
+                },
+
+                // Let the music play
+                function (chart) {
+                    setInterval(function () {
+                        var currentMeter = chart.series[0].points[0];
+                        var allMeter = chart.series[1].points[0];
+
+                        currentMeter.update( _currentVoteCount, false);
+                        allMeter.update( _allVoteCount, false);
+                        chart.redraw();
+
+                    }, 500);
+
+                });
+            });
+
+        }
+    </script>
+}

@@ -1,0 +1,98 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>SpikeCo password reset</title>
+    <link rel="stylesheet" type="text/css" href="https://aadb2cpocwebapp1.azurewebsites.net/content/bootstrap.min.dark.css">
+    <link rel="stylesheet" type="text/css" href="https://aadb2cpocwebapp1.azurewebsites.net/content/dashboard.dark.css">
+    <link rel="stylesheet" type="text/css" href="https://aadb2cpocwebapp1.azurewebsites.net/content/policy.dark.css">
+    <!--
+    <link rel="stylesheet" type="text/css" href="/content/policy.dark.css">
+    -->
+</head>
+<body>
+<div id="main-view">
+    <div class="row">
+        <div class="col-sm-2"></div>
+        <div class="col-sm-8 panel-default">
+            <div id="loginbox" class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-2 panel-body">
+                <div>
+                    <div class="panel-title">
+                        <div id="spikecologo">
+                            <img src="https://aadb2cpocwebapp1.azurewebsites.net/content/logo.png" width="161" height="20"/>
+                        </div>
+                        <div>FORGOT PASSWORD</div>
+                    </div>
+                    <hr/>
+                    <div style="padding-top: 15px">
+                        <div style="display: none" id="login-alert" class="alert alert-danger col-sm-12"></div>
+                        <div id="api" data-name="SelfAsserted">                           
+                            <!--
+                            NOTE: The entire contents of the div with id 'api' is overwritten dynamically by AAD.
+                            The content below is a copy of what AAD populates the element with.
+                            -->
+                            <div class="intro">
+                                <p>Please provide the following details.</p>
+                            </div>
+                            <div id="attributeVerification" role="form">
+                                <div class="error pageLevel" id="passwordEntryMismatch" style="display: none;" aria-hidden="true">The password entry fields do not match. Please enter the same password in both fields and try again.</div>
+                                <div class="error pageLevel" id="requiredFieldMissing" style="display: none;" aria-hidden="true">A required field is missing. Please fill out all required fields and try again.</div>
+                                <div class="error pageLevel" id="fieldIncorrect" style="display: none;" aria-hidden="true">One or more fields are filled out incorrectly. Please check your entries and try again.</div>
+                                <div class="error pageLevel" id="claimVerificationServerError" style="display: none;" aria-hidden="true"></div>
+                                <div class="attr" id="attributeList">
+                                    <ul>
+                                        <li>
+                                            <div class="attrEntry">
+                                                <div>
+                                                    <div class="verificationInfoText" id="email_intro" style="display: inline;" aria-hidden="false" role="alert" aria-live="polite">Verification is necessary. Please click Send button.</div>
+                                                    <div class="verificationInfoText" id="email_info" style="display:none" aria-hidden="true">Verification code has been sent to your inbox. Please copy it to the input box below.</div>
+                                                    <div class="verificationSuccessText" id="email_success" style="display:none" aria-hidden="true">E-mail address verified. You can now continue.</div>
+                                                    <div class="verificationErrorText error" id="email_fail_retry" style="display:none" aria-hidden="true">That code is incorrect. Please try again.</div>
+                                                    <div class="verificationErrorText error" id="email_fail_no_retry" style="display:none" aria-hidden="true">You've made too many incorrect attempts. Please try again later.</div>
+                                                    <div class="verificationErrorText error" id="email_fail_throttled" style="display:none" aria-hidden="true">There have been too many requests to verify this email address. Please wait a while, then try again.</div>
+                                                    <div class="verificationErrorText error" id="email_fail_server" style="display:none" aria-hidden="true">We are having trouble verifying your email address. Please enter a valid email address and try again.</div>
+                                                    <div class="verificationErrorText error" id="email_incorrect_format" style="display:none" aria-hidden="true">Incorect format.</div>
+                                                </div>
+
+                                                <label for="email">Email Address</label>
+
+                                                <div class="error itemLevel" aria-hidden="true"><p role="alert" aria-live="polite" tabindex="1">Please enter a valid email address.</p></div>
+
+                                                <input id="email" class="textInput" type="text" placeholder="Email Address" pattern="^[a-zA-Z0-9!#$%&amp;'+^_`{}~-]+(?:\.[a-zA-Z0-9!#$%&amp;'+^_`{}~-]+)*@(?:[a-zA-Z0-9](?:[a-zA-Z0-9-]*[a-zA-Z0-9])?\.)+[a-zA-Z0-9](?:[a-zA-Z0-9-]*[a-zA-Z0-9])?$" title="Email address that can be used to contact you." required="" aria-required="true">
+
+                                                <a href="javascript:void(0)" data-help="Email address that can be used to contact you." class="helpLink tiny">What is this?</a>
+
+                                                <div class="buttons verify" claim_id="email">
+                                                    <div id="email_ver_wait" class="working" aria-hidden="true" style="display: none;"></div>
+                                                    <label id="email_ver_input_label" for="email_ver_input" aria-hidden="true" style="display: none;">Verification code</label>
+                                                    <input id="email_ver_input" type="text" placeholder="Verification code" style="display:none" aria-hidden="true">
+                                                    <button id="email_ver_but_send" class="sendButton" type="button" style="display: inline;" aria-label="Send verification code" aria-hidden="false">Send verification code</button>
+                                                    <button id="email_ver_but_verify" class="verifyButton" type="button" style="display:none" aria-label="Verify code" aria-hidden="true">Verify code</button>
+                                                    <button id="email_ver_but_resend" class="sendButton" type="button" style="display:none" aria-label="Send new code" aria-hidden="true">Send new code</button>
+
+                                                    <button id="email_ver_but_edit" class="editButton" type="button" style="display:none" aria-label="Change e-mail" aria-hidden="true">Change e-mail</button>
+
+                                                    <button id="email_ver_but_default" class="defaultButton" type="button" style="display:none" aria-label="Default">Default</button>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="buttons">
+                                    <button id="continue" disabled="" aria-label="Continue">Continue</button>
+                                    <button id="cancel" aria-label="Cancel" formnovalidate="">Cancel</button>
+                                </div>
+
+                                <div class="verifying-modal">
+                                    <div id="verifying_blurb"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

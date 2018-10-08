@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30723.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Inspector", "Inspector\Inspector.csproj", "{D56CE4E7-70F0-467A-B8C3-A19147D32B2C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CreateGdpAssets", "CreateGdpAssets\CreateGdpAssets.csproj", "{44EEE374-16C8-4EFD-8DB5-42CF2400E3BD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D56CE4E7-70F0-467A-B8C3-A19147D32B2C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D56CE4E7-70F0-467A-B8C3-A19147D32B2C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D56CE4E7-70F0-467A-B8C3-A19147D32B2C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D56CE4E7-70F0-467A-B8C3-A19147D32B2C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{44EEE374-16C8-4EFD-8DB5-42CF2400E3BD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{44EEE374-16C8-4EFD-8DB5-42CF2400E3BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{44EEE374-16C8-4EFD-8DB5-42CF2400E3BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{44EEE374-16C8-4EFD-8DB5-42CF2400E3BD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

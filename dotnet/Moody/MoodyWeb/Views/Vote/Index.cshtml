@@ -1,0 +1,84 @@
+﻿@{
+    ViewBag.Title = "Vote";
+}
+@{
+    Layout = "~/Views/Shared/_LayoutNoHeader.cshtml";
+}
+<div class="container">
+    <input id="btnUp" type="button" value="Like" class="btn btn-large btn-success" style="padding: 12px 12px; font-size: 22px; font-weight:bold; width:150px" /><br />
+    <img id="imgFaces" src="images\0.png" style="padding:10px" /><br />
+	<input id="btnDown" type="button" value="Dislike" class="btn btn-large btn-danger" style="padding: 12px 12px; font-size: 22px; font-weight:bold; width:150px" /><br />
+    <div style="height:50px"></div>
+    <textarea id="comment" rows="1" maxlength="100"></textarea>
+
+    <ul id="confirmation"></ul>
+</div>
+<audio id="clickSound">
+    <source src="images/click.mp3" type="audio/mpeg" />
+</audio>
+@section scripts {
+    <script src="~/Scripts/jquery.signalR-2.0.2.min.js"></script>
+    <script src="~/signalr/hubs"></script>
+    <script>
+        var _mood = 0;
+        var _timerId;
+
+        $(function () {
+            var voteResults = $.connection.voteResultsHub;
+            voteResults.client.receiveVote = function (value, message) {
+                //$('#confirmation ').append('<li>Sent vote ' + htmlEncode(value) +
+                //    ' with message ' + htmlEncode(message) +
+                //    '</li>');
+            };
+            $.connection.hub.start().done(function () {
+                $('#btnUp').click(function () {
+                    voteResults.server.receiveVote(1, $('#comment').val());
+                    buttonHandler("#btnUp");
+                });
+                $('#btnDown').click(function () {
+                    voteResults.server.receiveVote(-1, $('#comment').val());
+                    buttonHandler("#btnDown");
+                });
+            });
+        });
+
+        // This optional function html-encodes messages for display in the page.
+        function htmlEncode(value) {
+            var encodedValue = $('<div />').text(value).html();
+            return encodedValue;
+        }
+
+        function buttonHandler(targetName) {
+            clearInterval(_timerId);
+
+            $("#comment").val("");
+            $(targetName).attr("disabled", "disabled");
+
+            var mood = targetName == "#btnUp" ? 1 : -1;
+            _mood += mood;
+
+            if (_mood < -2) { _mood = -2; }
+            if (_mood > 2) { _mood = 2; }
+            setFace();
+
+            setTimeout(timerEnableHandler(targetName), 1500);
+            $("#clickSound").get(0).play();
+        }
+
+        function timerEnableHandler(targetName) {
+            $(targetName).removeAttr("disabled");
+            _timerId = setInterval(timerMoodHandler, 3000);
+        }
+
+        function timerMoodHandler() {
+            if (_mood < 0) { _mood++; }
+            if (_mood > 0) { _mood--; }
+            setFace();
+        }
+
+        function setFace() {
+            var url = "images/" + _mood + ".png";
+            $("#imgFaces").attr("src", url);
+        }
+    </script>
+}

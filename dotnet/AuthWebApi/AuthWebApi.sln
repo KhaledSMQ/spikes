@@ -1,0 +1,50 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApiServer", "WebApiServer\WebApiServer.csproj", "{053B9879-B25A-49FF-800F-3913D4E119EB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApiClient", "WebApiClient\WebApiClient.csproj", "{3A2C85AF-C58B-4B48-81C2-CBB9B42F5CAD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SamlTokenRequestor.Thinktecture", "SamlTokenRequestor.Thinktecture\SamlTokenRequestor.Thinktecture.csproj", "{7FEA059C-CB68-40D7-998A-5379FC763973}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SamlTokenRequestor.Wif", "SamlTokenRequestor.Wif\SamlTokenRequestor.Wif.csproj", "{EDA6BEA1-1E4D-4783-9142-110D6ED827F7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JwtTokenRequestor.Wif", "JwtTokenRequestor.Wif\JwtTokenRequestor.Wif.csproj", "{42F65752-07E0-4886-B459-4B1A7C64AA2F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TokenHelpers", "TokenHelpers\TokenHelpers.csproj", "{518CDA2D-C08A-4532-84D7-BBFD0F06E9E7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{053B9879-B25A-49FF-800F-3913D4E119EB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{053B9879-B25A-49FF-800F-3913D4E119EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{053B9879-B25A-49FF-800F-3913D4E119EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{053B9879-B25A-49FF-800F-3913D4E119EB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3A2C85AF-C58B-4B48-81C2-CBB9B42F5CAD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3A2C85AF-C58B-4B48-81C2-CBB9B42F5CAD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3A2C85AF-C58B-4B48-81C2-CBB9B42F5CAD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3A2C85AF-C58B-4B48-81C2-CBB9B42F5CAD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7FEA059C-CB68-40D7-998A-5379FC763973}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7FEA059C-CB68-40D7-998A-5379FC763973}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7FEA059C-CB68-40D7-998A-5379FC763973}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7FEA059C-CB68-40D7-998A-5379FC763973}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EDA6BEA1-1E4D-4783-9142-110D6ED827F7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EDA6BEA1-1E4D-4783-9142-110D6ED827F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EDA6BEA1-1E4D-4783-9142-110D6ED827F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EDA6BEA1-1E4D-4783-9142-110D6ED827F7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{42F65752-07E0-4886-B459-4B1A7C64AA2F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{42F65752-07E0-4886-B459-4B1A7C64AA2F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{42F65752-07E0-4886-B459-4B1A7C64AA2F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{42F65752-07E0-4886-B459-4B1A7C64AA2F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{518CDA2D-C08A-4532-84D7-BBFD0F06E9E7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{518CDA2D-C08A-4532-84D7-BBFD0F06E9E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{518CDA2D-C08A-4532-84D7-BBFD0F06E9E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{518CDA2D-C08A-4532-84D7-BBFD0F06E9E7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

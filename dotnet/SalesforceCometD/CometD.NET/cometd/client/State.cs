@@ -1,0 +1,7 @@
+namespace Cometd.Client
+{
+    public enum State
+    {
+        INVALID, UNCONNECTED, HANDSHAKING, REHANDSHAKING, CONNECTING, CONNECTED, DISCONNECTING, DISCONNECTED
+    }
+}

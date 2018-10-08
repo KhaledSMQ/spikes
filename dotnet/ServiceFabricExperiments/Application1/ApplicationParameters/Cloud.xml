@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="fabric:/Application1" xmlns="http://schemas.microsoft.com/2011/01/fabric">
+  <Parameters>
+    <Parameter Name="WebApi6_InstanceCount" Value="-1" />
+    <Parameter Name="WebApi5_InstanceCount" Value="-1" />
+    <Parameter Name="WebApi4_InstanceCount" Value="-1" />
+    <Parameter Name="WebApi3_InstanceCount" Value="-1" />
+    <Parameter Name="WebApi2_InstanceCount" Value="-1" />
+    <Parameter Name="WebApi1_InstanceCount" Value="-1" />
+  </Parameters>
+</Application>

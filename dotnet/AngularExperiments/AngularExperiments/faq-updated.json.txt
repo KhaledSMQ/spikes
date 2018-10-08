@@ -1,0 +1,18 @@
+[
+	{
+		"question": "This is the first FAQ Item",
+		"answer": "Good"
+	},
+	{
+		"question": "This is the second FAQ item.",
+		"answer": "Okay"
+	},
+	{
+		"question": "This is the third one.",
+		"answer": "I don't care."
+	},
+	{
+		"question" : "This is the fourth item, which was dynamically added",
+		"answer" :  "Wow... very cool"
+	}
+]
